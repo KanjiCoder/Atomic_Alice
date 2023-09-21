@@ -1,0 +1,8 @@
+
+
+Use your special effects from FlashV1 to animate the melting of the level when you DIE!!!!!
+You already have the code, and you could put it to good use!
+
+Work on:
+	AstroSplashCompoundFilter.as
+	This is the effect you were looking for!

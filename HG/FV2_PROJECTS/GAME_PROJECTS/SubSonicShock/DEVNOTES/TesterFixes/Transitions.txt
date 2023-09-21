@@ -1,0 +1,5 @@
+
+
+When new level is loaded, the lighting system should be OFF,
+and the lighting turns back on. This will make the lighting system more noticable.
+Also, we could slowly change the DARKNESS color from black to dark grey to make the transition more noticable.

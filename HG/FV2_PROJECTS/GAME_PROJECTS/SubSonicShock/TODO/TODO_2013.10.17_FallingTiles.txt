@@ -1,0 +1,59 @@
+//Falling tile.
+//Falling tiles SHOULD trigger dirty physics... Maybe dirty render, as they set tiles behind them
+//that prevent explosions from explosion map from going through them.
+[ ]
+[ ]
+[ ]
+[ ]
+[ ]
+ |
+ |
+ V
+ 
+ Is it possible to use TweenMax to do the job? Or do you need more control?
+ I think I need more control. I need a column tween manager maybe?
+ 
+ ColumnTweenManager.to(tileX,tileY,onDestinationFunction)
+ 
+ As it is moving column, it ERASES tiles on the tail. And CREATES tiles on the head.
+ Explosions WILL be able to go through the TIPS (head and tail) of the column when
+ those tips are not 100% locked evenly into a tile position.
+ 
+ It may look weird having explosion going through a column that is mostly on that tile.
+ Solution:?
+ 
+ Easy Solution: Don't design levels where that can happen! 
+Hard Solution: Some type of invisible tile on the tilemap...
+Hard Solution (Possibly better):
+	
+	Register invisible BLOCKER CELLS will an explosion cell in the explosion grid.
+	 They could have a time limit, and after their age exceeds that time limit, they are no longer valid.
+	 
+Another solution:
+	Explosions that hit the [head or tail] shift the column up or down, snapping it into a tile position...
+	That seems kinda weird to me... Physics wise... Don't like that.
+	Seems hard to pull off code wise, and the end result would be weird.
+	
+	
+Questions: Do we need a ColumnTweenManager?
+Questions: What is the most efficient way to handle all of this?
+Questions: How to we handle falling columns that end up merging together?
+Questions: How do we know which tileset to get the graphics from?
+
+
+For each theColumnHead in _inBounds list:
+<ColumnTweenManager instance>.updateColumnPosition(theColumnHead);
+
+For each theColumnHead in _outOfBounds list:
+<ColumnTweenManager instance>.updateColumnPosition(theColumnHead);
+
+
+Where should rendering come from???
+Should it be added to the FlxGame and have a .draw() function?
+This is seeming like the most logical way to update it!
+
+
+
+
+
+	

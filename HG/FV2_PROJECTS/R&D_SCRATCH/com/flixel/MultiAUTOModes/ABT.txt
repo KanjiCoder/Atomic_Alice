@@ -1,0 +1,1 @@
+Project I am using to mess with FlxTileMap to get the auto modes to do my bidding.

@@ -1,0 +1,130 @@
+	
+https://www.facebook.com/bethany.marieh/photos
+	ABCDEABCDEABCDEABCDEABCDEABCDE
+	ghABihCjiDkjElkkglll <<This is shorter... But we need to compress the longest repeating pattern because"
+	ghABCDEgh6           <<this run-length compression is even shorter.
+	ghABCDEihhgiii       <<This is what I currently have. Could possibly be more compressed in the long run.
+	ghABCDEihhgiii       <<still the way it is done.
+
+	//AH! To find optimum run-length:
+	//We must:
+	/1: do run-length compression
+	/2: Record how much space is used:
+	/3: decompress the dictionary by ONE KEY.
+	//GO BACK TO STEP 1.
+	//Repeat until we have completely uncompressed file.
+	Then take the compression that saved the MOST space.
+
+	Note: I am also curious as to... how much different compression size is when you rotate an image 90 degrees and then compress it.
+
+
+//tried typing random stuff:
+AKSJFIEWJFJLJBNLSEIWOIURJDKJSFLDJFIEJKSJFKIEJKSLSKJDSKUEJGKJDAHGKJDIEKAJSJGIELSKDJFKJDKFJDSGIEJJVSDKJFGHEISLKDFJIELSJALJ
+//these results tell me we are compressing when we DON'T need to compress. Possibly compressing items 
+//that save zero space or use space.
+ghJDiJFjKhkIElJKSmJGnkLSoEIpklqLSrKDgAKSikWiJLJBNqoWOIURhKJSFLDipiKpqjSKUEmjAHGjkKAJSmnrijKFhSGkJJVSDKiGHoSLrFJnJALJ
+
+//this happens if we allow things that: Save at least ZERO characters:
+ghJDiJFjKhkIElJKSgAKSikWiJLJBNLSEIWOIURhKJSFLDikliKklLSjSKUEJGjAHGjkKAJSJGkLSKDijKFhSGkJJVSDKiGHEISLKDFJkLSJALJ
+
+//this is what happens if we DON'T allow things that save ZERO characters:
+ghJDgAKSJFIEWJFJLJBNLSEIWOIURhKJSFLDJFIEJKSJFKIEJKSLSKhSKUEJGKhAHGKhIEKAJSJGIELSKDJFKhKFhSGIEJJVSDKJFGHEISLKDFJIELSJALJ
+
+         1         2         3
+123456789012345678901234567890 
+ghE5ih6jA3kEAlW4mjjnkkoP7llpjn 30
+kEnEEmAAhqi3rkEnhEjhEsmmthEEuW 60
+WvkEngq4illuWoWPPusABsIKussAAK 90
+KussAAKJl3oWPPWqnEjkEkAhEktEnn 120
+vhkAtnnrEpEjnvEEmjhpnnrnEjkAkA 150
+hEkAh4tktE"                    160
+
+//NEED TO ALLOW SYMBOLS OF ALL THE SAME!!!
+ghE5ih6jA3kEAlW4mjjnkkoP7llpjn
+kEnEEmAAhqi3rkEnhEjhEsmmthEEuW
+WvkEngq4illuWoWPPusABsIKussAAK
+KussAAKJl3oWPPWqnEjkEkAhEktEnn
+vhkAtnnrEpEjnvEEmjhpnnrnEjkAkA
+hEkAh4tktE"       
+
+ghEEih3jAAkAEAlWWmkEkhkhj3nEkE 30
+ol4WPpjiqjArAhksritsqiuihvoPwK 60
+ljjxjmgi65lvP5vlj5qBj6Iwj11Kwj 90
+11KJl6P7vWi15njkhpEAunkEsphknt 120
+ExpxqhhExpkntnqEjEpEpiiuhAu    149
+
+ghEEih3jAAkAEAlWWmkEkhkhj3nEkE
+ollWPpjiqlj3rAhkisllotjAurtivP
+sPwEjmxknuyAihgi65lsP5vqjjtBj6
+IKqj10KKqj10KJl6P6vWi15njkhpEy
+nkErphxwpjmthhwpxntEjEpEpi3hhy"
+
+ghEEih3jAAkAEAlWWmkEkhkhj3nEkE
+ollWPpjiqllorljjsrj4thkuKsj3vA
+tiwjAxjmynvwgi65lqP6qPsABj6Iuj
+4Kuj4KJl6P7qPWi15njkhpEAihnkEv
+ptyiExpxwhhExpkyinwEjEpEpi3hhA
+ih"
+
+ghEEih3jAAkAEAlWWmkEkhkhj3nEkE
+ol4WPpjiqljjrqj4shktjAuAsitivK
+rj3gi65loP6oPrABj6Ivj4Kvj4KJl6
+P7oPWi15njkhpEAihnkEAsipsnuEjm
+pjmthhEjmpknuntEjEpEpi3hhAih"
+
+ghEEih3jAAkAEAlWWmkEkhkhj3nEkE
+ol4WPpjiqjArAhksPoPtKlj6ujmvkn
+riwihgi65loP5slj5qBj6Itj7Ktj7K
+Jl6P6sWi15njkhpEAwnkEriphvqiEu
+puqhhEupvqinqEjEpEpiiwhAw"
+
+ghAEAEiAEEhjA3EkAElhimhl6nEAoj 30
+ln8E6pAkqWArq26sW9PtKWrKgE390W 60
+11P7sPWq13BA12IttJW12P7sPWE91h 90
+jknk7k9mp8mj7ojln9E5omj7hjpp7p 120
+28k8"                          124
+
+         1         2         3
+123456789012345678901234567890 
+ghEEih3jAAkAEAlWWmkEkhkhj3nEkE
+ollWPpjiqjArAhkisllotjmusPvKlj
+6wnrqxihgi65luP5ulj5qBj6Ivj7Kv
+j7KJl6P7uWi15njkhpEAxnkErphkwi
+EtptqhhEtpkwinqEjEpEpiixhAx"
+
+https://www.facebook.com/bethany.marieh/photos
+https://www.facebook.com/bethany.marieh/photos
+https://www.facebook.com/photo.php?fbid=10152242167169849&set=a.10151539690944849.1073741831.603754848&type=1
+
+
+"Falling is safe" Level String:
+         1         2         3
+123456789012345678901234567890 
+ghW3AAWEiAEji3iikA5ElAAWEmj5i4 30
+n6h9i7io24phi5mq4Er9i3i10hsiiA 60
+tAqWukk6hvohw3ExjiyiiszimgEoW6 90
+EoWP4WEAwAwiswtIMlxx4WMMlAiEAw 120
+iiyiWMJlxiiiiiEihxyqhvv7urr9i3 150
+knnn6h7uvvkkkAqppphkkkt4AWE5zh 180
+5zWPPAWWE5zWIKlkj5tKKloWKJloW6 210
+
+//Babylon5 looking level:
+
+//using run-length compression FIRST:
+         1         2         3         4         5
+12345678901234567890123456789012345678901234567890 
+ghAOAOAiEEjYYkhOAlijAmEA5iA5EniAoEjEpiOqAOArE3sikO 50
+tiYuKAvE7PPE7whOxE4Ayn4zjyE14gA6jt3oY3l11jvjA9jihA 100
+IMwl7jikMMAwl5jikAMJkOl3jsxKwljsnAst3ikKyihuOtsrA4 150
+rkOtEOquOnnAnnKhown3x3iwoOhmOhEYrOqKmqurzA4lYPA24P 200
+YAAYPA24PYAzA4ijrhmKqOrYEquOmhKoOhn3x3phohunnAnpwE 250
+YpAKhrA4rOktpkypAKht3phunApkljpkE4Kkl3jpkIukl5jphA 300
+KKkl7jphKJAhl9jvjA11jt3oY3l6"                      328 about
+
+ghAOAOAiEEjAAkjjlYYmhOAnAlioilpEkAikAqiirOAKsEltAi
+ukkvOhwOixYiyjnzkq3ikgkjloYssYouyqEPPqisunhAIMhOok
+ymMMAhOoknhOjMJmOoymOqAKhOonmwjimOoxmKikihKAwxmwEk
+iEmwYEOArAwtjitAKhsEhwjAqjthOsEvpEvExEOArpEArtsizo
+AYPu3PYjYPu3PYnzoiEhpEKAOAwEYEArAOpEhKsEvijAqjtvsE
+hKttjitvOExrhiEkiEOmixOmikirhoxvKtjiOmonOmqKmoyOmI
+KAmoknvAKKmokyvKJAhounqEPPqisuylYssYokj

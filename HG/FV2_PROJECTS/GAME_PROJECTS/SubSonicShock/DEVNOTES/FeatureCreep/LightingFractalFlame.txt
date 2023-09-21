@@ -1,0 +1,14 @@
+
+
+What if the baked lighting had a filter applied to it to make it do some type of psychedellic fractal animation?
+
+What if there were object that...
+They are sprites... But they render by DEFORMING a subsection of the baked lighting map they are on?
+They would look at whatever is on the lighting buffer, and distort it.
+Could get some interesting phantom looking enemies that way.
+
+But you would need a test square that could distort the lighting system in a cool way.
+
+How would it plug into the lighting system?
+
+Fractal flame fantom sounds pretty cool idea.

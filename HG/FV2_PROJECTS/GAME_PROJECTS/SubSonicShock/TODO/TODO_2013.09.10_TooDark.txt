@@ -1,0 +1,24 @@
+
+While at Sophia's place. Had people play test game.
+Biggest problem is that the game is a bit too dark.
+
+kevin >>
+
+Bring up saturation of level.
+Darkness should not be completely dark.
+
+IDEA: Give levels self-illumination
+      layer for each brick. So that
+      in the darkness, edges and what not
+      could light up.
+
+Problem: More processing. More potential for
+lag. Will have to code it as well.
+
+Pro:
+Would look really cool with a tron-style
+effect that is occasionally flashing.
+
+half-half:
+Sometimes the darkness is not completely dark, sometimes darkness is pitch black
+and the things in the dark are glowing.

@@ -1,0 +1,46 @@
+
+//UPDATED TODO:
+	
+TODO: Get Decals drawing FIRST.
+Because decals are less interactive than props.
+Thus, it is logical to get that proof of concept working FIRST
+before we move on to getting the props drawing.
+
+
+1. Make prop placement engine
+2. Code necessities for displaying props.
+   Don't worry too much about collision, but do code the basic structures for collision as you think of them.
+   
+   //BELOW:
+   //CLASSES CREATED TO GET PROPS UP AND RUNNING IN GAME///////////////////////////////////////////////////////////
+   
+   PropPlacementEngine.as   //Engine that is responsible for spawning props on the tilemap.
+   IPropSprite.as           //Interface that defines a prop object.
+   PropSlicesCache.as       //Caches slices for each bitmap used as prop
+   
+   
+   TilePropData.as
+   TilePropMasterData.as
+   PropSprite.as            //First implimentation of IPropSprite. Made from loading GamePropData into it.
+   
+   
+   PropReg.as  // A registry for storing props that is a child of AssetReg.
+   IPropReg.as // An interface implimented by PropReg.
+               // PropReg is GAME SPECIFIC, while IPropReg is GAME AGNOSTIC.
+			   // AKA: PropReg can be hardcoded to know things about entire game.
+			   
+			   
+   PropPlacementEngineFunctions.as //functions used by PropPlacementEngine.
+   
+   FlxTilemapPropFunctions.as //Functions embedded into FlxTilemap_EXT for managing props.
+   
+   DecalSlice.as   //Used to make decals like blood splatter in the game.
+   CommonSlice.as  <<Common between DecalSlice and PropSlice
+   
+   TilePropEnums.as //<<Registration configurations for setting props.
+   
+   ATileProp.as  //Single prop within TilePropData. Basically, most of Original TilePropData has been gutted and put
+                 //into here to support multiple props overlapping each other.
+				 
+   BloodAndSplatterPropPack.as //Props and decals are interchangeable. Made this prop pack to test out decal setting functions.
+                               //Get decals working tonight. Then tomorrow, get props working properly.

@@ -1,0 +1,38 @@
+
+
+In order needed to work on.
+1. CollisionBucket.as
+2. CollisionBucketBuffer.as
+3. PlasmaMapStateSprite.as
+
+
+
+Also open tab:
+	BufferedPlasmaMap.as
+	
+	
+END RESULT:
+	I want thwomps that will CRUSH THROUGH blocks in the game.
+	
+TODO NEXT: Make object that can tell us if tile is in LIGHT or not:
+	 * SINCE ALL LIGHTS ARE DEFINED BY RECTANGLES:
+			 * Easy to calculate if objects are in the light or not!
+			 * Tilemap should have a "setIsTileInLight(tileX,tileY,true)"
+			 * and a getIsTileInLight(tileX,tileY,false)....
+			 * TOO specialized!!!
+			 * LightLedger.getIsTileInLight
+			 * LightLedger has _data:vector.<boolean> that aligns with size of tilemap.
+			 *            Dependancies:
+				          1. The tilemap
+						  2. The plasma Map.
+						  When POWER IS OFF on plasma map getIsTileInLight ALWAYS returns FALSE.
+		     * IDEA: Two classes of enemy:
+				 * 1. Computer: They activate in the light.
+				 * 2. Shadow Demon: They move around in the darkness. Freeze in light.
+				 
+				 
+What kind of system can I develop as a way to TEST the Collision bucket collision I have?
+Maybe something simple but cool that can be used in game?...
+Maybe the TWOMPS are the simplist case to make something cool to test it that can be used in game?
+
+Splotchy sensor areas?

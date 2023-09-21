@@ -1,0 +1,90 @@
+
+PROPS YOU COULD MAKE:
+
+Washer, Dryer, Garage Sink
+Industrial Shelving.
+BunkBed
+Potted Christmas Tree
+Coffee machine
+Soda Machine
+Vending Machine
+Personal Computer (Just Machine)
+Monitor.
+Flat Screen TV.
+Pong Table
+Mini Fridge
+Normal Fridge.
+Deep Freezer
+Dresser/Closet that you can hang stuff in.
+
+Git Bash vs Git on Command Line
+putty gen
+
+For efficiency:
+An entire props bitmap seems too excessive, because most of that bitmap will
+NOT be populated by props.
+
+But having a lot of props will create drawing performace problems.
+
+Solution:
+"Prop Blocks"
+
+When engine decides where to randomly put props, it looks to create a spawn area.
+A spawn area is a large rectangular area without any tiles in it.
+
+Different levels will have different THEMES set in the meta data
+for the level.
+
+Themes:
+1. Kitchen
+   A. Sink
+   B. Washing Machine
+   C. Oven
+   D. Industrial Shelves
+   
+2. Research Lab & Library
+   A. Test Tubes
+   B. Microscopes
+   C. Large Study Tables.
+   D. Drafting Tables
+   E. Maker Bot
+   F. Robotic Arm
+   G. Fume Hood
+   H. Safe
+
+3. Bathroom
+   A. Stalls
+   B. Urinals
+   C. Mirrors with Sinks
+   D. Signs to tell you that employees must wash hands.
+
+4. Break Room
+   A. Vending Machine. (Falling items)
+   B. Soda Machine
+   C. Coffee Machine.
+   D. Turn Table Vending Machine
+   E. Coffee Maker
+
+5. Office and Cubical Space.
+   A. Cork Board, White Board, Chalk Board
+   B. PC Computer. LCD Screen. Mounted Flat Screens.
+   C. File Cabinents, Lockers
+   D. Printer, Fax machine
+   E. Desk.
+
+6. Armory
+   A. Gun Racks.
+   B. Safes
+   C. Weapon Cages
+   D. Crates and Pallets
+   E. Smoke Detectors.
+   F. Sprinkler Fixtures
+   G. Warning/Hazard Signs
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+
+
+Update: Get BitmapTransformUtil . makeTransformedCopyOfCollisionDataBitmap () working. 2013.09.26_04:06:PM
+
+OLD:
+PlasmaMapStateSprite.as
+PSSTransformSheets.as
+PSSPackHolder.as
+PSS_POD_Processor.as
+
+Return to these classes once you have bitmap flipping and rotation code done.

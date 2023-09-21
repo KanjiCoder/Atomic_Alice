@@ -1,0 +1,6 @@
+
+
+After mini-game with spark-plugs is finished, make a game that works on exact same premise, except instead of spark plugs,
+you must avoid the laser trip wires. Every time you go through a trip wire, it sets off explosions. Will have to use your
+tile clinger class to do physics for these lazer box relays. Because I want them to fall out of the walls when the wall
+they are attached to is destroyed.

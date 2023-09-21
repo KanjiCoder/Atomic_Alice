@@ -1,0 +1,5 @@
+
+
+Rename: BitmapButtonGallery to: DisplayObjectGallery
+
+Then do work on a "BitmapButtonGallery";

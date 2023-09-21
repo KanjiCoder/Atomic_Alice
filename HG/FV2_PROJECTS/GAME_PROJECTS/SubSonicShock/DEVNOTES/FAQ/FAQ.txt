@@ -1,0 +1,5 @@
+
+
+Where is crouching through platform code in the game?
+Answer: As of 2013.12.03:
+	In FlxTileMap_WithPlatforms.as :: specialCollide(...) :: geomType == TileTypePOD.PLATFORM

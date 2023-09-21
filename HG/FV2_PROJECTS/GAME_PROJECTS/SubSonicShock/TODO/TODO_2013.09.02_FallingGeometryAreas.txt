@@ -1,0 +1,43 @@
+
+
+
+//TODO: Fix Background that goes missing on 2 level loads into the game.
+I am guessing it is because the FlxCamera is being disposed and I am not re-initializing things correctly.
+
+
+
+Game Name Idea: Brick Burster.
+Still like "Bomb Runner" though. As I still remember it.
+
+TODO BEFORE FALLING GEOMETRY:
+	CHECK: Just get RegRecs loading into game.
+	
+	RegRecs are in game... how do I control configuration for what happens now?
+	
+	Make a NON-STATIC class:
+	RegRecManager
+	
+	That will track to see if character is inside a given RegRec.
+	And will do things based on what happens if the character goes into that region.
+	
+	
+
+Falling Geometry Action Time:
+	
+	1. Screen Shakes
+	2. Geometry falls.
+	3. Geometry can crush you to death.
+	4. Falling geometry can create blockades in level.
+
+When entering certain event regions... Tiles are deleted from top of event region and turned into "falling geometry"
+that can crash down and kill you. When falling geometry hits obstacle on tilemap, the sprite vanishes and it turns back into
+normal geometry.
+
+
+Also:
+	Make it so flares you set create a barricade you cannot get past.
+	You could also use this to create force field floors that you can only cross when they are on.
+	
+Also:
+	Why not try taking everything you like about megaman levels and putting them into your game mechanics for how
+	the level plays?

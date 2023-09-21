@@ -1,0 +1,5 @@
+Collect Shards and start glowing.
+Light pushes enemies further back away from you depending on how bright you are.
+
+Make tilesets saturated, and then in-game adjust the color saturation of the tile-sets.
+Maybe when darker, tiles get de-saturated.

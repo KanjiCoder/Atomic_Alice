@@ -1,0 +1,90 @@
+{
+   "BusinessPlan" : {
+      "Kickstarter" : {
+         "FORSEEN_PROBLEMS" : {
+            "CODE_LOSS" : {
+               "SUMMARY" : [
+                  "What if I accidentially delete my source code? Or my computer crashes and my work is lost?",
+                  "I have been using version control and backing up my source code in multiple locations:",
+                  "1. BitBucket.Org",
+                  "2. Google Drive",
+                  "3. Microsoft SkyDrive",
+                  "4. DropBox",
+                  "5. My local machine",
+                  "The likelyhood that all 5 locations would be compromised is highly unlikely.",
+                  "I am sure if I was an asshole, and pissed off the right hacker, it could happen.",
+                  "I am pretty easy to get along with, and friends with a lot of programmers, so I don't see that happening."
+               ]
+            },
+            "HARDWARE_LOSS" : {
+               "SUMMARY" : [
+                  "If for some reason my computer is stolen... Well I have 2 decent computers. In the event that my computer is stolen or broken,",
+                  "I can immediately go to work on the other one. My source code is backed up on remote repositories, so data loss won't be a problem."
+               ]
+            },
+            "LAWSUIT" : {
+               "SUMMARY" : [
+                  "What if I don't deliver and everyone get's pissed and trys to sue me? I did a lot",
+                  "of looking into what happened to \"Code Hero\". I don't want to end up like that.",
+                  "I will be taking precautions. I've been living out of my car working on this game",
+                  "since July 1st, 2013. I have been working on this game for even longer than that.",
+                  "I will NOT spend money I have not earned. Meaning, I will be keeping seperate bank",
+                  "for all the money I get from this kick starter. And I will not touch what I have not earned.",
+                  "For example, for those who pay me 500 dollars to get their own mid-ground props in the game,\r\n",
+                  "I will not be touching that money until said person(s) are satisfied that I have delivered.",
+                  "This way, if there is a dispute that cannot be worked out (everyone including me, hates your art)",
+                  "we can revert to \"no deal\" and I will refund your money.",
+                  "NEW_PARAGRAPH",
+                  "This will make my first month difficult, as I won't be touching any money. But it wont be a problem,",
+                  "As I have been living out of my car working on a tight budget for 2 months. But I think another month",
+                  "programming out of my car is a worthy sacrifice to make absolutely sure that no one is swindled out of their money."
+               ]
+            }
+         },
+         "STRETCH_GOALS" : {
+            "MAKE_MG_PROPS" : {
+               "PRICE" : "500",
+               "SUMMARY" : [
+                  "Those who pay 500 or more may design props for game and there will be at least ONE LEVEL in the game in which all of those props are present.",
+                  "Props must be up to a certain benchmark standark of quality. If I do not like the props you have supplied, you may have your money",
+                  "refunded to you, or you may keep trying to refine the art till it is up to standards. If you disagree with my opinion of your art, you may",
+                  "call for a petition. 10 people must email me, or post on my kickstarter in your behalf, letting me know that they welcome your art in my game."
+               ]
+            },
+            "MAKE_NOVICE_LEVEL" : {
+               "PRICE" : "5",
+               "SUMMARY" : [
+                  "A novice level has no restrictions on what you can put in it. However, because of this, there is the risk that these levels.",
+                  "Could not be up to my professional standards. As such, for the price listed, I will allow you to make ONE level with whatever",
+                  "You want in it. No questions asked. Whatever unconventional or devious level plan you have, approved.",
+                  "The catch?",
+                  "These levels will be stored in the \"BONUS LEVELS\" section of the game under \"NOVICE FAN LEVELS\".",
+                  "This way, I don't have to worry about these levels messing with my personal vision of the main game.",
+                  "The tools for this already exist. All I have to do is give you them and a document explaining how they work.",
+                  "With these tools, you can work on your personal level till you feel you are satisfied with it. All submissions are final.",
+                  "No take backs. If you feel there was some big change you forgot, pay to make another level. The price is cheap. "
+               ]
+            },
+            "MAKE_PRO_LEVEL" : {
+               "PRICE" : "500",
+               "SUMMARY" : [
+                  "RESTRICTION: In addition to the steep price, you must submit to me a sketch of your level idea, diagrammed out.",
+                  "This is basically your pitch to me to show you are compitent. If I think you've got a cool idea, I will let you put",
+                  "a level in the main game. This is a big deal to me. But if you convince me you have an awesome level idea, it will happen."
+               ]
+            }
+         },
+         "SUMMARY" : [
+            "Get as much money as you can. But do NOT spend it until you have finished ",
+            "your kickstarter in the case of a class action lawsuit."
+         ]
+      }
+   },
+   "GameWants" : {
+      "GRAPHICAL" : {},
+      "INTERACTIVE" : [
+         "Open World. Wired up with MacroMap.",
+         "Save Data using base64 chunks of text. A-Z,a-z,0-9,!? for the 64 chars. Brackets, and other symbols used for special notation."
+      ]
+   }
+}

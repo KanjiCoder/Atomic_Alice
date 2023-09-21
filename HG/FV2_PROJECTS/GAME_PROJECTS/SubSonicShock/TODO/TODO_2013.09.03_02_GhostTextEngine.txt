@@ -1,0 +1,50 @@
+
+
+Level 01: Coffin Containment Room Idea:
+	
+	You start in the box. There is no way out. Even when you press up.
+	Then the GhostTextEngine prompts:
+		
+		"Do you want out of here?"
+		
+	So that you dont have to figure out which button to press to select, there is a timer
+	that will go out if you take too long to make a selection.
+	
+	SELECT: "YES, I want out" :
+		You are prompted to press UP ARROW to jump. You do so, and you bust through blocks.
+		
+	SELECT: "I don't need your help."
+	    You are prompted: "Fine, burn in hell."
+		The entire level explodes, but something saves you. You can now escape and jump on the platforms
+		that remain to do so.
+		
+		
+	Vauge Story:
+	There are 3 forces at work:
+		
+		EVIL:
+		1. Something sinister trying to kill you. Very overt in it's intentions.
+		   It is a very primal force. When it communicates with you, it is usually
+		   also in short fragments like the good force.
+		   Only the Amoral force portrays high intellect.
+		   The amoral force is a more human force.
+		   Because it, in a way, embodies good and evil.
+		
+		AMORAL:
+		2. A sketchy presence that seems to resent you.
+		   Offers help, but always wants something in exchange.
+		   Doesn't care if you live or die. Ambigious morals.
+		  
+		GOOD:
+		3. A silent force of good that sometimes helps you.
+		   It's presence is more subtle. It rarely talks, and when it does,
+		   it talks usually in one, two, or 3 word fragments.
+		   
+		   
+	Megaman style "UPGRADE" chambers:
+		If you do not get help from AMORAL character in first level,
+		Then you will get the upgrade later in the game.
+		   
+		   
+		   
+		   

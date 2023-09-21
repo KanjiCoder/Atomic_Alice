@@ -1,0 +1,51 @@
+
+
+Left off on working on:
+	JM_LIB.utils.worldMapTools.mapDecoderEncoder 
+	To make a world map editor.
+	
+	Then was going to lace my FlxTilemap with PropData so that I could make props render super efficiently.
+	Basically, all props are cut up into tiles and put into a master vector. Then tiles can have a property
+	of "hasProp" if it has a prop, then we look at the propSLICE number to get the correct tile.
+	
+	A prop that is 2x2 tiles may be made up of propSLICEs 4,5,6, and 7 for example.
+	
+	
+	Might make side project: Dont get squished.
+	Objective is to NOT get squished against the walls of the game.
+	
+	Though I think 4 maps comming at you from all directions would be cool.
+	Just focus on ONE map comming at you from the bottom and rushing down.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	1 hour of gameplay.
+Locked Game Portal.
+Answer Math Questions in order to play game.
+
+Unlock next level by answering math question.
+
+8 and 14 year old kids.
+
+IDEA: You answer riddles in the game.
+If you are WRONG, the screen shakes.
+A scary enemy comes stalking after you.
+
+TODO:
+Make scary enemy that creeps up on you and kills you that you cannot avoid.
+Make Riddles.
+Release game in this format, with your phone number so people can call and
+contact you.
+
+If you get answer wrong... Lights turn off.
+Lights turn back on... And creepy statue is standing near you.
+
+Get a question right, they dissapear.

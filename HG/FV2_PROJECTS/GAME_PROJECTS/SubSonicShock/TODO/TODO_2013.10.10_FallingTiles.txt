@@ -1,0 +1,83 @@
+
+
+
+HOW TO EFFICIENTLY CHECK FOR ALTERED PHYSICS IN COLUMNS AS GEOMETRY OF TILEMAP CHANGES:
+///////////////////////////////////////////////////////////////////////////////////////
+FlxTilemap_EXT.registerDirtyTileCheckerFunction(inFunc)
+
+FallingTileColumnManager can have a function registered with
+FlxTilemap_EXT that LOOKS at the linked list of dirty tiles and re-calculates
+physics only for the areas that have changed.
+
+Columns will be analysed and parsed there, NEVER in the update function.
+But definitely in the load function();
+///////////////////////////////////////////////////////////////////////////////////////
+
+
+Consider Caching:
+tileValue, tileX, tileY inside of TileStateDatum so these physics checks on the dirty linked list can run faster.
+Also: Note that it is not the HEAD of the column that needs to be checked. It is the tileValue of the tile directly
+BELOW the head that needs to be checked:
+	
+	
+FlxTilemap_EXT.registerDirtyTileCheckerFunction(inFunc, inDoUpdateVector);
+To optimize, before inFunc() is ever called, it will check inDoUpdateVector to see if any of the dirty
+tiles are of the value that need to be updated...
+
+A bit weird... Maybe no linked list update? Maybe just do update physics function per tile on the valid
+tiles. Maybe it should be called by redraw() function? Hmm... But that does break model-view-controller.
+If the tilemap is not re-drawn, the physics will not update corectly.
+
+What are my main efficiency gaurds??
+	1. Do NOT update physics if the tile map has NOT CHANGED in any way. (_map.revisionNumber)
+	2. Avoiding function calls unless necessary.
+	3. Avoiding calculating tileIndex to tileX,tileY and back again when not necessary.
+	
+	
+	Hmm... inDoUpdateVector more likely would be best a class that contains;
+	1. a vector
+	2. a length variable (since useable length of vector is always changing.)
+	
+	inDoUpdateVector contains all of the tile INDICIES that need to be checked for update.
+	These INDICIES represent the X,Y tile coordinates of the tile DIRECTLY below the head of the falling column.
+	
+	Special class that FlxTileMap_EXT will store for EACH registered dirty tile checker function.
+	Class TileUpdaterPackage{
+		var theFunctionThatTakesTileINDEXCoord:Function
+		var checkTheseIndicies:Vector.<int>
+		var checkTheseIndiciesMaxIndex:int
+	}
+	
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	
+	New signature for FlxTilemap_EXT.registerDirtyTileCheckerFunction:
+		FlxTilemap_EXT.registerDirtyTileCheckerFunction( inTileUpdaterPackage );
+		
+	Decoupled, yet fast. A bit weird of a way to do it, but will be fast.
+	
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	
+	
+	
+
+
+
+
+
+
+systems\physics:
+	ClusterColumnHead
+	FallingTileColumnManager
+	RegisteredClusterBehavior
+	ClusterCHLinkedList
+	
+	
+	ElseWhere:
+		TileClinger
+		TileClingerFunctions
+		
+		
+		The tileClinger will go on in front of the cluster.
+		This is how we will check for collision with tilemap and animate the cluster as it moves.

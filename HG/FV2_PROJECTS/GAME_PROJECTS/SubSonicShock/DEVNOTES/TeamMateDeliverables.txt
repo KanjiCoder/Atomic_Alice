@@ -1,0 +1,89 @@
+
+Explain State-Sprite by using multiple personality disorder.
+Explain Encapsulation via a brothel.
+
+TODO:
+Add more ignition button code.
+Add menu support for DEV_DEFAULT, EASY, PUZZLE, TWITCH, HELL
+
+Tyler:
+MISC things to tell tyler:
+1. Everyone I've showed the game to really likes the music already. So, excellent job.
+2. I will put a link to your bandcamp or whatever you would like in the credits to this game.
+
+Music:
+0. I am keeping the techno track. I like it.
+1. Elivator music looping track of 30 seconds while other music loads.
+2. A DUN DUN! Scary sound clip that is 1 second long.
+3. An ominous, scary track that plays when you are in spider danger.
+4. Rattling vent noises.
+5. Creepy creature sounds.
+
+
+Matthew:
+1. Destroyed state for the 2x3 button.Colored GREY so it can be used for all 3 colors.
+2. Destroyed state for the 2x2 button.Colored GREY so it can be used for all 3 colors.
+3. 3x3 tile (48x48 pixe) ventalation duct with animated spinning fan, with a grate on top of it.
+4. 3x3 tile ventalation duct broken, missing the grate.
+5. 3x3 trashed up grate. Will be animated falling off of the ventilation duct.
+
+
+3. A jumping spider that is 16x16 pixels (1x1)when not doing jumping animation, and can get to be 16x30 pixels (1x2) when extended in it's jump animation.
+
+
+Josh:
+Each sequence of levels needs to have a level that teaches you about each element of the game.
+"Teaching Levels":
+1. Buttons set off bombs.
+2. Small 4-way bombs are SLOWER than skull buttons when they chain.
+3. Teach everything we need to know about 4WAY bombs before introducing vertical and horizontal bombs.
+4. Introduce vertical or horizonal bomb. (NOT BOTH)
+5. After they recognize the directional bomb, introduce the OTHER directional bomb.
+6. Introduce a level that cannot be beat unless you understand the difference between vertical and horizontal bombs.
+7. Introduce falling tiles.
+    In levels after introducing falling tiles, introduce these elements in any order you wish:
+    1. Falling tiles can crush you.
+    2. Falling tiles can set off other bombs.
+    3. Falling tiles can BLOCK explosions.
+    4. NON-MOVING falling tile type ALSO blocks explosions.
+    ....
+
+Hmm... Okay... Hold up... Rather than telling you exactly what to do, how about I tell you what needs to be learned?
+I can show you what I have already done, and you can look to that for inspiration.
+
+By the END of the game, here are rules you should know:
+1. Should be able to look at a bomb and know WHICH DIRECTION it explodes.
+2. Small 4-way chains SLOWER than big 4-way
+3. Bomb explosions kill you.
+4. You can safely stand over a tile that is exploding if it is turning into a platform, and the explosion is not going up onto the tile you are on.
+5. Which bricks can you break with your head?
+6. Which bricks leave platforms when they break?
+7. Which bricks never break?
+8. Which bricks are invincible?
+9. Which bricks fall when nothing is under them.
+10.How do I use jump sensitivity to complete some levels?
+11.How do get through small holes?
+12. Platforms:
+     Probably teach in this order:
+     1. I can walk horizontally through arrays of platforms.
+     2. I can JUMP up through platforms.
+     3. I can crouch down through platforms.
+13. If you break bricks in the ceiling with your head, and those bricks leave platforms, you
+    can do a dig-dug style climb up through walls.
+14. You can run across small gaps without falling.
+15. The main objective is to get to the exit door without dying.
+
+
+
+
+
+
+
+
+
+200 levels.
+50 of 4 different varieties.
+1. 50 Easy. Theme of easy: "Press Right to win" or "I can play this while I am high" or "A 4 year old can beat this"
+2. 50 Puzzle-Hard
+3. 50 Twitch-Hard
+4. 50 Hell. Insanely difficult. Can mix twitch skills with puzzle solving skills.

@@ -1,0 +1,25 @@
+
+
+1. Make it so character can pick up mines ALREADY on the ground and place them somewhere.
+2. Make him like mario. He can bust bricks with his head. You are always journeying downward,
+so, this could work. Also, he cannot bust bricks to the right or left or down. Just above his
+head.
+
+3. Could have an interactive menu selection where he busts bricks with his head.
+
+4. Need flag in code that kills ALL UI in the game.
+   This way I can figure out if my UI is slowing down the game.
+   
+5. Take UI out of the main screen.
+
+6. Maybe... At the begining of each level, have a brick placed that you can hit.
+   Hitting this brick opens up the in game menu. You cannot get to this brick any other way.
+   
+Tech:
+	What does [Reap] and some of the other things in [brackets] mean in the performance profiler?
+	
+7. Button to turn your lantern on or off.
+
+8. Thwamps.
+
+9. Be able to set down flare columns to create barricades.

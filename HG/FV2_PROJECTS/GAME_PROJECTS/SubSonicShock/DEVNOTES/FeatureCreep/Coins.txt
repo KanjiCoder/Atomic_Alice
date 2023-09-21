@@ -1,0 +1,4 @@
+Make coins that can be collected. Collecting 100% of the coins in a level gives you the 100% completion status you want.
+
+Or they could be energy orbs, and you need to collect so many of them to open a locked door.
+The orbs circle around you as you collect them, and they are deposited in the door lock when you touch the door lock.

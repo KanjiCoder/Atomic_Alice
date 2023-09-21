@@ -1,0 +1,63 @@
+I had a watermark layer that put me on the brink of lagging: 28-29 FPS instead of 30.
+Got rid of that, lag went away.
+
+Then I decided to start doing a stress test to find out how fast my code is running.
+I bumped my game FPS to 60FPS.
+
+Played game, the highest it could achieve was 40-41FPS while playing.
+
+Got rid of my timer box, which involves updating non-blitted text every frame of the game.
+(Its like a stopwatch for the game that keeps track of high-scores for each level)
+
+Now the frame rate hit it's cap of 60FPS.
+
+I am going to aim for 120FPS.
+My game will be made to run at 30FPS, but I would like it to run smoothly at 120FPS
+so that I have a safe cushion.
+
+I am not confortable having my game "on the brink of lag" where if I add just one more
+layer to the stage, the game is done for.
+
+IDEA:
+ALPHABETICAL MATTERS. Having an attitude matters.
+Game name idea from that:
+Adam Smash
+Alice Smash
+AS4 AS4
+
+
+Flames should pour down from tiles when you smash them with your head.
+
+IDEA: Fire-ball tiles:
+When they become ACTIVATED, they will fall and burst into a column of flames.
+They spread like fire. Think the game "Playing with fire" accept they create a falling fire-column hazard.
+
+Use this effect:
+http://jmim.deviantart.com/art/Fireball-Cannon-291373531
+
+How they fall:
+1. Always in 1x1 tile units.
+2. Their is a big delay before they start falling.
+   So that a column on the ceiling can be more spread apart.
+3. They fall as flaming blocks, and explode into firey columns when they land.
+4. Maybe the tile STROBES right before it falls.
+
+Other tile properties:
+1. The tile is "INVINCIBLE"
+2. The tile does NOT need things below it to keep it from falling.
+3. tile only falls when it has been heated up.
+4. Tile becomes fireball as it falls.
+5. tile leaves coins after it explodes. But you must wait for flames to pass.
+6. Tiles SPREAD FIRE to other tiles of this type.
+
+
+
+
+
+
+
+
+
+
+
+

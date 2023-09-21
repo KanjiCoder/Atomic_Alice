@@ -1,0 +1,3 @@
+Metroid Mania/Vania needs a heat map overlay to show you where you have been.
+Actually goes over the entire screen of the in-game game-play.
+Use an overlay layer to accomplish this.

@@ -1,0 +1,5 @@
+Burnable Bricks in one of your games:
+http://www.kongregate.com/games/damijin/pyro-ii
+
+You know this is done with perlin noise and multiply mask.
+Check out FlashANdMath.com or whatever that website was.

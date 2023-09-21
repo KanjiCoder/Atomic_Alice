@@ -1,0 +1,33 @@
+
+Where do you pull the correct lights from for the white-hot glow on the light fixtures?
+LightsPropReg.as
+
+
+
+
+Sometimes I feel weak when I need music & coffee to program.
+But then I remember technology is evolving faster than humanity.
+
+2:20 PM, (computer time). I've had supreme conciousness for about an hour. Still going.
+6:08 PM, (computer time). Still pretty consious. Not hyper. But sharp.
+7:25 PM, (computer time). Feel the stress of impending lost focus. Got more tea. Ate bananna. Ate orange. Turn on heater.
+9:25 PM, (computer time). Trying to solve a problem. I know what to do. But the want to code it is being lost.
+                          Starting to masturbate. Think I've lost most of my focus. If I had more discipline or moral, I might keep going.
+                          Or go faster.
+9:34 PM: Sketched out some more theory on how to unmat the colors.
+
+CheckList:
+The actual blending of stacks to the render bitmap has not been finished. At least I do not believe so.
+
+do we get out of _currentRenderer.setup(..) without null ref?
+
+
+NOTE:
+_listOfDirtyStackIndicies_maxIndex does not seem to be getting updated when we create dirty nodes.
+
+NOTE:
+Lights do not seem to be being made correctly.
+I think I have TWO sets of lumen-lights.
+
+hasNonWhitePixel==true means: has grey or black.
+hasNonBlackPixel==true means: has grey or white

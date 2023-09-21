@@ -1,0 +1,22 @@
+
+
+3 major things to do in order of importance.
+
+1. 4 different explosion colors to go with 4 different bombs.
+2. PSS_POD_Processor. Make rotated and transformed sprite sheets so chris can have buttons on walls and ceiling.
+3. Finish the Decals so we have support for blood splatter. Finish the props engine as well.
+
+
+Explosion color is most important because I've noticed a lot of people do not see the correlation between bomb style and it's behavior.
+Also, simplified vertical and horizontal bombs. They do not go out at ALL on one of their axis.
+This means if you stick VERTICAL bombs on a horizontal line, they will NOT chain.
+BUT.... I like this. It makes:
+	1. Chained up vert/horizontal bomb configurations in level more obvious.
+	2. Cleaner holes blasted through things.
+	3. More distinguishable explosion pattern.
+	
+	If players cannot recognize patterns, how are they going to figure out puzzles?
+	
+	Also,I have noticed changes have made it easier for me to visualize construction of a level.
+	 If I am having a hard time thinking about how it goes together and i am creating the level,
+	 someone who has never played the game is going to be totally confused.

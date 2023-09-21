@@ -1,0 +1,53 @@
+
+
+When you take DARK YELLOW strip and DARK GREEN strip,
+It creates a ray light that goes through BOTH geometry and EMPTY space.
+The range the light moves is between the YELLOW and GREEN.
+
+
+Other idea:
+Yellow+DarkGreen, must be TOUCHING each other to create this all permeating ray light.
+
+GOT IT! Strips of WHITE must line up with strips of YELLOW or GREEN to create 2 types of inf ray lights.
+Must be filterd FIRST to avoid the SINGLE WHITE PIXEL that can spawn your character.
+
+MUST be a single pixel thin line that is AT LEAST 2 pixels long.
+Inf ray lights thus will be rectangular always. But that is the way ray lights kinda should look.
+
+
+//Lights need to look different than the others.
+//Here is the key for the 2 possible combinations:
+WHITE+YELLOW:
+	Tiles are replaced with WHITE tiles.
+	
+WHITE+CYAN:
+	Tiles are replaced with CYAN tiles.
+	
+//LEFT OFF AT:
+	BitmapParser_RayBoxes.as
+	TMRayBox.as
+	SPECIFICALLY:
+			BitmapParser_RayBoxes.as:
+			masterBinH.sort( LightBrickStrip.sortHorizontalStripsRule );
+			masterBinV.sort( LightBrickStrip.sortVerticalStripsRule );
+			
+			
+			figure how: TilemapDynaRayBaker.as makes it's ray lights.
+			
+LEAVING OFF AT:
+Getting the TMRayBox*s that I have made...
+Rendering into the game. TODO current
+
+1. Make TMRay's load into game.
+2. Tweek colors so that the two new ligth combinations we have look goood.
+3. Design 2 enemies:
+	1. THWOMP:
+	2. Spiked Crusher.
+	3. Instant kill lava. That fucking glows! Hmm... Make it a light.
+	   But use INF-RECS + Sprites to create and illuminate it. Rendering
+	   will be faster if we have a very specific lava-pit dimensions.
+	   //
+	   Maybe glowing acid vats?
+	   
+	   
+	

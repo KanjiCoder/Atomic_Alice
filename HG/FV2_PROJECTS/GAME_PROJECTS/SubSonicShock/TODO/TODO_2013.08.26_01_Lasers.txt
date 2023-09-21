@@ -1,0 +1,16 @@
+laserCannonCombo:"CCWWCCWWCCWWCC"
+
+TODO Today:
+0: Check init_levelLoader to see if multiple instances exist!
+1. Make Laser Cannon
+2. Browse Deviant Art, Favorite stuff. Suck up.
+3. Browse You Tube, suck up to music artists.
+4. Thank your bosses at Detonator games for the experience.
+
+For making Cannon:
+ColumnBlastBoundaryData
+tmParticleUpdater
+PColumnExplosion
+ExpParticleMap
+PMSSpawner
+PlasmaStateSprite

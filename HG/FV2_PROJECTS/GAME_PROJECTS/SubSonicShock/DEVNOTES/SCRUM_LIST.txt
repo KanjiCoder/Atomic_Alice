@@ -1,0 +1,185 @@
+
+   Item: EFFICIENT_COLLISION:
+   Description: Look for more effecient collision code for my FLX Tilemap.
+
+   Item: READY_FOR_TIME_WISE_STUDIOS
+   DependsOn:
+   Descripton:
+   I need to figure out what I want finished for the game to be ready for timeWise studios.
+   Need to attend to all items brought up by playtesters eventually. But all of those items do not matter
+   in order to get it ready for playtesters.
+
+   Item: COINS_FROM_BUSTED_BLOCKS
+   Description: When blocks break, they leave coins.
+
+   Item: CREEPY_SOUND_FX
+   Description: Get some creepy sound effects in the game.
+
+   Item: BOMB_LIGHTS_WHEN_TRIPPED_BY_PLAYER
+   Description: Make strobing lights on lighting map that are stamped when a bomb is playing it's "tripped" animation.
+   This is because sometimes players did not know they were over a bomb until it was TOO LATE. As they were in front of the bomb,
+   they could not see it blinking.
+
+   Item: LIGHT_FIXTURE_SPARK_SHATTER_EFFECT
+   Description: When lights break, they should leave and outline of sparks.
+
+   Item: LIGHTS_OUT
+   Description: When a light fixture is broken, the lights temporarily go out.
+   When there are NO LIGHTS AT ALL in a level, the "darkness color" of the lighting system turns to BLACK.
+   
+
+   Item: IN_GAME_UI_PAPER_RE_DESIGN lumpTime: 4Hours.
+   Description:
+   We need to think about how the UI is going to make MONEY.
+   Should their be a button that takes you to our website so you can buy the game?
+   What should that button say?
+
+   Item: IN_GAME_UI_FINALIZE dependsOn IN_GAME_UI_PAPER_RE_DESIGN lumpTime: ????
+   Description: We need to take the plans from our UI redesign sketches and impliment them.
+   Until we have done that brainstorming and paper-work, don't really have a time estimate on this item.
+
+   Item: UI_TOGGLE_FIX: dependsOn:SOUND_EFFECTS_OFF lumpTime: ????
+   Description: The in game UI does NOT follow the model-view-controller archetecture. Usually when the game re-loads, the music will re-start.
+   Not sure how long this will take. Need to look at the code to figure it out. This is a must-have as the UI is already in the game, and thus
+   must be up to professional standards.
+
+   Item: SOUND_EFFECTS_OFF lumpTime: 1 day.
+   Description: Not only fix turning off sound effects so that jump,land,and glass break do NOT play when the sound is muted,
+   create a soundManager class that we will pass all play sound commands to. These commands will be ignored if the sound of the sound manager is muted.
+   I am estimating a day, because we need to create a manager class. But not more than a day, because the manager class we are creating is pretty simple.
+   There are no complex math calculations here. More about organization.
+
+   Item: NO_BOMB_SHAKE_FOR_SPAZZING_BUTTONS lumpTime: 2 hours.
+   Description:
+   Do not make the screen shake on spazzing buttons.
+   As the blast is continous and would be very annoying if I am to make puzzles that involve using this feature to
+   create a "blast fence".
+
+   Item: WRITE_JSON_EVENTS_TO_FILE_WHILE_IN_GAME LumpTime:????
+   Ability to configure our event rectangle JSON file in-game to help out level designer.
+   Also would be a good step towards making an in-game level-editor.
+
+   Item: PLASMA_LIGHT_RENDER LumpTime:2Days
+   Get the plasma lighting part of your lights back in game.
+   Work Involved:
+   Hunting down where baked plasma map is: 1 hour.
+   Hunting down code that creates baked lighting. 1 hour.
+   Planning out how you want different light fixture arrangements to glow: 1 hour.
+   Creating a scanner object configured to create the plasma glow on the lights. 4 hours.
+   Adding re-rendering code to level re-load: 1 hour.
+   Adding bucket re-rendering code by applying baked lighting code to plasma: 2 hours.
+   
+
+   Item: GAME_SAVE_DATA LumpTime:8Hours
+   Work involved:
+   Planning out the Min-viable-product in terms of save-data needed. 1 Hour.
+   Figuring out how to use save data in flash games, and testing it out 4 Hours.
+   Creating the actual data for saving a game. 2 Hours.
+
+   Item: LOCKED_LEVEL_SET_BUTTONS dependsOn GAME_SAVE_DATA LumpTime:4 hours.
+   A "LOCKED" screen over level-set selections so people cannot go straight to "HARD" without doing easy first.
+   Work Involved:
+   Making a "locking button" that extends from bitmap button. 4 hours.
+       Making sure "locking buttons" within a set all share the same "locked" graphic. 
+   Code that monitors the save-state of the game.
+
+   Item: SIMPLE_SPIDER LumpTime: 1 Day. (10hours+)
+   A simple spider enemy that only moves vertically. It pops down from the screen.
+   Reference TinyDangerousDungeons and basically steal that mechanic. It just needs to be simple.
+   Work Involved:
+   Figure out dimensions of spider sprite in tile-units. 1 hour.
+   Create a mock-up StateSprite sheet of spiders. NOT a plasmaStateSprite. 2 hours.
+   Create a spawner class for the spiders that extends statesprite spawner. 2 hours.
+   Integrate spawner into game's initializer. 1 hour.
+   Configure Sprite-Rec patterns so spider patterns can be placed on source levels. 1 hour.
+   This also involves adding the pattern correctly to the .JSON file of RegRecs 30min
+   Make PNG documentation with the spider patterns. 1 hour.
+
+   Item: DIFFICULTY_MENU_FINALIZE dependsOn LOCKED_LEVEL_SET_BUTTONS lumpTime:2days
+   Work Involved (not including dependancies)
+   Fix motion of the display gallery. Don't make it jerk between EVERY STOP POINT.
+   If the stop point is NOT the final destination, do NOT do the jerk.
+   How do we do this? We need to know before hand whether the object is animating to a point
+   where it will want to stop. And we will use a non-linear ease ONLY for that tween. All other tweens
+   will be linear.
+   There will also be a variable for controlling speed difference when tweening to a stop point and NOT
+   tweening to a stop point.
+
+   Item: CLASSIC_THWOMP lumpTime: 8Hours
+   Edit your block-buster thowmp to have a state that does NOT destroy blocks.
+   This state will only hurt you if it CRUSHES you. (You can stand on top of it.)
+   It will not be invisible like the phantom block-buster.
+   Work involved:
+   Create placeholder art for this state: 1 hour.
+   Create a constant that represents this object in the JSON file and in the GAME. Maybe: "CLASSIC_THWOMP" 30min
+   Create AI behavior for thowmp that makes it smash down when you are under it.                           1hour
+   AI does NOT smash down if you are below it, but there are blocks between you and the thwomp.            30min
+   Edit JSON file to create display settings for this plasma state sprite.                                 1hour
+   Create a sprite-rec pattern in JSON file that will be used to spawn CLASSIC_THWOMP                      1hour
+   Integrate spawning functions for CLASSIC_THWOMP into spawner registry                                   
+
+   Item: CREDIT_MENU_RE_STRUCTURE
+   Description: Look at the credit menu. Figure out what changes need to be made to finalize it.
+   
+   Item: MENU_MEMORY_REFACTOR
+   Description: The way I coded the architecture for my menus seems wasteful on memory space. Menus that are NOT seen still have their bitmaps in memory.
+   Worrying that this could lead to slowing down the game for some people.
+
+   Item: PROP_SUPPORT lumpTime: ????
+   Description: Do further work on your prop engine to get it so Matthew can get statues and other props into the game.
+
+   Item: EXPLODING_PLAYER lumpTime: ????
+   Description: When the player dies, you expode into a ball of flames.
+   The ball of flames being based on this particle effect I really liked from deviant art.
+   
+   Item: FIRE_BALL_TILES
+         Flames should pour down from tiles when you smash them with your head.
+
+         IDEA: Fire-ball tiles:
+         When they become ACTIVATED, they will fall and burst into a column of flames.
+         They spread like fire. Think the game "Playing with fire" accept they create a falling fire-column hazard.
+
+         Use this effect:
+         http://jmim.deviantart.com/art/Fireball-Cannon-291373531
+
+         How they fall:
+         1. Always in 1x1 tile units.
+         2. Their is a big delay before they start falling.
+            So that a column on the ceiling can be more spread apart.
+         3. They fall as flaming blocks, and explode into firey columns when they land.
+         4. Maybe the tile STROBES right before it falls.
+
+         Other tile properties:
+         1. The tile is "INVINCIBLE"
+         2. The tile does NOT need things below it to keep it from falling.
+         3. tile only falls when it has been heated up.
+         4. Tile becomes fireball as it falls.
+         5. tile leaves coins after it explodes. But you must wait for flames to pass.
+         6. Tiles SPREAD FIRE to other tiles of this type.
+         7. Maybe tiles are like hot plasma metal.
+            When they are in the HOT state, they can potentially fall down and burn up,
+            but only within that window of when they are hot...
+            That would cause problems with flame spreading element.
+         8. If you break a tile with your head, and sparks fly onto the floor, and this floor is
+            made of that tile type, the floor will catch fire.
+
+
+   Item: BLOCK_BUSTER_THWOMP LumpTime:????
+   Description: Re-use the thwomp that busts blocks that was already made.
+   Work Involved:
+   Make a few levels using the thwomps: 2 Hours.
+   Figure out your APPROACH for refactoring collision code for phantoms. 1 hour.
+   Refactor the collision code so they behave like phantoms again. 1 hour.
+   Make thwomps unable to pass through:
+   1. A destroyed tile who's destroyed state is PLATFORM.
+   2. A destroyed tile who's destroyed state is BLOCK.
+   3. Any tile who's destroyed state is NOT "EMPTY_SPACE".
+                                                                   1 hour.
+   Keep thwomps min/max vertical positioning bound by the types of tiles above and below them... 1 hour.
+   Unforseen Difficulty: Phantoms have been allowed to go through platform types, because when destroying levels, we want to leave scaffolding...
+   ...
+   Power Box?
+
+
+
+

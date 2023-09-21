@@ -1,0 +1,16 @@
+
+
+
+
+
+Powers you can gain:
+1. Brick Bashing ability #1: (You can bash concrete BRICKS that leave NOTHING.
+2. Brick Bashing ability #2: (You can bash through the other type of BRICK that leaves platforms)
+3. Head Bashing MAX. You are now able to defeat enemies using your head to bash them. Kill turrets this way.
+4. ROPE. If you tap up while jumping, you throw a rope up.
+5. Certified Turret operator. Your Fingerprint is now registered in the database for liscensed turret operators,
+   you may now use the turret.
+6. Temporary sheild. When pressing down, a temporary sheild activates.
+
+7. You get a flash light. Or radio-active glow.
+8. Bigger light. The light around you is bigger.

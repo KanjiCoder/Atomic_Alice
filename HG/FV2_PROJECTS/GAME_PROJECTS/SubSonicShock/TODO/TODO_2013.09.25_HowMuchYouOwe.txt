@@ -1,0 +1,17 @@
+//Money ideas:
+	//1: Phone number included in credits for game.adobe
+	//   You can call it, and I will personally mail you a copy on a CD.
+	//   The price is 80 dollars. I don't want too many calls. And taking the time out of my day to personally mail ONE
+	//   of my games will be worth a full days work at minimum wage.
+	
+	//AHHH! Donate link to my game. The cost:
+	//
+	//Your Pay Rate $$/Hour Divided by Two, or 80 dollars. Whatever is cheapest.
+	//CALCULATE:
+	//Have a calculate screen where this can be calculated.
+    
+	//Donate AND LINK button are greyed out until you have calculated how much you owe.
+	//Yes, even though it is on the honors system.
+	
+	//If you select ZERO, or negative. You must tell me your favorite thing about the game for your copy.
+	//Link does not ungrey until you do.

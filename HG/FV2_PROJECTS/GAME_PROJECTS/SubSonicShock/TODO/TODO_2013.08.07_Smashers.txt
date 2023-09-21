@@ -1,0 +1,46 @@
+
+
+
+VH SMUSHER
+VH BLOCKBLOWER
+
+Smusher smushes you against a wall, but does NOT destroy blocks.
+BLOCKBLOWER will blow through blocks. Can be configured for what type of blocks it can blow through.
+
+TWO of each:
+	A vertical and horizontal version of each. 
+	
+	
+	A 3 man team is the smallest team.
+	INVENTION      -GAME DESIGNER & PROGRAMMER
+	IMPLIMENTATION -PROGRAMMER
+	EVANGELIZATION -SOCIAL GUY. BUSINESS GUY. Good with people and connections.
+	
+	
+	Who is your game for?
+	Target raver kids. Since you already have access to a lot of them.
+	
+	PlasmaMapStateSprite:
+	Uses 3 sheets:
+		1. NORMAL SHEET
+		2. LIGHT SHEET for light emission layer.
+		3. PLASMA SHEET for plasma glow layer.
+		
+		Input wid/hig dimensions it is supposed to be for collision and placement.
+		Because the glow might want to leak out of boarders of guy.
+		
+		
+		4 enemies on this sheet. Each 3X3 tiles in dimension.
+		3x3 = 16*3 x 16*3 pixels.
+		48x48 pixels for collision area of enemy.
+		ONE TILE worth of glow all around enemy....
+		
+		3x3 with 1 tile surrounding = 5x5 for each enemy.
+		80x80 enemy space total in pixels.
+		
+		FOUR ENEMIES at 80x80 for space:
+			320 in height to fit all the states with NO animation.
+			
+			SMALLEST SHEET SIZE (States, but no animation in states:)
+			80width BY 320hight.
+		

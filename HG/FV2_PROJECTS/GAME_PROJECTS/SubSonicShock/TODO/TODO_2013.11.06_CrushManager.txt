@@ -1,0 +1,2 @@
+Need to fix up crush manager so that it pushes you correctly when you move.
+Look on line 162.

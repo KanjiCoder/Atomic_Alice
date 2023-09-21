@@ -1,0 +1,6 @@
+
+
+When you made the phantom immovable... Now you are physically colliding with it.
+
+Probably should re-factor plasmaStateSprite to have COLLISION FUNCTION and OVERLAP FUNCTION.
+Overlap function will not have any collision resolution, while collision function will.

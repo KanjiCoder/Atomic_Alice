@@ -1,0 +1,42 @@
+
+
+GOT IT!!!
+Dialog is conveyed by stamping dialog onto the background image.
+Thus, you can keep the background somewhat simple. But make it interesting since
+random words sometimes show up that will give it more visual detail.
+
+Still want randomly moving furnature. But the dialog randomly showing up will make things pretty immersive.
+And all scary like.
+
+Maybe you can only run when you are in danger?
+
+
+Just an idea for game.
+What do I need now???
+
+1. Do death animations.
+2. Scary stalker guy... Where are you?
+3. Laser beams in walls?
+4. Laser beam enemy that only shoots when you are below it.
+5. Fire dripper enemy.
+   Launches grenade flare at you or causes fire on ground....
+   
+   
+   TODO:
+	   Figure out why the background is being deleted upon occasional new level load.
+	   
+Art Asset Ideas:
+Back-BackGround:
+Trees outside. Or some other stuff like that.
+
+Background details:
+Could add structure and design to the level.
+Windows.Multiple window styles.
+Broken cracked wall panels.
+
+FENCES. Railing.
+
+Mid-ground props:
+Could add desks, tables, chairs.
+
+For-ground props?

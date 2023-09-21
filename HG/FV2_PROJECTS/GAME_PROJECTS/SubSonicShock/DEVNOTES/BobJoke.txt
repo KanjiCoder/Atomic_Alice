@@ -1,0 +1,6 @@
+IDEA:
+What is your name? >>> John Mark
+Hello Bob!
+
+A joke where computer asks your name, you type it in, And then it disregards your input.
+BUt later in scary game... It uses your name. But by then, you forgot you told it your name.

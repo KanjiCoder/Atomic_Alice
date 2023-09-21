@@ -1,0 +1,89 @@
+Game Design Schedule:
+
+Feb12 - Feb15: Config file controlling tile properties.
+			   USE JSON text. And parse it.
+			   --
+			   Don't come up with your own parsing language. That is uneccessary.
+			   Using JSON will help you show case your knowledge when you talk about the config file.
+			   Also, there are JSON viewers ETC and tools already made to work with JSON.
+			   --
+               Will be a text-file that can be easily parsed, allowing you to change the associations of
+			   PIXEL COLORS to what they represent. We have 0-15 colors to associate things with.
+			   This will be used to help organize how the level is put together. As well as allow for more
+			   flexibility when the level loader comes out.
+			   --
+			   TODO:
+			   Sprite spawner algorithm and function table maping JSON to it.
+			   
+			   TODO: 2013.02.15 (This may take a bit more time)
+			   Fix up Bitmap Parser, and then tie it in with your JSON config file.
+			   
+Feb16 - Feb17: MAIN MENU:
+               1. Is controlled by arrow keys, but can also use mouse to hit selections.
+			   2. 3 Options:
+			      1. New Game               --Starts new level by loading playState2
+				  2. Level Select           --Opens STUB state: levelSelectMenuState
+				  3. Make your own level    --Opens STUB state: levelMakerMenuState
+				  4. Controls               --Opens STUB state: controlMenuState
+
+Feb18 - Feb20: Load your own level functionality.
+				CODE UI PARTS FIRST, that way you have something to interface with when testing out loader.
+               1. Load PNG into game back end.
+			   2. Load PNG front end. Button + dialog popup.
+			   3. Menu option on main screen for loading your own level.
+			   4. levelMakerMenuState:
+					1.Has text instructions on how to load.
+						1. Color Key
+						2. PNG width and height size needed. Min/Max width/heights allowed.
+						3. Don't abuse the bombs. Too many and the game will lag. Be smart about your level design skills.
+					2. Has LOAD_PNG button.
+					3. Has PLAY YOUR LEVEL button that only pops up once you have loaded something.
+					4. Displays error message if you load something bad.
+					
+			     
+
+Enemies:
+Feb20 - Feb25: Stalker enemies. They only move in the DARK. When they hit light, they slow down and eventually freeze.
+	       SIMPLE:
+               Use the dumb gravity bound stalker code you already have to create enemies that stalk you.
+               Guys same size as you. Emulatable sprites. Stupid. Slow. But dangerous.
+               Don't worry about making AI super smart. Do NOT use path finding. Too slow.
+
+ 	       ADVANCED: If time permits:
+               However, DO use PLAYER-TILE-TIMESTAMPING.
+               How Player-Tile-Timestamping works:
+               For the tilemap, we have a big grid-array that is set to 1:1 ratio over tilemap.
+               The first tile you are over gets stamped with the current frame number since the
+               loading of the level. Every tile you are over will get stamped with the current level
+               frame. Enemies will use this to follow you.
+
+Feb 26th: STUN FLAIR:
+          A flair that you can throw that will, after it lands... Create a big flash.
+		  Enemies caught in the blast will be stunned. Will be able to be used to set off mines.
+		  Mines caught it the blast will become tripped.
+		  
+Feb 27th: Blockade mode, get it working again so you can set blockade blocks.
+Feb 28th: Make it so YOU or ENEMIES can destroy blockade blocks by running into them too many times.
+          How will you make them appear to take damage?
+		  Is there a better way to set blocks? Maybe... Using your mouse?
+		  I think, pressing "Z" once to enter blockade mode. Again to lay a block and exit, works just fine.
+		  HOLDING "X" will charge/wind up flair for you to throw in a parabolic type fashion.
+
+Feb 30th - 31st:
+          SET ART.
+		  Think of different types of prop-art you can make to give the game a more "realistic" feel.
+		  I think the setting is a robotics laborotory / office.
+		  Prop Ideas:
+		  1. Office Chair.
+		  2. Office Desk & Cubical. Sinks into background. But is a sprite on the main tilemap. Using some forced perspective.
+		  3. Light fixture auto-tiles that actually look like lights.
+		  4. LCD monitor.
+		  5. Fans. Big fans.
+		  6. Space age doors and windows.
+		  7. Hanging wires.
+
+Feb19 - Feb25: Make pre-baked lighting map able to re-evaluate itself quickly when light objects are destroyed.
+               Get bombs emitting light again.
+
+Feb26:         Flare you can throw.
+Feb26 - Feb28: Wall enemies.

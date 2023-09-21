@@ -1,0 +1,41 @@
+
+
+DankDrop
+DarkDrop
+FireBox
+FireDrop
+FireSetter
+BoxFire
+BoxLighter
+FireDropper
+LightBox
+BoxSlider
+FlareRunner
+LightRunner
+
+//TODO:
+	1: Make Boxes have light source around them. This will help you see where they are going when you push them!
+	
+	AHH!!!
+	The darkness color is a dark-grey most of the time...
+	But when the stalker appears:
+		1. Darkness turns dark-red.
+		2. After turning dark-red, darkness turns pitch black.
+		
+		During the time it was dark red, you can see the dark-black shilloutte of the dangerous stalker that
+		is now after you. You can use event areas that will trigger the stalker in your game.
+		
+		OR!! You could make invisible objects that, when you collide with them trigger the stalker.
+		OR!! Like in Clock Tower... Make it so that hitting a set object and breaking it makes noise.
+		And that evokes the stalker. Might not be best since bombs always make noise.
+		
+		IDEA: Scary Door. Slowly opens and enemy pours out of it.
+		
+		
+//TODO:
+	WASD, ARROW, ZX, SPACE(laymine) support.
+	Possible hand configs:
+		
+	1. Arrows to move. Space to jump.
+	2. ZX = jump, Action, C = crouch.
+	3. WASD AD=rightleft. S = Crouch. W = Jump. SPACE = Action.

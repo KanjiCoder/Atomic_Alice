@@ -1,0 +1,26 @@
+package 
+{
+	import flash.display.Sprite;
+	import flash.events.Event;
+	
+	/**
+	 * Debug environment for my TileClinger object.
+	 * @author JMim
+	 */
+	public class Main extends Sprite 
+	{
+		
+		public function Main():void 
+		{
+			if (stage) init();
+			else addEventListener(Event.ADDED_TO_STAGE, init);
+		}
+		
+		private function init(e:Event = null):void 
+		{
+			removeEventListener(Event.ADDED_TO_STAGE, init);
+			// entry point
+		}
+		
+	}//class
+}//package

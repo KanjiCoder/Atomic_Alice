@@ -1,0 +1,5 @@
+DEMO_PROJECTS:
+	Projects to show you how certain code works.
+	Projects that are cool agglimations of your code.
+GAME_PROJECTS:
+	Projects intended to be full games.

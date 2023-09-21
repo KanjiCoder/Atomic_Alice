@@ -1,0 +1,13 @@
+
+
+Files open when I was working on Decal Mask code to get blood decals to look good.
+
+TileStateDatum.as
+PropPlacementEngineFunctions.as
+FlxTilemapPropFunctions.as
+DecalSlice.as
+
+TODO:
+	Get the masking tiles into the game. And make them work so that decals never completely bock out
+	the original tile map. We want the decals to add a level of depth to the environment.
+	NOT become the new environment.

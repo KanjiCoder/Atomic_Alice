@@ -1,0 +1,73 @@
+can you progrm it so any block can be set to fall
+
+becuase I was thinking if a mine had to have a floor under it you could have mines that need to be dropped into place.
+
+I think there should be some other type of volatile device similiar to a mine, that must be on a floor. Otherwise it breaks continuity.
+
+
+TODO for Jaron:
+	Code a special type of block that will fall if it is NOT supported by something. (Use the CYAN slots that currently spawn enemies?)
+	Blocks always fall in columns. To save on programming time. Also, would be pretty interesting.
+	Hmm... I think these column blocks should also be invincible.
+	
+	
+	Implementation thoughts:
+		1.How to you efficiently check for falling columns?
+			A.Since these blocks will be indestructable, you could parse all the blocks into columns ahead of time.
+			B.Instead of parsing into columns, only keep track of the "Keystone" block. The one on the very bottom of a column.
+			  Create the column on demand when the keystone loses whatever is below it.
+			  I like this idea best, because it could allow columns to fuse together.
+			  
+		Class: ColumnBlockShiftingManager
+		Will manage the physics of the falling block type.
+		
+		2. How do you ANIMATE the falling blocks:
+			1. Snapshot that section of the tilemap and convert the falling tiles into a sprite.
+			2. DELETE the tiles we have created a snapshot of.
+			3. Use Flixel's collision functions to let it fall. Unless they don't work. Then use my clinger class.
+			4. Once object is done falling, convert the snapshot into tiles on the tilemap. Delete the snapshot sprite.
+		
+		
+			
+		Checking for fissures aka falling columns: continued:
+		I like the keystone block idea.
+		However, I don't like the idea of checking them EVERY frame of the game.
+		Some type of callback needs to be called when a tile on the tilemap is set.
+		Example:
+			FlxTileMap_EXT.setTileByIndex( dex )
+			{
+					if(keyStoneDict[ dex ] == true)
+					{
+						doKeystoneColumnCollisionCheck();
+					}
+			}
+			
+		//////////////////////BASIC THEORY//////////////////////////////////////////////////////////////////////
+		To impliment something like this... FlxTilemap_EXT would have to have a...
+		setOnSetTileByIndexCallback(inFunc:Function)
+		
+			FlxTilemap_EXT.setSetTileByIndexCallback(inFunc):void{ setTileByIndexCallback = inFunc;}
+			
+			FlxTilemap_EXT.setSetTileByIndexCallback( ColumnBlockShiftingManager.checkKeystoneByIndex );
+		
+			FlxTilemap_EXT.setTileByIndex( dex )
+			{
+				if(hasSetTileByIndexCallback)
+				{
+					setTileByIndexCallback(dex);
+				}
+			}
+			
+			ColumnBlockShiftingManager.checkKeystoneByIndex( dex )
+			{
+				if(keyStoneDict[ dex] == true)
+				{
+					doKeystoneColumnCollisionCheck();
+				}
+			}
+		//////////////////////BASIC THEORY//////////////////////////////////////////////////////////////////////
+		
+		
+		
+		
+		

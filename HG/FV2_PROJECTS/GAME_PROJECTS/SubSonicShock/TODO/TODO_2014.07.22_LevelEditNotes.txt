@@ -1,0 +1,40 @@
+http://www.pof.com/viewprofile.aspx?profile_id=74809496
+http://www.pof.com/viewprofile.aspx?profile_id=6390330
+
+
+Game Start:
+
+
+//Global application state registry
+GlobalAppStateReg
+
+How do we keep track of what menus to show when?
+1. Make the menus private in the menu registry.
+Only access them via "all.showMenuByName(inName)
+Like this, so we can keep track of what the previous menu is.
+
+I think we should do this refactor FIRST before we refactor the rest of the game.
+As the problem we are having with the game is mainly menu related.
+
+
+TODO:#2:
+LevelReg.incrementLevelNumber <<Fix this hack using GlobalAppStateReg
+
+TODO:#3: When moving keys to unpause, the in-game menu state is wrecked.
+Probably because menu is being closed. Fix this!
+
+
+TODO:#4: Make the editor area of the editor menu able to be made invisible so you can test the game
+while the editor is still open and hit "stop" button on level editor.
+
+TODO:#5: Make editor friendly levels in this addition.
+
+if( v1.x != v2.x || v1.y != v2.y )
+{
+
+}
+
+if(!(v1.x == v2.x && v1.y == v2.y))
+{
+
+}

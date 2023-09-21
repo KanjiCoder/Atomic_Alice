@@ -1,0 +1,5 @@
+
+QUESTION: Spawning 1 to 1:
+What code file controls the 1 to 1 spawning of enemies and sprites and other thigs?
+1 to 1 being 1 pixel, 1 tile, one object spawned that is 1x1 tile big.
+Answer: TilemapModKeyMaker_PlayState

@@ -1,0 +1,82 @@
+
+I ran into some glitches with some old code I wrote.
+I am going to re-write the class.
+But instead of making a version that is "hand-tweened" (which makes it easy to pause in place by simply not calling the update() method)
+I am going to build it on top of GreenSock's TweenMax engine.
+
+Here are my notes:
+I had a hard time figuring out what I was going to do, so I wrote down different ideas for how to code it till I hit
+something that made a lot of sense and wasn't too abstract.
+
+I'd say a good use of my time, as I am too tired to program. Yet not tired enough to sleep.
+
+Though I really should do this more often. Taking the time to think about what you are going to program, instead of programming
+right away, can be very valuable. And this is coming from someone who is a "straight ahead" coder.
+I usually code as I think.
+
+new conveyer code design:
+
+//Diagram of conveyer with 3 items in it that are all on screen at the same time.
+//[p] stands for portal. if animating left-to-right,
+// v2 will smoothly animate to [p1], then TELEPORT directly to [p0], then continue to animate to old position
+// of [v0];
+[p0]-----[v0]-------[v1]---------[v2]------[p1]
+
+//how do you handle tweening it, but stitching it back together gracefully?
+//idea1: Programmer "trip itineraries" for each object.
+//       Problem: Seems unecessarily abstract and complex.
+//idea2: Animate [p1] to [p2] travel, but make the object being animated .visible==false.
+         Problem: leaves spot [v0] empty.
+//idea3: Helper Object manages it's own "flight" to a destination.
+         The main class it belongs to just changes the destination. But the helper is responsible for the details.
+         
+//idea4: Each static "check-point" has a "prev" and "next variable.
+//       in addition to this, each check-point has a "youCanStayHere" variable.
+//       [p0] and [p1], as points OFF the screen, have "youCanStayHere == false".
+//    
+//       in addition to this:
+//       if(youCanStayHere==false, but .next == null,
+//       then we are on [p1] moving forward. Teleport object at [p1] to [p0];
+//
+//       CONVERSLY:
+//       if(youCanStayHere==false, but .prev == null,
+//       then we are on [p0] moving BACKWARDS. Teleport to object at [p0] to [p1];
+
+How do we "teleport?"
+The class that is HOLDING the linked list keeps track of a .first and .last pointer to the start and end of the linked-list.
+
+//OLD NOTES NOT PERTAINING TO idea4:
+/** Value from negative INF to positive INF that represents shifting the array of points forward or backwards. **/
+var _arrayShiftOffset:int; 
+
+/** A vector of the points we are targeting. We want to CENTER display objects on these points. **/
+var _staticTargetPointVector:vector.<Point>;
+
+
+var _helperHolderSpriteVector:Vector.<HelperHolderSprite>;
+
+
+
+TravellingHelperObject extends Sprite (since you cannot extend displayObjectContainer)
+/** pos animates between dest0.pos and dest1.pos and stops at dest0 if isTravelinDirectionForward == false
+    and stops at dest1 if isTravelDirectionForward == true **/
+public var pos:intPoint;
+public var dest0:TravelCheckPoint;
+public var dest1:TravelCheckPoint;
+public var isTravelDirectionForward:Boolean;
+public var finalDestination:TravelCheckPoint;
+
+
+TravelCheckPoint:
+public var pos:intPoint;
+public var prev:TravelCheckPoint;
+public var next:TravelCheckPoint;
+
+
+help.travelData.lastAddressArrivedAt   
+help.travelData.lastCheckPointArrivedAt
+
+
+
+
+

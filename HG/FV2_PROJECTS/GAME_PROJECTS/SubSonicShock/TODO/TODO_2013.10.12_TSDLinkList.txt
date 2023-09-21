@@ -1,0 +1,11 @@
+
+
+
+Refactor the dirty linked list for rendering and make it
+a TSDLinkList instance. Once that is working and running correctly,
+continue your work on getting falling tile columns working.
+
+
+FIRST PRIORITY should be marking dirty physics in the tilemap.
+Since you will have just refactored the dirty rendering data,
+it will be fresh in your mind how to refactor this section.

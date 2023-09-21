@@ -1,0 +1,33 @@
+
+
+1. Screen goes black. (lights turn off):
+2. Game Pauses.
+3. Text is stamped onto the BG, Then there is a temporary stamp on the light and plasma layer that lets you
+   see the text clearly.
+   
+4. The text will show up in paragraph format.
+5. When text is done being shown, the lights turn back on.
+
+6. Each time paragraph/page of text changes, the BG jitters into a new position.
+   This way the multiple paragraphs stamping onto each other will not make a SOLID blot,
+   but a softer better spred out blot when the lights turn back on.
+   
+7. DIALOG ENGINE:
+   The dialog area will be as big as the RegRec that spawned it.
+   Otherwords: Dialog Area = Same Size + Position as RegRec.
+   
+   Since RegRecs take up space, this kind of works, because the reg-rec will always be around to draw on the background.
+   Even if reg-rec is NOT around to draw on the background, the light and plasma layers will make it so the text is still
+   readable.
+   
+   
+   
+   Class to create:
+   GhostTextEngine
+   GhostTextEngine.init(inCamera, inPlasmaMap)
+   or
+   GhostTextEngine.init(inCamera, plasmaMap.lightBuffer, plasmaMap.plasmaBuffer);
+   
+   Hmm... needs tilemap too to determine the correct placements sometimes.
+   
+   GhostTextEngine.init(inCamera, inTilemap, [plasmaMap.lightBuffer, plasmaMap.plasmaBuffer], [blend1, blend2]);

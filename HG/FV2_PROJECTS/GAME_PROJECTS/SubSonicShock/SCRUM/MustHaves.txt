@@ -1,0 +1,30 @@
+
+1. Where there is UI, that UI must be professional and have smooth transitions.
+
+2. Exploding animation when character dies. Steal the megaman style explosion with pause of screen.
+
+3. Plasma-Glow around bombs before they detonate. This will make an effect of showing you the direction of the bombs
+   when the light around you mixes with the plasma surrounding the bomb.
+   This glow will be rendered to the pre-baked plasma map. using our PropLightTilemap, we can easily attach baked lights 
+   to the bombs.
+   
+   DON'T link bombs together in groups. Which bombs trigger is very dependent on detonation order.
+   If a big bomb is next to a short bomb. Detonating the long bomb will also detonate the short bomb.
+   But NOT the other way around.
+
+3. Music Streaming. See if it is possible to do said act from newgrounds storage space.
+   Plan B:
+	   Advertise an EXTENDED sound-track in the the desktop version of the game, with DRM-FREE MP3.
+       That is no where near as good as the streaming. Only do plan B if you have no way to stream the
+	   audio.
+
+4. Website where people can purchase game.
+
+5. AIR desktop version of the game that allows: 2X and 3X scales of game
+
+6. Non-Obtrusive in-game adds.
+
+7. Make use of the reg-rec dialog boxes!!!
+  
+8. Level meta data tagger tool.
+

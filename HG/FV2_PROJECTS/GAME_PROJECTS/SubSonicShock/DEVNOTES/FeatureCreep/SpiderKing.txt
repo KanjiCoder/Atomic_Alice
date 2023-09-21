@@ -1,0 +1,29 @@
+Meowmeow
+Amanda was here
+o wo
+
+
+Idea to make game better:
+"The Spider King"
+Think of how lakeview cabin did not seem like a horror game until later.
+Do that!
+
+In fact, market the game as a happy sparkly game!
+
+If you take too long on a puzzle, the spider king comes.
+
+He is a small guy with a large axe. Maybe 1.5 * 1.5 tiles big character with a 1X2 axe or something.
+Little hopping spiders follow him around.
+
+The spiders hop when they move. Forget the gripping stuff you tried to do.
+They can invert gravity and hop on the ceiling.
+They can invert gravity and hop of the walls.
+They get to you by hopping.
+They also can shoot thread to get to you.
+They shoot thread as a last resport if they cannot hop to get to you.
+
+Spider king uses axe to break down walls. It may take a while.
+He moves slowly. You get 3-to-7 axe hits befor a wall breaks open.
+Actually different malerials should have different tolerances for when they break.
+
+Level is designed so spiders do not get to you until the spider king has busted a hole in the walls.

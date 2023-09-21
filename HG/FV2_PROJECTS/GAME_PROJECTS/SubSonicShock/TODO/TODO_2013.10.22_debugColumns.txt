@@ -1,0 +1,16 @@
+
+
+Observation:
+	It looks like, colums who's head lays on the 45 degree axis of symmetry at game start
+	end up having one block chopped off of their final height when they land.
+	Also the timing with other falling blocks somehow matters as well.
+	
+	I am thinking two errors:
+		1. Reference error. Multiple columns are referencing the same ClusterColumnHead.
+		2. x/y error. Somewhere where there is an .x there is a .y instead, or vise versa.
+		
+		I think both problems are happening in combination somehow.
+		
+		
+		_hasCrushManager = true;
+			_crushManager    = inCrushManager;

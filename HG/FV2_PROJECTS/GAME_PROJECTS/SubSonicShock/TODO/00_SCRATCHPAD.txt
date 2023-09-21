@@ -1,0 +1,151 @@
+package com.JMIM03.UT_PNGOpener{
+	
+	//Class Summary: 2012.02.06[4:37AM]
+	//UT for Utility.
+	//NOT LD for loader. (As my loader prefix (LD) is specifically for loading from the web)
+	
+	//NOTE: This utility will only work with AIR apps.
+	//This is because I am using it to open files on the HOST machine.
+	
+	//Original Usage:
+	//Used to open PNG files for my level exporter.
+	//My level-exporter takes a long bitmap and squashes it into a square that is my packaged level.
+	
+	
+	//imports so you can save to computer:
+	//import com.adobe.images.PNGEncoder;   //must be encoded correctly to save.
+	import flash.utils.ByteArray;         //must save the bitmap data converted to a byteArray using proper encoder.
+	
+	
+	//Imports that come in default package when coding in a .FLA file....
+	//But needed to import when putting in a class.
+	import flash.display.Loader; //for "Loader" objects.
+	import flash.net.URLRequest;
+	
+	
+	//Imports used in "file.browseForOpen"
+	//Found in documentation:
+	import flash.filesystem.*;
+	import flash.filesystem.File; //for the File object.
+	import flash.events.Event;
+	import flash.net.FileFilter;
+	
+	
+	import flash.display.Bitmap;
+	import flash.display.BitmapData;
+
+	public class UT_PNGOpener {
+		
+		private static var boundFunction:Function;
+		private var file:File;
+		private var dialogueTitle:String = "I like cupcakes";
+		
+		
+		//WHY is this function STATIC, but nothing else? Is there a valid reason for this when everything else is instanceable?
+		public static function set_onCompleteFunction(in_fun:Function){
+			if(in_fun.length!=1){
+				throw new Error("JMIM03.UT_PNGOpener.as::bound function must take exactly one(1) argument. xxxx");
+			}
+			boundFunction = in_fun;
+		}
+		
+		//Sets title of the dialog box that is opened.
+		public function set_title(in_title:String){
+			dialogueTitle = in_title;
+		}//[x]
+
+		//Because loading a file from your computer is asynchronous, to create an instance of "UT_PNGOpener"
+		//You must specify an bound function that will execute on complete of load in the constructor.
+		public function UT_PNGOpener(
+		in_onCompleteFunction:Function
+		):void
+		{
+			if(in_onCompleteFunction.length!=1){
+				//The ONE argument that the bound function should take is the bitmapData object that we get
+				//from opening a PNG file.
+				throw new Error("JMIM03.UT_PNGOpener.as::bound function must take exactly one(1) argument");
+			}//[x]
+			boundFunction = in_onCompleteFunction;
+		}//[Constructor]
+		
+		public function loadFromWeb(in_urlString:String=null){
+			if(in_urlString==null){
+				in_urlString = "http://www.jmim.com/FLASH/00_GameAssets/Level/TestMap_02.png";
+			}//[x]
+			
+			var loader:Loader = new Loader();
+			loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onComplete);
+			loader.load(new URLRequest(in_urlString));
+		}//[x]
+		
+		
+		public function loadImage(nativePath:String = null):void
+		{
+			if(nativePath!=null){
+				trace("nativePath NOT null");
+				//use hardcoded path
+			  //var file:File = new File(nativePath);
+				file = File.desktopDirectory.resolvePath(nativePath);
+				loadImage_END();
+			}else{
+				trace("NULL native path. Is Null");
+				var imgFilter:FileFilter = new FileFilter("lossLess Img Format", "*.png;*.bmp");
+				file = new File(); //must make new file.
+				//file = File.desktopDirectory;
+				file.addEventListener(Event.SELECT,loadImage_bySelect);
+				file.browseForOpen(dialogueTitle,[imgFilter]);
+			}
+		}//[FN:loadImage];
+	
+		//This function simply wrapper so event listener can also use it.
+		private function loadImage_bySelect(e:Event){
+	
+			 //HACK, recall loadImage now after you parse the file-name:
+			 trace("e.target==" + e.target);
+			 trace("e.target.url==" + e.target.url.toString());
+			 var unParsed:String = e.target.url.toString();
+			 var pArr:Array = unParsed.split("file:///");
+			 trace("pArr[1]===" + pArr[1]);
+			 loadImage(pArr[1]);
+			
+			//Since the code below wont work... we are just going to
+			//Re-Call loadImage with a nativePath parameter.
+			/*
+			trace("loadImage_bySelect");
+			var ba:ByteArray = new ByteArray();
+			var stream:FileStream = new FileStream();
+			
+			//This part is quite problematic... grrr...
+			stream.open(file, FileMode.READ);
+			
+			stream.readBytes(ba);
+			stream.close();         
+			var loader:Loader = new Loader();
+			loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onComplete);
+			loader.loadBytes(ba);
+			*/
+		}//[FN:loadImage_bySelect()]
+	
+		private function loadImage_END(){
+			trace("theEnd");
+			var ba:ByteArray = new ByteArray();
+			var stream:FileStream = new FileStream();
+			stream.open(file, FileMode.READ);
+			stream.readBytes(ba);
+			stream.close();         
+			var loader:Loader = new Loader();
+			loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onComplete);
+			loader.loadBytes(ba);
+		}//[FN:loadImage_END]
+	
+	
+		private function onComplete (event:Event):void
+		{
+			var bmDat:BitmapData = event.target.content.bitmapData;
+			boundFunction(bmDat);
+		}
+
+
+	}//class
+	
+}//package

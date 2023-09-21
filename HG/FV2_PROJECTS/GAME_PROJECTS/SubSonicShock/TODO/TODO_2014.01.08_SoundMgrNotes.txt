@@ -1,0 +1,9 @@
+SFX Toggle functions. FunctionsWithTypes(s) that are bound into a vector and all called when sound is turned on or off.
+Now....
+
+Where do we store the FlxExtSoundMgr instance?...
+It is an instanceable system. Thus, should be stored in the gameReg.
+It will depend on any system that has soundFX or music.
+
+
+Remarkable == Worth making a remark about.

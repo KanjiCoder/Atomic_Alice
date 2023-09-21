@@ -1,0 +1,19 @@
+Spiders come out of ventillation ducts after certain amount of time.
+The vents shake and you hear rattling sound, and then the grate comes off and the flow out.
+Maybe there is an animated fan? I like spinny stuff.
+
+Anyways, the grate on the vent shakes and rattles.
+The grate falls off.
+Spiders spew out and start chasing you.
+You get 3 hits and then you are dead.
+
+Grates can be stopped by having blocks fall in front of them.
+Or you can just finish the level in time...
+
+
+Ignition buttons:
+They blow up if tiles fall onto the PLUNGER part of the button.
+And also emit a HUGE SPARK that reaches further than a normal blast from the spark plug.
+After this happens, the spark plug goes into it's DESTROYED state.
+
+The 2x2 and 2x3 plungers have a GREY destroyed state that will be used for all the different ignition button colors.

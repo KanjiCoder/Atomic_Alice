@@ -1,0 +1,17 @@
+xWhiteXFlameX --Rated tiny dangerous dungeons 3 stars
+Umasr001 -- rated tiny dangerous dungeons  3.5stars.
+
+
+IDEA: Each level needs a theme designated by the props within that room.
+The theme can be somewhat ridiculous if you want, but you need better level names than
+"Level 6"
+
+I had a hard time communicating with Amanda about what level was what.
+
+How do we do this?
+
+One unique prop per level. They can be ridiculous props if you wish.
+
+1. The toaster room. Has random toasters all around the place.
+2. The oven room, has random ovens.
+3. The locker room, has random lockers.

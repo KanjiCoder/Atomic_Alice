@@ -1,0 +1,10 @@
+
+
+
+
+Lines 72, and 72 in ClusterCHLinked list.
+
+Other open files before I packed up:
+	ClusterColumnHead.as
+	FallingTileColumnManagerFunctions.as
+	

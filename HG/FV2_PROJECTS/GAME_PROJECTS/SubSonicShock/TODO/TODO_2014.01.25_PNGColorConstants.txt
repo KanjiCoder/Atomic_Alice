@@ -1,0 +1,7 @@
+
+Classes I left off on when re-factoring the color constant code.
+
+PNGColorMapNoAlpha.as
+PNGColorConstants.as
+ColorConstHelper.as
+CConContainer.as

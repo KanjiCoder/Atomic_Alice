@@ -1,0 +1,25 @@
+
+Summary of results I want:
+	Parallaxing needs to be FIXED, but never too fast.
+	Meaning that, the background is always in the same position for any given player x,y coordinate in the world.
+	This way, if writing appeared on the background in a certain area of the level, it will be there if you go back to it.
+
+
+How does background scrolling work?
+
+IF level is SMALLER than background,
+we do a STRAIGHT 1:1 scroll.
+Because we will NOT run out of background.
+
+If the level is BIGGER than the background,
+we use percentage scrolling.
+
+Either way, background should always be
+the same size, or bigger than the scree
+
+Hmm... I would like a bit of parallax even if the BACKGROUND is way bigger than the level.
+Scroll percentage should scroll between allowed ranges of map then...
+
+ParallaxMaxScale:int = 1; //1 to 1. No parallaxing when scrolling.
+ParallaxMaxScale:int = 0.5; //for every inch the forground moves, the background moves a half inch.
+

@@ -1,0 +1,32 @@
+Get Amanda to start a youtube let's play channel.
+
+http://www.daveramsey.com/blog/20-things-the-rich-do-every-day
+http://imgur.com/a/QlMEA#2
+
+
+1. Rescue bunnies
+2. Kill and place turrets like in bolo.
+3. Levels look more like places by drawing them out.
+4. TRON GLOW on edge of all tiles. Color-Coded so as to re-enforce what tile does what.
+
+GLOW KEY:
+BLUE == Bashable.
+CYAN: No platform.
+BLUE: Platform
+
+WHITE GLOW: Non-bashable.
+
+IDEA: RAIL CANNON:
+1. Get into it by pressing --> (Walking into it).
+   It is a dead-end. So now, since you cant go anywhere by pressing forward,
+   now pressing forward SHOOTS.
+
+2. UP and DOWN move the rail cannon up and down the track.
+
+3. Pressing <-- (BACK arrow) gets you out of the cannon.
+
+
+Thought:
+I want at least 1,000 beta-testers.
+We will do this by asking beta-testers to refer me to other good beta testers.
+When we hit 1,000 beta-testers, we are ready to release.

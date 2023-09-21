@@ -1,0 +1,4 @@
+R&D_SCRATCH
+Is a folder for scratchpad projects.
+This is for learning what you are doing before you seriously undertake coding
+a professional project.

@@ -1,0 +1,10 @@
+
+
+Ref these .as files for making fractals that happen when the game is paused:
+	LiveGameFractalEffects.as
+	LGFractalEffectsManager.as
+	LGFEMFunctions.as
+	
+Ref this area for INSPIRATION:
+	package net.wonderFL.fractals.
+	

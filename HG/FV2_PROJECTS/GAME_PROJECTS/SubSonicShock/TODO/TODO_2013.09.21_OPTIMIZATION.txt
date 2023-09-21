@@ -1,0 +1,35 @@
+In FlxTilemap_EXT
+possible HUGE optimization::
+Optimization: Re-use of _data and _dataMeta.
+Make it so that old data is ONLY SCRAPPED, when the new level is sufficiently smaller than the old level.
+Otherwise, the data is re-used so we don't have to re-initialze stuff.
+
+
+protected function make_data():void
+		{
+			//Step1: Dispose of the old data from the previous tiles from the previous loaded map.
+			//       The loop is tearing apart our linked-list of TileStateDatum
+			if (_data != null)
+			{   //Added for extra protection to make sure data is nullified.
+				for (var meow:int = 0; meow < _data.length; meow++)
+				{ _data[meow] = null; }
+			}
+			
+			_data = null;
+			_dirtyLinkedListHasFirst = false;
+			
+			//TODO: Rather than destroy, it might be best to re-use this data. Than tear it all apart.
+			//maybe look at how big new data is and how big old data is. If new data is largely smaller than OLD data,
+			//THEN KILL/DESTROY data. Else, re-use that data.
+			//Tear down the _dataMeta from previous map load.
+			if (_dataMeta != null) //<-- has there been a previous map load?
+			{
+				for each(var d:TileStateDatum in _dataMeta) { d.destroy();}
+				_dataMeta = null;
+			}
+			
+			//Step2: Create new array of tile indicies and meta-data for new map:
+			//must be paired!
+			_data = new Array();
+			_dataMeta = new Vector.<TileStateDatum>;
+		}

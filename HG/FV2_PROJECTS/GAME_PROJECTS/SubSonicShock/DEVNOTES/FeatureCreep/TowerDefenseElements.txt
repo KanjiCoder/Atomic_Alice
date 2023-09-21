@@ -1,0 +1,8 @@
+
+
+How could I add tower defense elements to this game?
+So that when you play the game, you can make... Bots or something that will try and protect you.
+
+Containment cages? Think ghost busters.
+Containment cages trap ghosts that try and kill you.
+Containment cages also use the ghosts to power things that use electricity.

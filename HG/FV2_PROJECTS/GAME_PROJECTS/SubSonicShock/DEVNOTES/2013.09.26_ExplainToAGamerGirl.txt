@@ -1,0 +1,29 @@
+Its a survival-horror side-scrolling puzzle-platformer bomberman-style game.
+Judging by your interest in Cosplay, your punisher shirt, and your tattoo of the crow. I am guessing that is a concise yet understandable summary?
+
+How do you like Admin work?
+
+
+
+Its a side scrolling bomberman.
+Right now I am working on coding blood effects that splatter all over the walls when you die. Everytime you restart a level, you'll see all the places you last died. This will help it give a theme of slow deteroriation of the sanity of the world. Think Silent Hill.
+I am basically stealing everything I like about my favorite games, and putting it in this. Right now it is a fun game... But I am not happy with it yet. I want it to be a game that you don't want to play alone in the dark.
+
+It's a fast paced bomberman puzzle platformer(side scroller).
+However, my final vision is more of a survival horror game incorporating some elements
+from resident evil and clock tower. Right now I am working on coding blood effects
+that splatter all over the walls when you die. Everytime you restart a level,
+you'll see all the places you last died. Kinda to give it a silent hill theme of slow deteroriation of the sanity of the world you are in.
+
+Judging by your tattoos, interests, and profession,
+I am guessing you are familiar with said games?
+
+http://www.pof.com/viewprofile.aspx?profile_id=60958797
+	Toxicjinx: A Pirate's life for me... 
+
+
+
+
+
+
+

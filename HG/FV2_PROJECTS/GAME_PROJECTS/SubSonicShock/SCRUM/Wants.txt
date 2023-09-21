@@ -1,0 +1,42 @@
+
+
+1. Falling Coal Tiles.
+Falling coal tiles catch fire if explosion hits them. Once they catch fire, they can start falling.
+They are different than falling columns:
+	1. They fall FASTER than the player can fall. (Don't have to worry about jumping off them)
+	2. They are on fire. You take 1HP damage if you touch them.
+	3. They explode into a ball of sparks when they finally hit the ground.
+	   This ball of sparks can ignite other bombs. Sparks take 1HP damage.
+	4. They fall ONE BLOCK at a time. There is a delay between blocks falling.
+	   ONLY BLOCKS TOUCHING THE "AIR" (empty space) can be on fire.
+	   As coal blocks peel off, the next one touching the AIR can then light on fire.
+	5. If coal block is 
+	      1. COVERED FROM AIR
+		  2. BEFORE IT STARTS Falling
+		  Then that coal block will have it's flames smothered.
+		  
+
+2. Shattering Glass Tiles.
+These are tiles that will shatter and break when a falling column crushes them.
+The weight from a falling column can also cause them to shatter.
+
+I don't want the shatter to be immediate though. The delay will get more interesting effects.
+
+How Delay?
+Some tiles on tilemap have HP. And every frame, a falling column reduces the HP of the tile.
+Could also have it so if you jump too much on a glass tile, it shatters... Nope... Don't do that...
+
+QUICK WAY to impliment this without having to refactor color pallet to use Tertiaries:
+	the YELLOW lights break when something hard hits them. Makes no sense to do this to the green
+	lights because they leave scaffolding.
+
+3. Lasers that emit sparks out the back of them when they are tripped.
+
+4. Laser that instead of being a laser, is a force field.
+   Instead of the back throwing out sparks, the back is a button you must press to turn the forcefield off.
+   You can touch either relay of the force field to turn it on or off.
+   
+   IT IS A TOGGLE BUTTON.
+   
+   If blocks touch it, they can get the toggle STUCK.
+

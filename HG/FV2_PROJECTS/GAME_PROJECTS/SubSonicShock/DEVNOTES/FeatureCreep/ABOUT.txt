@@ -1,0 +1,12 @@
+Keep a folder for all of the features you would like to add to the game.
+That way you don't forget about them, but don't feel forced to code any cool idea you think about.
+As time goes on, some cool idea may be EASIER to impliment because of the current code-base already in place.
+
+(Because no matter what you make, your code base is always growing).
+
+Right now... I think electrically conductive tiles are an AWESOME idea.
+Also... I still need to work on my TileClinger object that is supposed to make buttons fall.
+But my priority is making falling columns right now.
+
+Those other features can go in the sequel to my game.
+

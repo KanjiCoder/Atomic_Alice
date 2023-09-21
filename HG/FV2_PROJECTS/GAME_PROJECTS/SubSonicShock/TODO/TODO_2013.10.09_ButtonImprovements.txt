@@ -1,0 +1,59 @@
+Backup of parts I am slicing out of IgnitionButton.as as I get cleaner code that uses TweenLite
+instead of my hackish delay code. Why did I do that? I need to keep my "not made here syndrome in check."
+
+public var oneFrameInMilliseconds:int = (1000 / 30) - 50; // a buffer of 50 for safety.
+		
+		/** Used to keep track of the spawner that manages this ignition button.
+		 *  This is because the parent spawner is keeping a frame counter that all buttons must reference
+		 *  in order to create a button "spam gaurd". **/
+		private var _parentSpawner:IgnitionButtonSpawner;
+		private var _hasParentSpawner:Boolean = false;
+		public function setParentSpawner(inSpawner:IgnitionButtonSpawner):void
+		{
+			CONFIG::debug { ICU.check(inSpawner, ICU.B, "null spawner input"); }
+			_parentSpawner = inSpawner;
+			_hasParentSpawner = true;
+		}
+		
+		/** Average human reaction time is 215 milliseconds. **/
+		//30 FPS game.
+		//1 second = 1000 milliseconds.
+		//1000 / 30 = 33.333333  (Milliseconds per frame)
+		//215 millisecond human reaction time divided by 33.3333333 milliseconds per frame == 6.45 frames
+		//Round up. 7 Frame delay on button press. And occassionally no delay every 10 presses.
+		
+		/** use timer object to store time of last explosion to stop button from being rapid-fired. **/
+		private var _timeOfLastPhase:int;
+		public  var explosionFrameDelay:int = 6;
+		private var _explosionMSInterval:int = 0;// 215; //215 milliseconds. Average human reaction time. About six frames.
+		
+		/** Counts how many times the button has been pressed using a delay of human reaction time. **/
+		public var freakOutCounter:int = 0;
+		/** Every noDelayInterval(nth), the button will fire WITHOUT a delay. And hopefully freak out the user
+		 *  Because it will feel like the button went off before you hit it. **/
+		public var noDelayInterval:int = 7;
+		
+		/**
+		 * 
+		 * @param	inMS  :The millisecond delay for the button.
+		 * @param	inFPS :The frames per second of the game.
+		 */
+		public function setDelayUsingMilliseconds(inMS:int, inFPS:int):void
+		{
+			_explosionMSInterval = inMS;
+			var millisecondsPerFrame:int = 1000 / inFPS; //1000ms in second. Divided by FPS gets milliseconds per frame.
+			var roughFrameCount:int = Math.ceil( Number(inMS / millisecondsPerFrame) );
+			explosionFrameDelay = roughFrameCount;
+		}
+		
+		/** Used to create 7 frame delay that is about 245 milliseconds. (At 30FPS)
+		 *  By delaying button reaction by human reaction time, we can train people that this is instantanious.
+		 *  Then we can have a button with NO DELAY every once and a while. This will make people think the button actually
+		 *  went off before they pressed it. Awesome mind fuck. **/
+		public var sparkPhase:int = 0;
+		
+		/** used to make sure buttons on ceiling go off. Since there is a delay, if you quickly touch button, and then
+		 *  fall away from it, it wont go off. Unless we use this variable to register that the button should be ignited. */
+		public var lastFrameTouching:int;
+		
+		private var _sparkSpamGaurd:int;

@@ -1,0 +1,20 @@
+
+
+How would I make it so I can port my game to be controlled with a mouse?
+You click, and he tries to go where-ever you click.
+
+How do you jump?
+
+
+CLICK: He goes.
+HOLD + RELEASE: He jumps at the angle, and SPEED you specify.
+
+Click ONCE near him: He sets a flare box.
+Click TWICE near him: He sets a flare box and kicks it.
+
+This could would well with a mouse!
+I should make a click interface an make a game based off of that.
+
+Could make a ClickAble version of all side scrollers this way.
+Have an alternate tile set you use with them maybe?
+Hmm... Have to think about it.

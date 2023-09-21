@@ -1,0 +1,254 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 2562064460 bytes for jchar in C:\BUILD_AREA\jdk6_45\hotspot\src\share\vm\prims\jni.cpp
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:44), pid=1596, tid=7944
+#
+# JRE version: 6.0_45-b06
+# Java VM: Java HotSpot(TM) Client VM (20.45-b01 mixed mode windows-x86 )
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0eeb2000):  JavaThread "Thread-0" daemon [_thread_in_vm, id=7944, stack(0x0a010000,0x0a110000)]
+
+Stack: [0x0a010000,0x0a110000],  sp=0x0a10e074,  free space=1016k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x13490a]
+V  [jvm.dll+0x12f48c]
+V  [jvm.dll+0xa0b72]
+C  [mscorwks.dll+0x1d29]
+C  0x097245eb
+C  0x0b039b5c
+C  0x0b039af5
+C  0x0b039a50
+C  0x0b0369f0
+C  0x0b03443f
+C  0x0b03424d
+C  [System.ni.dll+0x4a060d]
+C  [System.ni.dll+0x4a036e]
+C  [mscorwks.dll+0x1b5c]
+C  [mscorwks.dll+0x18f8a]
+C  [mscorwks.dll+0x30099b]  TranslateSecurityAttributes+0x35818
+C  [mscorwks.dll+0x300e32]  TranslateSecurityAttributes+0x35caf
+C  [mscorlib.ni.dll+0x1b95c3]
+C  [mscorlib.ni.dll+0x7b72b2]
+C  [mscorlib.ni.dll+0x7b72e8]
+C  [mscorlib.ni.dll+0x20a6b3]
+C  [mscorlib.ni.dll+0x20a549]
+C  [mscorwks.dll+0x1b5c]
+C  [mscorwks.dll+0x18f8a]
+C  [mscorwks.dll+0x1957b]
+C  [mscorwks.dll+0x195bc]
+C  [mscorwks.dll+0x19629]
+C  [mscorwks.dll+0xc10f1]  NGenCreateNGenWorker+0xa148
+C  [mscorwks.dll+0x4548f]  CoUninitializeEE+0x1ccef
+C  [mscorwks.dll+0x4542b]  CoUninitializeEE+0x1cc8b
+C  [mscorwks.dll+0x4534a]  CoUninitializeEE+0x1cbaa
+C  [mscorwks.dll+0x454dd]  CoUninitializeEE+0x1cd3d
+C  [mscorwks.dll+0x49284]  CoUninitializeEE+0x20ae4
+C  [mscorwks.dll+0xc0d86]  NGenCreateNGenWorker+0x9ddd
+C  [mscorwks.dll+0x48f1d]  CoUninitializeEE+0x2077d
+C  [mscorwks.dll+0x1600b9]  GetCLRFunction+0x35184
+C  [KERNEL32.dll+0x2850d]  BaseThreadInitThunk+0xe
+C  [ntdll.dll+0x5bf39]  RtlInitializeExceptionChain+0x85
+C  [ntdll.dll+0x5bf0c]  RtlInitializeExceptionChain+0x58
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0ef16400 JavaThread "SWF/SWD reader" daemon [_thread_blocked, id=4292, stack(0x0dec0000,0x0dfc0000)]
+  0x0ee9b400 JavaThread "DJAPI message listener" daemon [_thread_in_native, id=6824, stack(0x0b180000,0x0b280000)]
+  0x0eef6800 JavaThread "Thread-2" daemon [_thread_in_native, id=5428, stack(0x0aba0000,0x0aca0000)]
+  0x0ef14400 JavaThread "Thread-1" daemon [_thread_in_native, id=7880, stack(0x015c0000,0x016c0000)]
+=>0x0eeb2000 JavaThread "Thread-0" daemon [_thread_in_vm, id=7944, stack(0x0a010000,0x0a110000)]
+  0x0b115000 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=6836, stack(0x0ec90000,0x0ed90000)]
+  0x0b113800 JavaThread "C1 CompilerThread0" daemon [_thread_blocked, id=7860, stack(0x0eb90000,0x0ec90000)]
+  0x0b112800 JavaThread "Attach Listener" daemon [_thread_blocked, id=6808, stack(0x0ea90000,0x0eb90000)]
+  0x0b110800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=4860, stack(0x0e990000,0x0ea90000)]
+  0x0b0fa800 JavaThread "Finalizer" daemon [_thread_blocked, id=5916, stack(0x0e890000,0x0e990000)]
+  0x0b0f9400 JavaThread "Reference Handler" daemon [_thread_blocked, id=8216, stack(0x0dd30000,0x0de30000)]
+  0x01568800 JavaThread "main" [_thread_in_native, id=3476, stack(0x00b60000,0x00c60000)]
+
+Other Threads:
+  0x0b0f5400 VMThread [stack: 0x0dc30000,0x0dd30000] [id=3604]
+  0x0b125400 WatcherThread [stack: 0x0ed90000,0x0ee90000] [id=9020]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 4928K, used 4446K [0x130b0000, 0x13600000, 0x18600000)
+  eden space 4416K,  89% used [0x130b0000, 0x13487bc0, 0x13500000)
+  from space 512K, 100% used [0x13580000, 0x13600000, 0x13600000)
+  to   space 512K,   0% used [0x13500000, 0x13500000, 0x13580000)
+ tenured generation   total 10944K, used 1583K [0x18600000, 0x190b0000, 0x230b0000)
+   the space 10944K,  14% used [0x18600000, 0x1878bf30, 0x1878c000, 0x190b0000)
+ compacting perm gen  total 12288K, used 4794K [0x230b0000, 0x23cb0000, 0x270b0000)
+   the space 12288K,  39% used [0x230b0000, 0x2355ebb0, 0x2355ec00, 0x23cb0000)
+No shared spaces configured.
+
+Code Cache  [0x110b0000, 0x111a8000, 0x130b0000)
+ total_blobs=363 nmethods=226 adapters=73 free_code_cache=32651008 largest_free_block=79552
+
+Dynamic libraries:
+0x00a80000 - 0x00ad8000 	C:\DEV\FD\FlashDevelop.exe
+0x774c0000 - 0x77617000 	C:\Windows\SYSTEM32\ntdll.dll
+0x72120000 - 0x7216a000 	C:\Windows\SYSTEM32\MSCOREE.DLL
+0x76550000 - 0x76680000 	C:\Windows\SYSTEM32\KERNEL32.dll
+0x772a0000 - 0x77346000 	C:\Windows\SYSTEM32\KERNELBASE.dll
+0x764a0000 - 0x7654e000 	C:\Windows\SYSTEM32\ADVAPI32.dll
+0x76e90000 - 0x76f41000 	C:\Windows\SYSTEM32\msvcrt.dll
+0x76a60000 - 0x76a94000 	C:\Windows\SYSTEM32\sechost.dll
+0x76f50000 - 0x76ffc000 	C:\Windows\SYSTEM32\RPCRT4.dll
+0x74b00000 - 0x74b1c000 	C:\Windows\SYSTEM32\SspiCli.dll
+0x74af0000 - 0x74af9000 	C:\Windows\SYSTEM32\CRYPTBASE.dll
+0x74a90000 - 0x74ae1000 	C:\Windows\SYSTEM32\bcryptPrimitives.dll
+0x720a0000 - 0x7211a000 	C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscoreei.dll
+0x762c0000 - 0x76300000 	C:\Windows\SYSTEM32\SHLWAPI.dll
+0x76300000 - 0x76416000 	C:\Windows\SYSTEM32\USER32.dll
+0x76aa0000 - 0x76b9d000 	C:\Windows\SYSTEM32\GDI32.dll
+0x75d10000 - 0x75d30000 	C:\Windows\system32\IMM32.DLL
+0x76020000 - 0x760fe000 	C:\Windows\SYSTEM32\MSCTF.dll
+0x6c9f0000 - 0x6cf9f000 	C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorwks.dll
+0x71e90000 - 0x71f2b000 	C:\Windows\WinSxS\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.6910_none_d089c358442de345\MSVCR80.dll
+0x74b20000 - 0x75be6000 	C:\Windows\SYSTEM32\shell32.dll
+0x75d30000 - 0x75e66000 	C:\Windows\SYSTEM32\combase.dll
+0x74670000 - 0x746e5000 	C:\Windows\SYSTEM32\SHCORE.dll
+0x747e0000 - 0x747f1000 	C:\Windows\SYSTEM32\profapi.dll
+0x59d30000 - 0x5a82a000 	C:\Windows\assembly\NativeImages_v2.0.50727_32\mscorlib\d1ce70bf6cbab6ab838cbd8b50e902c1\mscorlib.ni.dll
+0x76100000 - 0x76219000 	C:\Windows\SYSTEM32\ole32.dll
+0x73a20000 - 0x73aa8000 	C:\Windows\system32\uxtheme.dll
+0x71e30000 - 0x71e8b000 	C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorjit.dll
+0x747c0000 - 0x747da000 	C:\Windows\SYSTEM32\CRYPTSP.dll
+0x74780000 - 0x747be000 	C:\Windows\system32\rsaenh.dll
+0x05600000 - 0x057de000 	C:\DEV\FD\PluginCore.dll
+0x592f0000 - 0x59a92000 	C:\Windows\assembly\NativeImages_v2.0.50727_32\System\1b46657236c1f942f9dbaf6aac73bb49\System.ni.dll
+0x71ca0000 - 0x71e29000 	C:\Windows\assembly\NativeImages_v2.0.50727_32\System.Drawing\7e4447d26cd9083018bd28ddd60a0248\System.Drawing.ni.dll
+0x58710000 - 0x592ee000 	C:\Windows\assembly\NativeImages_v2.0.50727_32\System.Windows.Forms\53c49b1cfdb85cf6784c7dcc8cdbd56d\System.Windows.Forms.ni.dll
+0x738f0000 - 0x738f9000 	C:\Windows\SYSTEM32\secur32.dll
+0x73c20000 - 0x73c39000 	C:\Windows\SYSTEM32\dwmapi.dll
+0x73ab0000 - 0x73c13000 	C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.9200.16518_none_ba1cf6b7e09f1918\gdiplus.dll
+0x71700000 - 0x71860000 	C:\Windows\SYSTEM32\DWrite.dll
+0x71c90000 - 0x71c96000 	C:\Windows\SYSTEM32\shfolder.dll
+0x715a0000 - 0x716eb000 	C:\Windows\SYSTEM32\WindowsCodecs.dll
+0x77050000 - 0x770db000 	C:\Windows\SYSTEM32\oleaut32.dll
+0x581d0000 - 0x5870a000 	C:\Windows\assembly\NativeImages_v2.0.50727_32\System.Xml\fc5d4ada42ed8e9a30b64912f5dc9767\System.Xml.ni.dll
+0x73e40000 - 0x74038000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9200.16579_none_8937eec6860750f5\comctl32.dll
+0x07e60000 - 0x07e82000 	C:\DEV\FD\Plugins\AirProperties.dll
+0x07e40000 - 0x07e50000 	C:\DEV\FD\Plugins\AS2Context.dll
+0x07f00000 - 0x07f82000 	C:\DEV\FD\Plugins\ASCompletion.dll
+0x08080000 - 0x080a6000 	C:\DEV\FD\Plugins\AS3Context.dll
+0x080b0000 - 0x080da000 	C:\DEV\FD\Aga.dll
+0x08110000 - 0x0813e000 	C:\DEV\FD\Plugins\XMLCompletion.dll
+0x72eb0000 - 0x72ed6000 	C:\Windows\SYSTEM32\ntmarta.dll
+0x081b0000 - 0x081c0000 	C:\DEV\FD\Plugins\ASClassWizard.dll
+0x71c10000 - 0x71c86000 	C:\Windows\SYSTEM32\RichEd20.DLL
+0x6f990000 - 0x6f9a4000 	C:\Windows\SYSTEM32\USP10.dll
+0x71be0000 - 0x71c0b000 	C:\Windows\SYSTEM32\msls31.dll
+0x74810000 - 0x74818000 	C:\Windows\SYSTEM32\version.dll
+0x086a0000 - 0x086aa000 	C:\DEV\FD\Plugins\BasicCompletion.dll
+0x087c0000 - 0x087cc000 	C:\DEV\FD\Plugins\BookmarkPanel.dll
+0x087e0000 - 0x087e8000 	C:\DEV\FD\Plugins\BridgeSettings.dll
+0x08800000 - 0x0880a000 	C:\DEV\FD\Plugins\CodeAnalyzer.dll
+0x08940000 - 0x089c2000 	C:\DEV\FD\Plugins\CodeFormatter.dll
+0x08840000 - 0x08864000 	C:\DEV\FD\Antlr3.dll
+0x089e0000 - 0x089f0000 	C:\DEV\FD\Plugins\CodeRefactor.dll
+0x08a10000 - 0x08a1c000 	C:\DEV\FD\Plugins\CssCompletion.dll
+0x08a20000 - 0x08a28000 	C:\DEV\FD\Plugins\DataEncoder.dll
+0x08a40000 - 0x08a68000 	C:\DEV\FD\Plugins\fdb.j4n.dll
+0x08c60000 - 0x08d40000 	C:\DEV\FD\Plugins\jni4net.n-0.8.4.0.dll
+0x08ac0000 - 0x08ace000 	C:\DEV\FD\Plugins\FileExplorer.dll
+0x08ae0000 - 0x08aea000 	C:\DEV\FD\Plugins\FlashConnect.dll
+0x77000000 - 0x77050000 	C:\Windows\SYSTEM32\ws2_32.dll
+0x76de0000 - 0x76de8000 	C:\Windows\SYSTEM32\NSI.dll
+0x74910000 - 0x7495a000 	C:\Windows\system32\mswsock.dll
+0x71a00000 - 0x71af3000 	C:\Windows\assembly\NativeImages_v2.0.50727_32\System.Configuration\7d7b887e33aafaadae040bb07fa959bb\System.Configuration.ni.dll
+0x08b60000 - 0x08b80000 	C:\DEV\FD\Plugins\FlashDebugger.dll
+0x08fc0000 - 0x08fcc000 	C:\DEV\FD\Plugins\FlashLogViewer.dll
+0x09010000 - 0x09024000 	C:\DEV\FD\Plugins\FlashViewer.dll
+0x09060000 - 0x09074000 	C:\DEV\FD\Plugins\HaXeContext.dll
+0x71bd0000 - 0x71bda000 	C:\DEV\FD\Plugins\jni4net.n.w32.v20-0.8.4.0.dll
+0x09120000 - 0x0912e000 	C:\DEV\FD\Plugins\LayoutManager.dll
+0x09150000 - 0x09162000 	C:\DEV\FD\Plugins\LoomContext.dll
+0x09190000 - 0x091f8000 	C:\DEV\FD\Plugins\ProjectManager.dll
+0x09290000 - 0x0929c000 	C:\DEV\FD\Plugins\MacroManager.dll
+0x092b0000 - 0x092ba000 	C:\DEV\FD\Plugins\OutputPanel.dll
+0x08260000 - 0x0826c000 	C:\DEV\FD\Plugins\PHPContext.dll
+0x09510000 - 0x0952e000 	C:\DEV\FD\SwfOp.dll
+0x71930000 - 0x719f1000 	C:\Windows\assembly\NativeImages_v2.0.50727_32\System.Runtime.Remo#\5a9b13b8b902bbf75fa2245f4dcbf18c\System.Runtime.Remoting.ni.dll
+0x09bf0000 - 0x09bfc000 	C:\DEV\FD\Plugins\ResultsPanel.dll
+0x09c50000 - 0x09c64000 	C:\DEV\FD\Plugins\SourceControl.dll
+0x09c80000 - 0x09c8a000 	C:\DEV\FD\Plugins\StartPage.dll
+0x55b40000 - 0x566a1000 	C:\Windows\assembly\NativeImages_v2.0.50727_32\System.Web\538224ffef6d0b8691f397688ec6a48d\System.Web.ni.dll
+0x09ca0000 - 0x09cac000 	C:\DEV\FD\Plugins\TaskListPanel.dll
+0x5bb00000 - 0x5bb36000 	c:\Program Files\WIDCOMM\Bluetooth Software\SysWOW64\BtMmHook.dll
+0x76e80000 - 0x76e86000 	C:\Windows\SYSTEM32\PSAPI.DLL
+0x76c30000 - 0x76ddf000 	C:\Windows\SYSTEM32\SETUPAPI.dll
+0x76690000 - 0x766d6000 	C:\Windows\SYSTEM32\CFGMGR32.dll
+0x762a0000 - 0x762be000 	C:\Windows\SYSTEM32\DEVOBJ.dll
+0x641f0000 - 0x6420e000 	C:\Windows\Microsoft.NET\Framework\v2.0.50727\shfusion.dll
+0x746f0000 - 0x74777000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.9200.16658_none_bf1359a245f1cd12\COMCTL32.dll
+0x60610000 - 0x60616000 	C:\Windows\Microsoft.NET\Framework\v2.0.50727\Fusion.dll
+0x71bc0000 - 0x71bc8000 	C:\Windows\Microsoft.NET\Framework\v2.0.50727\culture.dll
+0x64220000 - 0x64238000 	C:\Windows\Microsoft.NET\Framework\v2.0.50727\ShFusRes.dll
+0x10000000 - 0x100a8000 	C:\DEV\FD\SciLexer.dll
+0x726f0000 - 0x726f6000 	C:\Windows\SYSTEM32\Msimg32.DLL
+0x73790000 - 0x738a9000 	C:\Windows\SYSTEM32\PROPSYS.dll
+0x76220000 - 0x76294000 	C:\Windows\SYSTEM32\clbcatq.dll
+0x71230000 - 0x7125a000 	C:\Windows\SYSTEM32\thumbcache.dll
+0x71210000 - 0x7122a000 	C:\Windows\SYSTEM32\bcrypt.dll
+0x73500000 - 0x735a7000 	C:\Windows\system32\apphelp.dll
+0x71330000 - 0x713d0000 	C:\Windows\SYSTEM32\sxs.dll
+0x75bf0000 - 0x75d10000 	C:\Windows\SYSTEM32\urlmon.dll
+0x76860000 - 0x76a58000 	C:\Windows\SYSTEM32\iertutil.dll
+0x770e0000 - 0x77298000 	C:\Windows\SYSTEM32\WININET.dll
+0x6d8e0000 - 0x6db90000 	C:\DEV\JAVA\JDK6_32BIT\jre\bin\client\jvm.dll
+0x72f10000 - 0x72f31000 	C:\Windows\SYSTEM32\WINMM.dll
+0x7c340000 - 0x7c396000 	C:\Windows\SYSTEM32\MSVCR71.dll
+0x72ee0000 - 0x72f0b000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x6d890000 - 0x6d89c000 	C:\DEV\JAVA\JDK6_32BIT\jre\bin\verify.dll
+0x6d3e0000 - 0x6d3ff000 	C:\DEV\JAVA\JDK6_32BIT\jre\bin\java.dll
+0x6d8d0000 - 0x6d8df000 	C:\DEV\JAVA\JDK6_32BIT\jre\bin\zip.dll
+0x6d6c0000 - 0x6d6d3000 	C:\DEV\JAVA\JDK6_32BIT\jre\bin\net.dll
+
+VM Arguments:
+java_command: <unknown>
+Launcher Type: generic
+
+Environment Variables:
+JAVA_HOME=C:\DEV\JAVA\JDK6_32BIT
+PATH=C:\Program Files\Dell\DW WLAN Card;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files\WIDCOMM\Bluetooth Software\;c:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\TortoiseHg\;C:\DEV\JAVA\JDK6_32BIT\bin;C:\DEV\TortoiseGit\bin;C:\DEV\GIT_SCM\Git\cmd
+USERNAME=JMIM
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8 , 64 bit Build 9200 
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt
+
+Memory: 4k page, physical 4060436k(1544932k free), swap 5960980k(2333576k free)
+
+vm_info: Java HotSpot(TM) Client VM (20.45-b01) for windows-x86 JRE (1.6.0_45-b06), built on Mar 26 2013 13:40:03 by "java_re" with MS VC++ 7.1 (VS2003)
+
+time: Sat Dec 07 14:09:12 2013
+elapsed time: 215 seconds
+

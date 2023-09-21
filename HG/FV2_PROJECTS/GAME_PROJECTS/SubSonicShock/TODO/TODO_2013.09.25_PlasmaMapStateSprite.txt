@@ -1,0 +1,8 @@
+
+get THESE:
+private static var _SheetDict:Dictionary = new Dictionary();
+private static var _AllPlasmaStateSheetPackages:Vector.<PlasmaStateSheets> = new Vector.<PlasmaStateSheets>(0);
+
+Into:
+PSSPackHolder,
+and maintain original functionality.

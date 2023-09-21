@@ -1,0 +1,11 @@
+Take a look at AssetReg.. Needs a refactor overhaul.
+ALSO:
+	GenericAssetPack.as
+	and
+	RegisteredGenericAsset.as
+	
+	will be playing a big role in this re-factor.
+	
+	
+	I need to figure out how to create an instance of a specific class type, and alter it.
+	Specifically for embedding BitmapData.

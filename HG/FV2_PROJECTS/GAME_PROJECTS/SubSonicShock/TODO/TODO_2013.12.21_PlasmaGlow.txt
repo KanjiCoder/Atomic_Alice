@@ -1,0 +1,21 @@
+
+Classes open at time of writing todo:
+	StackOfPropPancakes.as
+	PropLightBaker.as
+	TilemapDynaRayBaker.as //reference for how to make PropLightBaker
+	TileLightClusterFetchingUtility.as //needed so PropLightBaker has light clusters to work with.
+	FloodSearchTile (Reference for making generic flood search algorithm. May actually use this data type)
+	RayLitMapLoader (The object we are modifying to give plasma baking support)
+
+First thing to do:
+	//DONE! Implimented on a bitmap within a unitTest() function that is part of the class. It is working wonderfully.
+	Get generic flood search utility working.
+	Impliment that utility in thing
+	
+	
+Next thing to do:
+	Get baked plasma lights working correctly.
+	
+	
+After that:
+	Get baked plasma lights RE-RENDERING in real time.

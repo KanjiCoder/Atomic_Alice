@@ -1,0 +1,49 @@
+
+
+
+
+Bomb lights:
+
+AfterMapTilesAndSpritesFinalizedFunctions
+
+
+The bomb lights should be set after everything is done loading.
+Should do this by calling bound function that is linked into a manager.
+That is configured to set these lights.
+
+Maybe the LightingEventsManager is responsible for this.
+If the game mode is HARD, maybe we don't set these helper lights on the bombs.
+Either way, you did far too much work not to test this out.
+
+
+NOTE:
+Light baking in the ray-lit map loader happens after all of the tiles and props have been finalized.
+This tells me setting plasma glow around bombs would be best done with a module of some sort.
+
+
+
+Need: PropBakerPluginModule.as
+You can make one of these that is specialized to alter the baking proceedure of the PropLightTilemap in different ways.
+
+
+Var mod:PropBakerPluginModule = new PropBakerPluginModule(); //<< More like:: PropLightTilemapSetupPluginModule
+mod.setLightPropFetchingFunction( inFuncWithTypes )
+
+//the setLightPropFetchingFunction is used to convert a tile coordinate into a PropSprite to be used for lighting.
+
+
+function exampleLightPropFetchingFunction(inTileX,inTileY):PropSprite
+{
+	//looks at the bomb grid and decides which prop sprite to return for this coordinate.
+}
+
+
+var mapLoader:RayLitMapLoader ....
+mapLoader.setGlowPluginModule( mod )
+
+
+
+
+Need to establisha constants file for ExplosionSnapBombs
+How about: SnapBombConstants.as
+

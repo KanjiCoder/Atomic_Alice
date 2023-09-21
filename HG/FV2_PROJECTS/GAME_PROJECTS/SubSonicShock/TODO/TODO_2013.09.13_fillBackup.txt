@@ -1,0 +1,49 @@
+
+//In case I mess up my calculations and fuck it all up.
+
+public function fill(Color:uint,BlendAlpha:Boolean=true):void
+{
+	//ORIGINAL:
+	//_fill.fillRect(_flashRect,Color);
+	//buffer.copyPixels(_fill,_flashRect,_flashPoint,null,null,BlendAlpha);
+	
+	
+	//JMIM EDIT: Making scrolling background that is part of the FlxG.
+	if (bgDat.bgImageExists)
+	{
+		//var osRec:Rectangle = new Rectangle();
+		if (bgDat.hasTilemap)
+		{   
+			var newPos:Point = new Point()
+			//                                                               /--- width of image MINUS the amount that is always on screen because we cannot scroll that part!
+			_bgDelta.x = (bgDat.tileMap.currentScrollPercent.x * (bgDat.bgImage.width - this.width)) - _bgRec.x;
+			_bgDelta.y = (bgDat.tileMap.currentScrollPercent.y * (bgDat.bgImage.height - this.height)) - _bgRec.y;
+			
+			//Cap the deltas so the scrollin only happens so fast!
+			//X -axis
+			if (_bgDelta.x < bgDat.deltaCaps.x0) { _bgDelta.x = bgDat.deltaCaps.x0; } else
+			if (_bgDelta.x > bgDat.deltaCaps.x1) { _bgDelta.x = bgDat.deltaCaps.x1; }
+			//y -axis
+			if (_bgDelta.y < bgDat.deltaCaps.y0) { _bgDelta.y = bgDat.deltaCaps.y0; } else
+			if (_bgDelta.y > bgDat.deltaCaps.y1) { _bgDelta.y = bgDat.deltaCaps.y1; }
+		
+			//apply delta to _bgRec:
+			_bgRec.x += _bgDelta.x;
+			_bgRec.y += _bgDelta.y;
+			
+			buffer.copyPixels(bgDat.bgImage, _bgRec, _flashPoint, null, null, BlendAlpha);
+			
+		}
+		else
+		{
+			buffer.copyPixels(bgDat.bgImage, _flashRect, _flashPoint, null, null, BlendAlpha);
+		}
+		
+	}
+	else
+	{
+		_fill.fillRect(_flashRect,Color);
+		buffer.copyPixels(_fill,_flashRect,_flashPoint,null,null,BlendAlpha);
+	}
+	
+}

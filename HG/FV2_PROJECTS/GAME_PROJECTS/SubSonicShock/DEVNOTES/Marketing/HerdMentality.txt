@@ -1,0 +1,16 @@
+herd mentality:
+1. Make our website display FAKE statistics.
+2. Display "pay what you want" on the download area:
+
+COPY:
+DOWNLOAD NOW! Pay what you want!
+We'd like 30, but as starving artists, we understand that price is a bit steep for some.
+Average Purchase Price 17.37
+Maximum Purchase Price 50.38
+No. Of Copies Sold To date: 32,000.00
+No. Of Copies Sold this month: 2,123.00
+
+Think about copying stat chart on Indie Game hub.
+By faking the avarage price HIGHER than what it would be, but to something that seems
+realistic, we can convince more people to "pay what they want" at a higher rate.
+This is because we will tap into herd mentality.

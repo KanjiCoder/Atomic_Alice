@@ -1,0 +1,6 @@
+
+
+Idea: Soft-Lock detector. Runs every 23 frames. (need a prime number so it doesn't sync up with other processes)
+I really like the ropes from spelunky.
+
+Tap up while jumping to throw one. So instead of a double-jump, you throw a rope!

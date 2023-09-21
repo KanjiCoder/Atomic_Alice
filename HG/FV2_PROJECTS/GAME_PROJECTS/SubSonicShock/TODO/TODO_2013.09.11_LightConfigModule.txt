@@ -1,0 +1,2 @@
+Make a module that creates different lighting modes.
+Some of which will be harder to see in than others.

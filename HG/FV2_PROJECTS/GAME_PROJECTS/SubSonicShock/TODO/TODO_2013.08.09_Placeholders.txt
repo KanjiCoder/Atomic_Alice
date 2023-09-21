@@ -1,0 +1,25 @@
+LevelMapLoaderConfigModule
+LevelMapLoader
+BadSpriteRecBMM
+
+Using these classes, making modification that will turn bad sprite rectangles into other colors.
+
+WHY:
+	1.Good placeholder art.
+	2.Sprite rectangles with WHITE in them will be mistaken as lights if the sprite rectangle
+	is UNKNOWN and therefor goes unprocessed.
+	
+---------------------ABOVE DONE!!!
+
+
+TODO:
+	Buy Cigarettes.
+	Should I make a bitmap key to automatically create sprite rectangles???
+	No... Just figure out the code for the sprite rectangle by hand and come up with the correct string.
+	These config settings don't change often enough to justify creating a system.
+	
+	TODO: Game wise then:
+		Finalize that patterns you want for thwomps.
+		
+NOTE: Weird thing happened where entire tilemap dissapeared... First it was only half of it... Then I reloaded and it was always all of it.
+Seems hard to replicate.

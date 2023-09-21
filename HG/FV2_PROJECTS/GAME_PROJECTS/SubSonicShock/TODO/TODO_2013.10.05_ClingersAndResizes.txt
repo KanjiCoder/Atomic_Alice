@@ -1,0 +1,31 @@
+Todo: 2x2 buttons so that when creating levels, I can make things line
+up better. Maybe 3x3 doors as well.
+
+Also, work on the clinger helper class sometime.
+Problems:
+	1. Clinger must ignore stopping on cached revision if the clinger is unimpeeded.
+	2. Clinger needs to be teathered to the object it represents. So that clinger does not snap though an opening that
+	   later becomes closed to the object that represents it. This will happen if tiles are added to tilemap after they have been deleted.
+	   
+	   
+OOOH: Game Idea: Inverse bombs:
+	  When bombs explode, they create tiles.
+	  
+	  Way to impliment without wrecking original mechanic:
+	  The structures they create are a special tile that eventually explodes after it hits a certain age.
+	  
+	  
+BOMB BLAST SIZE:
+I am thinking:
+Skulls: 4 ways, but only 1 tile each way. So they much be touching to chain.
+Magentas: 4 ways, but only 2 tiles each. Allows for a gap of ONE tile.
+Thus you can space them out between THIN walls.
+
+The vertical and horizontal will be larger. But not move on one axis.
+
+
+
+Two new tile types that are INVINCIBLE:
+	PRISM and STEEL
+	Prism lets bombs blast go through it, but it itself does NOT break.
+	Steel stops the blast. Both are square NON-ANGLE tiles. They have no other states.

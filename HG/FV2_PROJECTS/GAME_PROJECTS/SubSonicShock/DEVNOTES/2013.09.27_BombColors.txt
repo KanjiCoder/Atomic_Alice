@@ -1,0 +1,34 @@
+
+
+Why do bombs need different explosion colors?
+To re-enforce the correlation between bomb graphic and the type of explosion pattern it makes.
+It will be easier to see the different explosion patterns if they are different colors.
+
+
+Every bomb type needs a different sprite sheet.
+This is because most people who play do NOT see the connection between the different bombs.
+
+There will be only 3 bomb types in final game.
+
+1. Red Skulls.
+   Explosion Color: RED
+   Explosion Pattern: 4 way, small.
+
+2. Magenta Bomb:
+   Explosion Color: Magenta.
+   Explosion Pattern: 4 way, LARGE.
+
+2. Orange Bomb:
+   Explosion Color: Orange.
+   Explosion Pattern: Horizontal.
+
+3. Yellow Bomb:
+   Explosion Color: Yellow
+   Explosion Pattern: Vertical.
+
+Hmm... Don't want to use:
+Blue, Cyan, Or Green. Those are "safe" colors.
+
+
+
+

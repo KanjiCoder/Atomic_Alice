@@ -1,0 +1,9 @@
+
+1. Get ignition buttons core mechanic working TODAY.
+2. Get sample levels working for mini game "Super Make Choice Extreme" TODAY.
+3. If finished, go to work on rendering props on the tilemap.
+
+
+FOR TUESDAY:
+1. Go meet up with Chris at 6PM. (He gets off work at 6PM).
+2. Email Chris the MiniGame concept.

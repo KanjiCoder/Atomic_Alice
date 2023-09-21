@@ -1,0 +1,24 @@
+
+IDEA: Make a built-in web-crawler that messages people on POF
+and asks them to play your game. Do a bit of research every day on how to web-crawl in AS3,
+till you can successfully log into POF using AS3.
+
+
+URLRequestDefaults.setLoginCredentialsForHost("www.example.com", "Ada", "love1816$X"); 
+
+Spider In ActionScript:
+http://stackoverflow.com/questions/8193411/spider-in-actionscript3
+
+
+URLRequestMethod.POST:
+http://stackoverflow.com/questions/8420993/post-values-to-a-url-using-flash
+
+
+Packet Sniffer:
+http://www.wireshark.org/
+
+
+Wrapper for actionscript:
+https://code.google.com/p/htmlwrapper/
+
+

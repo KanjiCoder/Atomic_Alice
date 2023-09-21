@@ -1,0 +1,1276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<link rel="stylesheet" type="text/css" href="Sloped%20Tiles%20-%20FlxTilemapExt_files/index.css">
+	<script type="text/javascript" src="Sloped%20Tiles%20-%20FlxTilemapExt_files/script.js"></script>
+	<script type="text/javascript" src="Sloped%20Tiles%20-%20FlxTilemapExt_files/theme.js"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://forums.flixel.org/Themes/default";
+		var smf_default_theme_url = "http://forums.flixel.org/Themes/default";
+		var smf_images_url = "http://forums.flixel.org/Themes/default/images";
+		var smf_scripturl = "http://forums.flixel.org/index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "ISO-8859-1";
+		var ajax_notification_text = "Loading...";
+		var ajax_notification_cancel_text = "Cancel";
+	// ]]></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta name="description" content="Sloped Tiles - FlxTilemapExt">
+	<meta name="keywords" content="flixel flash pixel games development coding retro">
+	<title>Sloped Tiles - FlxTilemapExt</title>
+	<link rel="canonical" href="http://forums.flixel.org/index.php/topic,5460.0.html">
+	<link rel="help" href="http://forums.flixel.org/index.php?action=help">
+	<link rel="search" href="http://forums.flixel.org/index.php?action=search">
+	<link rel="contents" href="http://forums.flixel.org/index.php">
+	<link rel="alternate" type="application/rss+xml" title="Flixel Forums - RSS" href="http://forums.flixel.org/index.php?type=rss;action=.xml">
+	<link rel="prev" href="http://forums.flixel.org/index.php/topic,5460.0/prev_next,prev.html">
+	<link rel="next" href="http://forums.flixel.org/index.php/topic,5460.0/prev_next,next.html">
+	<link rel="index" href="http://forums.flixel.org/index.php/board,4.0.html">
+		<script type="text/javascript" src="Sloped%20Tiles%20-%20FlxTilemapExt_files/captcha.js"></script>
+</head>
+<body>
+<div id="flixel_header"></div>
+<div id="wrapper" style="width: 90%">
+	<div id="header"><div class="frame">
+		<div id="top_section">
+			<h1 class="forumtitle">
+				<a href="http://forums.flixel.org/index.php">Flixel Forums</a>
+			</h1>
+			<img id="upshrink" src="Sloped%20Tiles%20-%20FlxTilemapExt_files/upshrink.png" alt="*" title="Shrink or expand the header." style="cursor: pointer;">
+			
+		</div>
+		<div id="upper_section" class="middletext">
+			<div class="user">
+				<script type="text/javascript" src="Sloped%20Tiles%20-%20FlxTilemapExt_files/sha1.js"></script>
+				<form id="guest_form" action="http://forums.flixel.org/index.php?action=login2" method="post" accept-charset="ISO-8859-1" onsubmit="hashLoginPassword(this, '6a653efccaee412c31b6d14d6dc0dc97');">
+					<div class="info">Welcome, <strong>Guest</strong>. Please <a href="http://forums.flixel.org/index.php?action=login">login</a> or <a href="http://forums.flixel.org/index.php?action=register">register</a>.<br>Did you miss your <a href="http://forums.flixel.org/index.php?action=activate">activation email</a>?</div>
+					<input name="user" size="10" class="input_text" type="text">
+					<input name="passwrd" size="10" class="input_password" type="password">
+					<select name="cookielength">
+						<option value="60">1 Hour</option>
+						<option value="1440">1 Day</option>
+						<option value="10080">1 Week</option>
+						<option value="43200">1 Month</option>
+						<option value="-1" selected="selected">Forever</option>
+					</select>
+					<input value="Login" class="button_submit" type="submit"><br>
+					<div class="info">Login with username, password and session length</div>
+					<input name="hash_passwrd" value="" type="hidden">
+				</form>
+			</div>
+			<div class="news normaltext">
+				<form id="search_form" action="http://forums.flixel.org/index.php?action=search2" method="post" accept-charset="ISO-8859-1">
+					<input name="search" class="input_text" type="text">&nbsp;
+					<input name="submit" value="Search" class="button_submit" type="submit">
+					<input name="advanced" value="0" type="hidden">
+					<input name="topic" value="5460" type="hidden"></form>
+				<h2>News: </h2>
+				<p><a href="http://flixel.org/forums/index.php/topic,4663.0.html" class="bbc_link" target="_blank">Flixel Forum Upgraded</a></p>
+			</div>
+		</div>
+		<br class="clear">
+		<script type="text/javascript"><!-- // --><![CDATA[
+			var oMainHeaderToggle = new smc_Toggle({
+				bToggleEnabled: true,
+				bCurrentlyCollapsed: false,
+				aSwappableContainers: [
+					'upper_section'
+				],
+				aSwapImages: [
+					{
+						sId: 'upshrink',
+						srcExpanded: smf_images_url + '/upshrink.png',
+						altExpanded: 'Shrink or expand the header.',
+						srcCollapsed: smf_images_url + '/upshrink2.png',
+						altCollapsed: 'Shrink or expand the header.'
+					}
+				],
+				oThemeOptions: {
+					bUseThemeSettings: false,
+					sOptionName: 'collapse_header',
+					sSessionVar: 'c617b78a6e96',
+					sSessionId: '6a653efccaee412c31b6d14d6dc0dc97'
+				},
+				oCookieOptions: {
+					bUseCookie: true,
+					sCookieName: 'upshrink'
+				}
+			});
+		// ]]></script>
+		<div id="main_menu">
+			<ul class="dropmenu" id="menu_nav">
+				<li id="button_home">
+					<a class="active firstlevel" href="http://forums.flixel.org/index.php">
+						<span class="last firstlevel">Home</span>
+					</a>
+				</li>
+				<li id="button_help">
+					<a class="firstlevel" href="http://forums.flixel.org/index.php?action=help">
+						<span class="firstlevel">Help</span>
+					</a>
+				</li>
+				<li id="button_search">
+					<a class="firstlevel" href="http://forums.flixel.org/index.php?action=search">
+						<span class="firstlevel">Search</span>
+					</a>
+				</li>
+				<li id="button_calendar">
+					<a class="firstlevel" href="http://forums.flixel.org/index.php?action=calendar">
+						<span class="firstlevel">Calendar</span>
+					</a>
+				</li>
+				<li id="button_login">
+					<a class="firstlevel" href="http://forums.flixel.org/index.php?action=login">
+						<span class="firstlevel">Login</span>
+					</a>
+				</li>
+				<li id="button_register">
+					<a class="firstlevel" href="http://forums.flixel.org/index.php?action=register">
+						<span class="last firstlevel">Register</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<br class="clear">
+	</div></div>
+	<div id="content_section"><div class="frame">
+		<div id="main_content_section">
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="http://forums.flixel.org/index.php"><span>Flixel Forums</span></a> »
+			</li>
+			<li>
+				<a href="http://forums.flixel.org/index.php#c1"><span>development</span></a> »
+			</li>
+			<li>
+				<a href="http://forums.flixel.org/index.php/board,4.0.html"><span>releases</span></a> »
+			</li>
+			<li class="last">
+				<a href="http://forums.flixel.org/index.php/topic,5460.0.html"><span>Sloped Tiles - FlxTilemapExt</span></a>
+			</li>
+		</ul>
+	</div>
+			<a id="top"></a>
+			<a id="msg30722"></a>
+			<div class="pagesection">
+				<div class="nextlinks"><a href="http://forums.flixel.org/index.php/topic,5460.0/prev_next,prev.html#new">« previous</a> <a href="http://forums.flixel.org/index.php/topic,5460.0/prev_next,next.html#new">next »</a></div>
+		<div class="buttonlist floatright">
+			<ul>
+				<li><a class="button_strip_print" href="http://forums.flixel.org/index.php?action=printpage;topic=5460.0" rel="new_win nofollow"><span class="last">Print</span></a></li>
+			</ul>
+		</div>
+				<div class="pagelinks floatleft">Pages: [<strong>1</strong>] </div>
+			</div>
+			<div id="forumposts">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/normal_post.gif" alt="" align="bottom">
+						<span id="author">Author</span>
+						Topic: Sloped Tiles - FlxTilemapExt &nbsp;(Read 1650 times)
+					</h3>
+				</div>
+				<form action="http://forums.flixel.org/index.php?action=quickmod2;topic=5460.0" method="post" accept-charset="ISO-8859-1" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('6a653efccaee412c31b6d14d6dc0dc97', 'c617b78a6e96') : false">
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="http://forums.flixel.org/index.php?action=profile;u=76502" title="View the profile of The Turnip Master">The Turnip Master</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_30722_extra_info">
+								<li class="postgroup">Member</li>
+								<li class="stars"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"></li>
+								<li class="avatar">
+									<a href="http://forums.flixel.org/index.php?action=profile;u=76502">
+										<img class="avatar" src="Sloped%20Tiles%20-%20FlxTilemapExt_files/index.png" alt="">
+									</a>
+								</li>
+								<li class="postcount">Posts: 26</li>
+								<li class="karma">Karma: +0/-0</li>
+								<li class="profile">
+									<ul>
+										<li><a href="http://forums.flixel.org/index.php?action=profile;u=76502"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/profile_sm.gif" alt="View Profile" title="View Profile"></a></li>
+										<li><a href="http://www.nerdspiel.com/" title="Nerdspiel" target="_blank" class="new_win"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/www_sm.gif" alt="Nerdspiel"></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/xx.gif" alt="">
+									</div>
+									<h5 id="subject_30722">
+										<a href="http://forums.flixel.org/index.php/topic,5460.msg30722.html#msg30722" rel="nofollow">Sloped Tiles - FlxTilemapExt</a>
+									</h5>
+									<div class="smalltext">« <strong> on:</strong> Tue, Nov  8, 2011 »</div>
+									<div id="msg_30722_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_30722">So, for my current project, I 
+thought I'd try implementing sloped tiles.&nbsp; I've attempted before 
+in past projects, but it's always been more trouble than it's 
+worth.&nbsp; This time, however, I seem to have it working, thanks to 
+all the work that people have already done here on the forums.<br><br>Here's my extended Tilemap class, based mostly off the one made by <a href="http://forums.flixel.org/index.php/topic,3897.0.html" class="bbc_link" target="_blank">krix</a>.&nbsp;
+ It functions very similarly, but has the ability to customize your tile
+ set to set any number of sloped tiles, which is a good thing for me 
+because my tile sets tend to get huge.&nbsp; Also, I added the ability 
+to set tile as being one way "cloud" type tiles that can be jumped 
+through from below.<br><br><a href="https://github.com/TheTurnipMaster/SlopeDemo/blob/master/src/FlxTilemapExt.as" class="bbc_link" target="_blank">FlxTilemapExt</a><br><a href="https://github.com/TheTurnipMaster/SlopeDemo" class="bbc_link" target="_blank">Demo Project</a><br><a href="https://github.com/TheTurnipMaster/SlopeDemo/blob/master/bin-debug/SlopeDemo.swf" class="bbc_link" target="_blank">Demo SWF</a><br><br>There's
+ also a quick demo project that I made to test it, based on the 
+EZPlatformer demo.&nbsp; I finally got it running smoothly on my 
+machine, but I'd be interested to see if anyone else can find any 
+problems.&nbsp; You still seem to stick a bit to the ceiling on the 
+downward slopes, but other than that, it seems to function correctly.<br><br>Enjoy.<br><br></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_30722">
+								« <em>Last Edit: Mon, Nov 21, 2011 by The Turnip Master</em> »
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/ip.gif" alt="">
+								Logged
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<a id="msg30734"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="http://forums.flixel.org/index.php?action=profile;u=58774" title="View the profile of Chelnok">Chelnok</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_30734_extra_info">
+								<li class="postgroup">Contributor</li>
+								<li class="stars"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"></li>
+								<li class="postcount">Posts: 257</li>
+								<li class="karma">Karma: +0/-0</li>
+								<li class="profile">
+									<ul>
+										<li><a href="http://forums.flixel.org/index.php?action=profile;u=58774"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/profile_sm.gif" alt="View Profile" title="View Profile"></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/xx.gif" alt="">
+									</div>
+									<h5 id="subject_30734">
+										<a href="http://forums.flixel.org/index.php/topic,5460.msg30734.html#msg30734" rel="nofollow">Re: Sloped Tiles - FlxTilemapExt</a>
+									</h5>
+									<div class="smalltext">« <strong>Reply #1 on:</strong> Tue, Nov  8, 2011 »</div>
+									<div id="msg_30734_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_30734">Looks good. Thanks!</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_30734">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/ip.gif" alt="">
+								Logged
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<a id="msg30742"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="http://forums.flixel.org/index.php?action=profile;u=76141" title="View the profile of camasthecat">camasthecat</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_30742_extra_info">
+								<li class="postgroup">Contributor</li>
+								<li class="stars"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"></li>
+								<li class="avatar">
+									<a href="http://forums.flixel.org/index.php?action=profile;u=76141">
+										<img class="avatar" src="Sloped%20Tiles%20-%20FlxTilemapExt_files/index.gif" alt="">
+									</a>
+								</li>
+								<li class="postcount">Posts: 440</li>
+								<li class="karma">Karma: +0/-0</li>
+								<li class="blurb">WOW! 400+ Posts!? Jeez! Do I have a life!?!?</li>
+								<li class="profile">
+									<ul>
+										<li><a href="http://forums.flixel.org/index.php?action=profile;u=76141"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/profile_sm.gif" alt="View Profile" title="View Profile"></a></li>
+										<li><a href="http://cloudypixelgames.com/" title="My site for thermalJS, an HTML5/Javascript engine kinda-like flixel:" target="_blank" class="new_win"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/www_sm.gif" alt="My site for thermalJS, an HTML5/Javascript engine kinda-like flixel:"></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/xx.gif" alt="">
+									</div>
+									<h5 id="subject_30742">
+										<a href="http://forums.flixel.org/index.php/topic,5460.msg30742.html#msg30742" rel="nofollow">Re: Sloped Tiles - FlxTilemapExt</a>
+									</h5>
+									<div class="smalltext">« <strong>Reply #2 on:</strong> Tue, Nov  8, 2011 »</div>
+									<div id="msg_30742_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_30742">Cool, Thanks a bunch!</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_30742">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/ip.gif" alt="">
+								Logged
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<a id="msg30822"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="http://forums.flixel.org/index.php?action=profile;u=1851" title="View the profile of yadurajiv">yadurajiv</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_30822_extra_info">
+								<li class="postgroup">Member</li>
+								<li class="stars"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"></li>
+								<li class="avatar">
+									<a href="http://forums.flixel.org/index.php?action=profile;u=1851">
+										<img class="avatar" src="Sloped%20Tiles%20-%20FlxTilemapExt_files/d100420b729e75342e372b857c397e08.jpeg" alt="">
+									</a>
+								</li>
+								<li class="postcount">Posts: 33</li>
+								<li class="karma">Karma: +0/-0</li>
+								<li class="blurb">~.^ wut you say?</li>
+								<li class="profile">
+									<ul>
+										<li><a href="http://forums.flixel.org/index.php?action=profile;u=1851"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/profile_sm.gif" alt="View Profile" title="View Profile"></a></li>
+										<li><a href="http://chronosign.com/" title="the rant" target="_blank" class="new_win"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/www_sm.gif" alt="the rant"></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/xx.gif" alt="">
+									</div>
+									<h5 id="subject_30822">
+										<a href="http://forums.flixel.org/index.php/topic,5460.msg30822.html#msg30822" rel="nofollow">Re: Sloped Tiles - FlxTilemapExt</a>
+									</h5>
+									<div class="smalltext">« <strong>Reply #3 on:</strong> Fri, Nov 11, 2011 »</div>
+									<div id="msg_30822_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_30822">Very nice and useful! ^_^</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_30822">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/ip.gif" alt="">
+								Logged
+							</div>
+							<div class="signature" id="msg_30822_signature">^___________^</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<a id="msg30859"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="http://forums.flixel.org/index.php?action=profile;u=76347" title="View the profile of marsoll">marsoll</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_30859_extra_info">
+								<li class="postgroup">Member</li>
+								<li class="stars"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"></li>
+								<li class="avatar">
+									<a href="http://forums.flixel.org/index.php?action=profile;u=76347">
+										<img class="avatar" src="Sloped%20Tiles%20-%20FlxTilemapExt_files/index_002.png" alt="">
+									</a>
+								</li>
+								<li class="postcount">Posts: 12</li>
+								<li class="karma">Karma: +0/-0</li>
+								<li class="profile">
+									<ul>
+										<li><a href="http://forums.flixel.org/index.php?action=profile;u=76347"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/profile_sm.gif" alt="View Profile" title="View Profile"></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/xx.gif" alt="">
+									</div>
+									<h5 id="subject_30859">
+										<a href="http://forums.flixel.org/index.php/topic,5460.msg30859.html#msg30859" rel="nofollow">Re: Sloped Tiles - FlxTilemapExt</a>
+									</h5>
+									<div class="smalltext">« <strong>Reply #4 on:</strong> Sun, Nov 13, 2011 »</div>
+									<div id="msg_30859_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_30859">Looks really good. When going up the slope, movement "feels" a little bit fast, in my opinion.<br>Other than that... great stuff!<br><br>Cheers, Marcus</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_30859">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/ip.gif" alt="">
+								Logged
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<a id="msg30943"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="http://forums.flixel.org/index.php?action=profile;u=57453" title="View the profile of KWarp">KWarp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_30943_extra_info">
+								<li class="postgroup">Active Member</li>
+								<li class="stars"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"></li>
+								<li class="postcount">Posts: 105</li>
+								<li class="karma">Karma: +0/-0</li>
+								<li class="blurb">Game Programmer</li>
+								<li class="profile">
+									<ul>
+										<li><a href="http://forums.flixel.org/index.php?action=profile;u=57453"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/profile_sm.gif" alt="View Profile" title="View Profile"></a></li>
+										<li><a href="http://www.kwarp.com/" title="kwarp.com" target="_blank" class="new_win"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/www_sm.gif" alt="kwarp.com"></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/xx.gif" alt="">
+									</div>
+									<h5 id="subject_30943">
+										<a href="http://forums.flixel.org/index.php/topic,5460.msg30943.html#msg30943" rel="nofollow">Re: Sloped Tiles - FlxTilemapExt</a>
+									</h5>
+									<div class="smalltext">« <strong>Reply #5 on:</strong> Wed, Nov 16, 2011 »</div>
+									<div id="msg_30943_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_30943">This is pretty good.<br><br>Nitpick:<br>I
+ notice that the box character moves into the slope a little more at the
+ cracks between two slope blocks, making the hills "bumpy". This is 
+probably because one of the other solid blocks is being used for 
+collision resolution instead of one of the slope blocks.</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_30943">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/ip.gif" alt="">
+								Logged
+							</div>
+							<div class="signature" id="msg_30943_signature">To understand recursion, you must first understand recursion.</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<a id="msg31020"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="http://forums.flixel.org/index.php?action=profile;u=1526" title="View the profile of krix">krix</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_31020_extra_info">
+								<li class="postgroup">Member</li>
+								<li class="stars"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"></li>
+								<li class="avatar">
+									<a href="http://forums.flixel.org/index.php?action=profile;u=1526">
+										<img class="avatar" src="Sloped%20Tiles%20-%20FlxTilemapExt_files/4387163496_32ed3f24fa_o.jpg" alt="">
+									</a>
+								</li>
+								<li class="postcount">Posts: 61</li>
+								<li class="karma">Karma: +0/-0</li>
+								<li class="profile">
+									<ul>
+										<li><a href="http://forums.flixel.org/index.php?action=profile;u=1526"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/profile_sm.gif" alt="View Profile" title="View Profile"></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/xx.gif" alt="">
+									</div>
+									<h5 id="subject_31020">
+										<a href="http://forums.flixel.org/index.php/topic,5460.msg31020.html#msg31020" rel="nofollow">Re: Sloped Tiles - FlxTilemapExt</a>
+									</h5>
+									<div class="smalltext">« <strong>Reply #6 on:</strong> Mon, Nov 21, 2011 »</div>
+									<div id="msg_31020_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_31020"><div class="quoteheader"><div class="topslice_quote"><a href="http://forums.flixel.org/index.php/topic,5460.msg30722.html#msg30722">Quote from: The Turnip Master on Tue, Nov &nbsp;8, 2011</a></div></div><blockquote class="bbc_standard_quote">So,
+ for my current project, I thought I'd try implementing sloped 
+tiles.&nbsp; I've attempted before in past projects, but it's always 
+been more trouble than it's worth.&nbsp; This time, however, I seem to 
+have it working, thanks to all the work that people have already done 
+here on the forums.<br><br>Here's my extended Tilemap class, based mostly off the one made by <a href="http://www.nerdspiel.com/" class="bbc_link" target="_blank">krix</a>.&nbsp;
+ It functions very similarly, but has the ability to customize your tile
+ set to set any number of sloped tiles, which is a good thing for me 
+because my tile sets tend to get huge.&nbsp; Also, I added the ability 
+to set tile as being one way "cloud" type tiles that can be jumped 
+through from below.<br><br><a href="https://github.com/TheTurnipMaster/SlopeDemo/blob/master/src/FlxTilemapExt.as" class="bbc_link" target="_blank">FlxTilemapExt</a><br><a href="https://github.com/TheTurnipMaster/SlopeDemo" class="bbc_link" target="_blank">Demo Project</a><br><a href="https://github.com/TheTurnipMaster/SlopeDemo/blob/master/bin-debug/SlopeDemo.swf" class="bbc_link" target="_blank">Demo SWF</a><br><br>There's
+ also a quick demo project that I made to test it, based on the 
+EZPlatformer demo.&nbsp; I finally got it running smoothly on my 
+machine, but I'd be interested to see if anyone else can find any 
+problems.&nbsp; You still seem to stick a bit to the ceiling on the 
+downward slopes, but other than that, it seems to function correctly.<br><br>Enjoy.<br></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br>Glad to see you referencing me for the basic slope class. Just wondering why my name is linked to nerdspiel.com !?<br><br>Cheers,<br>Dirk</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_31020">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/ip.gif" alt="">
+								Logged
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<a id="msg31033"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="http://forums.flixel.org/index.php?action=profile;u=76502" title="View the profile of The Turnip Master">The Turnip Master</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_31033_extra_info">
+								<li class="postgroup">Member</li>
+								<li class="stars"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"></li>
+								<li class="avatar">
+									<a href="http://forums.flixel.org/index.php?action=profile;u=76502">
+										<img class="avatar" src="Sloped%20Tiles%20-%20FlxTilemapExt_files/index.png" alt="">
+									</a>
+								</li>
+								<li class="postcount">Posts: 26</li>
+								<li class="karma">Karma: +0/-0</li>
+								<li class="profile">
+									<ul>
+										<li><a href="http://forums.flixel.org/index.php?action=profile;u=76502"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/profile_sm.gif" alt="View Profile" title="View Profile"></a></li>
+										<li><a href="http://www.nerdspiel.com/" title="Nerdspiel" target="_blank" class="new_win"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/www_sm.gif" alt="Nerdspiel"></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/xx.gif" alt="">
+									</div>
+									<h5 id="subject_31033">
+										<a href="http://forums.flixel.org/index.php/topic,5460.msg31033.html#msg31033" rel="nofollow">Re: Sloped Tiles - FlxTilemapExt</a>
+									</h5>
+									<div class="smalltext">« <strong>Reply #7 on:</strong> Mon, Nov 21, 2011 »</div>
+									<div id="msg_31033_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_31033"><div class="quoteheader"><div class="topslice_quote"><a href="http://forums.flixel.org/index.php/topic,5460.msg31020.html#msg31020">Quote from: krix on Mon, Nov 21, 2011</a></div></div><blockquote class="bbc_standard_quote">Glad to see you referencing me for the basic slope class. Just wondering why my name is linked to nerdspiel.com !?<br></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br>Oops,
+ my bad.&nbsp; I was trying to link to your original post.&nbsp; I must 
+not have noticed the wrong link in my clipboard.&nbsp; It should be 
+fixed, now.<br><br>Also, nice work on the slope class.&nbsp; Like I 
+said, I've seen dozens of different takes on sloped tiles in Flash and 
+I've never found one that actually worked well enough to try and use in a
+ project.&nbsp; Thanks for all the work!</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_31033">
+								« <em>Last Edit: Mon, Nov 21, 2011 by The Turnip Master</em> »
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/ip.gif" alt="">
+								Logged
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<a id="msg31343"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="http://forums.flixel.org/index.php?action=profile;u=76390" title="View the profile of Dmeville">Dmeville</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_31343_extra_info">
+								<li class="postgroup">Member</li>
+								<li class="stars"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"></li>
+								<li class="avatar">
+									<a href="http://forums.flixel.org/index.php?action=profile;u=76390">
+										<img class="avatar" src="Sloped%20Tiles%20-%20FlxTilemapExt_files/index_003.png" alt="">
+									</a>
+								</li>
+								<li class="postcount">Posts: 67</li>
+								<li class="karma">Karma: +0/-0</li>
+								<li class="profile">
+									<ul>
+										<li><a href="http://forums.flixel.org/index.php?action=profile;u=76390"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/profile_sm.gif" alt="View Profile" title="View Profile"></a></li>
+										<li><a href="http://dylanmeville.com/" title="" target="_blank" class="new_win"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/www_sm.gif" alt=""></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/clip.gif" alt="">
+									</div>
+									<h5 id="subject_31343">
+										<a href="http://forums.flixel.org/index.php/topic,5460.msg31343.html#msg31343" rel="nofollow">Re: Sloped Tiles - FlxTilemapExt</a>
+									</h5>
+									<div class="smalltext">« <strong>Reply #8 on:</strong> Fri, Dec  2, 2011 »</div>
+									<div id="msg_31343_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_31343">I found a FlxTilemapExt file 
+around these forums about a month ago with all the same core code, just 
+without the array of slopes.&nbsp; Nice addition!&nbsp; Looks nicer than
+ the way I handled multiple slope tiles!<br><br>It works great for the 
+player, however colliding the slopes against bullets seems to have 
+strange results.&nbsp; I've been trying to fix this here and there but 
+to no avail.&nbsp; All the bullets I'm using are just small moving 
+FlxSprites, so why this wouldn't work with the same success of the 
+player is weird.&nbsp; (Unless I'm missing something!)<br><br>Here's an image to see what's happening exactly.&nbsp; Maybe someone here could help me figure this out?<br>It's
+ particularly frustrating when you're firing UP a slope at an enemy, it 
+"hits" something invisible, and gets destroyed while it's moving BY the 
+slope.<br><br>I'll upload a playable demo so anyone can test it out and see whats happening in real time.<br><a href="http://dylanmeville.com/files/BCAFX/?swf=http://dylanmeville.com/swf/MetroidGame/Main.swf&amp;w=800&amp;h=600" class="bbc_link" target="_blank">[Click here to play the demo]</a><br>(WASD to move, mouse to aim, click to shoot)</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_31343">
+								« <em>Last Edit: Fri, Dec  2, 2011 by Dmeville</em> »
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/ip.gif" alt="">
+								Logged
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<a id="msg31371"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="http://forums.flixel.org/index.php?action=profile;u=76502" title="View the profile of The Turnip Master">The Turnip Master</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_31371_extra_info">
+								<li class="postgroup">Member</li>
+								<li class="stars"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"></li>
+								<li class="avatar">
+									<a href="http://forums.flixel.org/index.php?action=profile;u=76502">
+										<img class="avatar" src="Sloped%20Tiles%20-%20FlxTilemapExt_files/index.png" alt="">
+									</a>
+								</li>
+								<li class="postcount">Posts: 26</li>
+								<li class="karma">Karma: +0/-0</li>
+								<li class="profile">
+									<ul>
+										<li><a href="http://forums.flixel.org/index.php?action=profile;u=76502"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/profile_sm.gif" alt="View Profile" title="View Profile"></a></li>
+										<li><a href="http://www.nerdspiel.com/" title="Nerdspiel" target="_blank" class="new_win"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/www_sm.gif" alt="Nerdspiel"></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/xx.gif" alt="">
+									</div>
+									<h5 id="subject_31371">
+										<a href="http://forums.flixel.org/index.php/topic,5460.msg31371.html#msg31371" rel="nofollow">Re: Sloped Tiles - FlxTilemapExt</a>
+									</h5>
+									<div class="smalltext">« <strong>Reply #9 on:</strong> Mon, Dec  5, 2011 »</div>
+									<div id="msg_31371_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_31371">I think I know what your problem is.<br><br>If
+ your bullet code is based off of the bullets in Mode or another demo, 
+you probably have something like this in your PlayState class:<br><br><div class="codeheader">Code: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Select]</a></div><pre style="margin: 0; padding: 0;"><code class="bbc_code"><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>protected function overlapped(Sprite1:FlxSprite,Sprite2:FlxSprite):void<br><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>{<br><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>if((Sprite1 is EnemyBullet) || (Sprite1 is Bullet))<br><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>Sprite1.kill();<br><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>Sprite2.hurt(1);<br><span style="white-space: pre;">	</span><span style="white-space: pre;">	</span>}<br><br></code></pre><br>This
+ means that while most sprites can walk up a slope and overlap with the 
+tile, bullets are specifically designed to die as soon as they come into
+ contact with any other physical object.&nbsp; Since all the slope logic
+ is calculated in response to an overlap, most of the code in 
+FlxTilemapExt doesn't even get a chance to run.<br><br>In a game that 
+only shoots at right angles, it shouldn't really make much of a 
+difference to gameplay, it just looks funny to see the bullet impact 
+before it hits the slope.&nbsp; The problem for you is that it can get 
+in the way for diagonal shots that would miss the slope, but hit the 
+corner of the tile.&nbsp; The easiest thing to do would probably be to 
+just modify the part of code above so that it responds differently to 
+slopes.&nbsp; If you design your levels so that sloped tiles are never 
+floating out in space (like that one tile just to the right of your 
+starting screen), then you could just have bullets ignore sloped tiles, 
+letting the bullets hit the normal blocks behind them.&nbsp; You could 
+also try modifying the code to only kill in case of a collision, rather 
+than an overlap, but that might cause problems with bullets colliding 
+with enemies (unless your enemies are solid).<br><br>Alternatively, I 
+know that Flixel Power Tools has a FlxWeapon class that supports angled 
+bullets.&nbsp; That might work better with sloped tiles.&nbsp; I don't 
+suppose anyone knows if FlxWeapon removes bullets on overlap?</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_31371">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/ip.gif" alt="">
+								Logged
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<a id="msg31387"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="http://forums.flixel.org/index.php?action=profile;u=76141" title="View the profile of camasthecat">camasthecat</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_31387_extra_info">
+								<li class="postgroup">Contributor</li>
+								<li class="stars"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"></li>
+								<li class="avatar">
+									<a href="http://forums.flixel.org/index.php?action=profile;u=76141">
+										<img class="avatar" src="Sloped%20Tiles%20-%20FlxTilemapExt_files/index.gif" alt="">
+									</a>
+								</li>
+								<li class="postcount">Posts: 440</li>
+								<li class="karma">Karma: +0/-0</li>
+								<li class="blurb">WOW! 400+ Posts!? Jeez! Do I have a life!?!?</li>
+								<li class="profile">
+									<ul>
+										<li><a href="http://forums.flixel.org/index.php?action=profile;u=76141"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/profile_sm.gif" alt="View Profile" title="View Profile"></a></li>
+										<li><a href="http://cloudypixelgames.com/" title="My site for thermalJS, an HTML5/Javascript engine kinda-like flixel:" target="_blank" class="new_win"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/www_sm.gif" alt="My site for thermalJS, an HTML5/Javascript engine kinda-like flixel:"></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/xx.gif" alt="">
+									</div>
+									<h5 id="subject_31387">
+										<a href="http://forums.flixel.org/index.php/topic,5460.msg31387.html#msg31387" rel="nofollow">Re: Sloped Tiles - FlxTilemapExt</a>
+									</h5>
+									<div class="smalltext">« <strong>Reply #10 on:</strong> Mon, Dec  5, 2011 »</div>
+									<div id="msg_31387_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_31387">I can't get the ceiling slopes
+ working! But the floor slopes are working... I looked at the example 
+code, and I just copied and pasted, and now, all the tiles in the 
+tilemap are glitched. :S Any solutions? I don't think my code is the 
+problem... </div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_31387">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/ip.gif" alt="">
+								Logged
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<a id="msg31411"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="http://forums.flixel.org/index.php?action=profile;u=76502" title="View the profile of The Turnip Master">The Turnip Master</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_31411_extra_info">
+								<li class="postgroup">Member</li>
+								<li class="stars"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"></li>
+								<li class="avatar">
+									<a href="http://forums.flixel.org/index.php?action=profile;u=76502">
+										<img class="avatar" src="Sloped%20Tiles%20-%20FlxTilemapExt_files/index.png" alt="">
+									</a>
+								</li>
+								<li class="postcount">Posts: 26</li>
+								<li class="karma">Karma: +0/-0</li>
+								<li class="profile">
+									<ul>
+										<li><a href="http://forums.flixel.org/index.php?action=profile;u=76502"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/profile_sm.gif" alt="View Profile" title="View Profile"></a></li>
+										<li><a href="http://www.nerdspiel.com/" title="Nerdspiel" target="_blank" class="new_win"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/www_sm.gif" alt="Nerdspiel"></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/xx.gif" alt="">
+									</div>
+									<h5 id="subject_31411">
+										<a href="http://forums.flixel.org/index.php/topic,5460.msg31411.html#msg31411" rel="nofollow">Re: Sloped Tiles - FlxTilemapExt</a>
+									</h5>
+									<div class="smalltext">« <strong>Reply #11 on:</strong> Tue, Dec  6, 2011 »</div>
+									<div id="msg_31411_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_31411"><div class="quoteheader"><div class="topslice_quote"><a href="http://forums.flixel.org/index.php/topic,5460.msg31387.html#msg31387">Quote from: camasthecat on Mon, Dec &nbsp;5, 2011</a></div></div><blockquote class="bbc_standard_quote">I
+ can't get the ceiling slopes working! But the floor slopes are 
+working... I looked at the example code, and I just copied and pasted, 
+and now, all the tiles in the tilemap are glitched. :S Any solutions? I 
+don't think my code is the problem...<br></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br>Well,
+ I would probably start by taking a look at the code I used in the Demo 
+SWF I posted above.&nbsp; I haven't run into any bugs in the demo, so 
+hopefully you should be able to compile a SWF and have it function 
+correctly.&nbsp; It's pretty much just a version of the EZ Platformer 
+demo with a different tileset and using the FlxTilemapExt class instead 
+of the normal FlxTilemap class.&nbsp; If you can get the demo to work 
+properly but not your program, then you might just be able to compare 
+and see what the differences in your code are.<br><br>Just out of 
+curiosity, what problem are you having with the ceiling?&nbsp; Is it 
+colliding like a full, solid block?&nbsp; Is it not colliding at all?</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_31411">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/ip.gif" alt="">
+								Logged
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<a id="msg31419"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="http://forums.flixel.org/index.php?action=profile;u=76390" title="View the profile of Dmeville">Dmeville</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_31419_extra_info">
+								<li class="postgroup">Member</li>
+								<li class="stars"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"></li>
+								<li class="avatar">
+									<a href="http://forums.flixel.org/index.php?action=profile;u=76390">
+										<img class="avatar" src="Sloped%20Tiles%20-%20FlxTilemapExt_files/index_003.png" alt="">
+									</a>
+								</li>
+								<li class="postcount">Posts: 67</li>
+								<li class="karma">Karma: +0/-0</li>
+								<li class="profile">
+									<ul>
+										<li><a href="http://forums.flixel.org/index.php?action=profile;u=76390"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/profile_sm.gif" alt="View Profile" title="View Profile"></a></li>
+										<li><a href="http://dylanmeville.com/" title="" target="_blank" class="new_win"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/www_sm.gif" alt=""></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/clip.gif" alt="">
+									</div>
+									<h5 id="subject_31419">
+										<a href="http://forums.flixel.org/index.php/topic,5460.msg31419.html#msg31419" rel="nofollow">Re: Sloped Tiles - FlxTilemapExt</a>
+									</h5>
+									<div class="smalltext">« <strong>Reply #12 on:</strong> Wed, Dec  7, 2011 »</div>
+									<div id="msg_31419_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_31419">Thanks for the insight!<br><br>It
+ makes sense that since the bullets are clipping the edge of the tile 
+they're getting destroyed, so I think the easiest thing to do would just
+ make the bullets ignore the slopes.&nbsp; <br><br>I'll post if if get any results.<br><br>EDIT:&nbsp;
+ In the SolveCollisionSlopeetcetc functions, I'm throwing all that code 
+into the else block of an if(obj is Bullet) conditional.&nbsp; If the 
+obj is a bullet, I set a property on the bullet, CollidingWithSlope to 
+true.<br><br>Then, in my FlxG.collide between bullets and tilemap, I have if(!bullet.CollidingWithSlope){ bullet.Explode()}<br><br>The
+ problem I'm having is once the bullet hits the slope, it's 
+CollidingWithSlope is set to true, but it is never set back to false, 
+and get's stuck in the corner behind the slope, never exploding and 
+being destroyed.&nbsp; How would I go about fixing this?&nbsp; What I 
+guess I mean to ask is where can I add one line of code that will get 
+executed whenever I collide with any tile that ISN'T a slope?<br><br>.. I'll continue looking into it/testing about.<br><br><br>On a slightly different note, It still baffles me why things like this (see attached image) happen :s</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_31419">
+								« <em>Last Edit: Wed, Dec  7, 2011 by Dmeville</em> »
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/ip.gif" alt="">
+								Logged
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<a id="msg31439"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="http://forums.flixel.org/index.php?action=profile;u=76141" title="View the profile of camasthecat">camasthecat</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_31439_extra_info">
+								<li class="postgroup">Contributor</li>
+								<li class="stars"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"></li>
+								<li class="avatar">
+									<a href="http://forums.flixel.org/index.php?action=profile;u=76141">
+										<img class="avatar" src="Sloped%20Tiles%20-%20FlxTilemapExt_files/index.gif" alt="">
+									</a>
+								</li>
+								<li class="postcount">Posts: 440</li>
+								<li class="karma">Karma: +0/-0</li>
+								<li class="blurb">WOW! 400+ Posts!? Jeez! Do I have a life!?!?</li>
+								<li class="profile">
+									<ul>
+										<li><a href="http://forums.flixel.org/index.php?action=profile;u=76141"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/profile_sm.gif" alt="View Profile" title="View Profile"></a></li>
+										<li><a href="http://cloudypixelgames.com/" title="My site for thermalJS, an HTML5/Javascript engine kinda-like flixel:" target="_blank" class="new_win"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/www_sm.gif" alt="My site for thermalJS, an HTML5/Javascript engine kinda-like flixel:"></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/xx.gif" alt="">
+									</div>
+									<h5 id="subject_31439">
+										<a href="http://forums.flixel.org/index.php/topic,5460.msg31439.html#msg31439" rel="nofollow">Re: Sloped Tiles - FlxTilemapExt</a>
+									</h5>
+									<div class="smalltext">« <strong>Reply #13 on:</strong> Wed, Dec  7, 2011 »</div>
+									<div id="msg_31439_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_31439">Yay! I got the ceiling tiles 
+working! The problem was that I had only one variable in the array I was
+ sending to the tiles-There has to be more than one! Way is that 
+anyway??</div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_31439">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/ip.gif" alt="">
+								Logged
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<a id="msg31477"></a>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="http://forums.flixel.org/index.php?action=profile;u=76502" title="View the profile of The Turnip Master">The Turnip Master</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_31477_extra_info">
+								<li class="postgroup">Member</li>
+								<li class="stars"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"></li>
+								<li class="avatar">
+									<a href="http://forums.flixel.org/index.php?action=profile;u=76502">
+										<img class="avatar" src="Sloped%20Tiles%20-%20FlxTilemapExt_files/index.png" alt="">
+									</a>
+								</li>
+								<li class="postcount">Posts: 26</li>
+								<li class="karma">Karma: +0/-0</li>
+								<li class="profile">
+									<ul>
+										<li><a href="http://forums.flixel.org/index.php?action=profile;u=76502"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/profile_sm.gif" alt="View Profile" title="View Profile"></a></li>
+										<li><a href="http://www.nerdspiel.com/" title="Nerdspiel" target="_blank" class="new_win"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/www_sm.gif" alt="Nerdspiel"></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/xx.gif" alt="">
+									</div>
+									<h5 id="subject_31477">
+										<a href="http://forums.flixel.org/index.php/topic,5460.msg31477.html#msg31477" rel="nofollow">Re: Sloped Tiles - FlxTilemapExt</a>
+									</h5>
+									<div class="smalltext">« <strong>Reply #14 on:</strong> Fri, Dec  9, 2011 »</div>
+									<div id="msg_31477_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_31477"><div class="quoteheader"><div class="topslice_quote"><a href="http://forums.flixel.org/index.php/topic,5460.msg31439.html#msg31439">Quote from: camasthecat on Wed, Dec &nbsp;7, 2011</a></div></div><blockquote class="bbc_standard_quote">Yay!
+ I got the ceiling tiles working! The problem was that I had only one 
+variable in the array I was sending to the tiles-There has to be more 
+than one! Way is that anyway??<br></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br>It's
+ not that you need more than one variable in the array, it's just a 
+quirk of how arrays work in Actionscript.&nbsp; For example, let's say 
+you have something like this:<br><br><div class="codeheader">Code: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Select]</a></div><pre style="margin: 0; padding: 0;"><code class="bbc_code"><span style="white-space: pre;">	</span>var tempCL:Array = new Array(3, 4);<br><span style="white-space: pre;">	</span>var tempCR:Array = new Array(5);<br></code></pre><br>The
+ first line says "Create an array of length two with '3' and '4' as 
+values."&nbsp; The second line says "Create an empty array of length 
+five."&nbsp; My bet is that when you just had one value, Flash was 
+creating an empty array to pass to FlxTilemapExt.&nbsp; There are a few 
+different ways you can get around that problem.&nbsp; The best would 
+probably be to create your array of the proper length first, then 
+populate it.&nbsp; However, I've found that simply writing the line with
+ quotation marks around the value works as well, so:<br><br><div class="codeheader">Code: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Select]</a></div><pre style="margin: 0; padding: 0;"><code class="bbc_code"><span style="white-space: pre;">	</span>var tempCR:Array = new Array("5");<br></code></pre><br>Technically,
+ this method should be placing a String consisting of a number 5, rather
+ than the number itself, but the slope function seems to understand it 
+just as well.<br><br></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_31477">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/ip.gif" alt="">
+								Logged
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				<a id="msg31485"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<a href="http://forums.flixel.org/index.php?action=profile;u=76141" title="View the profile of camasthecat">camasthecat</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_31485_extra_info">
+								<li class="postgroup">Contributor</li>
+								<li class="stars"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/star.gif" alt="*"></li>
+								<li class="avatar">
+									<a href="http://forums.flixel.org/index.php?action=profile;u=76141">
+										<img class="avatar" src="Sloped%20Tiles%20-%20FlxTilemapExt_files/index.gif" alt="">
+									</a>
+								</li>
+								<li class="postcount">Posts: 440</li>
+								<li class="karma">Karma: +0/-0</li>
+								<li class="blurb">WOW! 400+ Posts!? Jeez! Do I have a life!?!?</li>
+								<li class="profile">
+									<ul>
+										<li><a href="http://forums.flixel.org/index.php?action=profile;u=76141"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/profile_sm.gif" alt="View Profile" title="View Profile"></a></li>
+										<li><a href="http://cloudypixelgames.com/" title="My site for thermalJS, an HTML5/Javascript engine kinda-like flixel:" target="_blank" class="new_win"><img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/www_sm.gif" alt="My site for thermalJS, an HTML5/Javascript engine kinda-like flixel:"></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/xx.gif" alt="">
+									</div>
+									<h5 id="subject_31485">
+										<a href="http://forums.flixel.org/index.php/topic,5460.msg31485.html#msg31485" rel="nofollow">Re: Sloped Tiles - FlxTilemapExt</a>
+									</h5>
+									<div class="smalltext">« <strong>Reply #15 on:</strong> Fri, Dec  9, 2011 »</div>
+									<div id="msg_31485_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_31485">Oh, OK. Thanks! <img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/cheesy.gif" alt=":D" title="Cheesy" class="smiley"></div>
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_31485">
+							</div>
+							<div class="smalltext reportlinks">
+								<img src="Sloped%20Tiles%20-%20FlxTilemapExt_files/ip.gif" alt="">
+								Logged
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator">
+				</form>
+			</div>
+			<a id="lastPost"></a>
+			<div class="pagesection">
+				
+		<div class="buttonlist floatright">
+			<ul>
+				<li><a class="button_strip_print" href="http://forums.flixel.org/index.php?action=printpage;topic=5460.0" rel="new_win nofollow"><span class="last">Print</span></a></li>
+			</ul>
+		</div>
+				<div class="pagelinks floatleft">Pages: [<strong>1</strong>] </div>
+				<div class="nextlinks_bottom"><a href="http://forums.flixel.org/index.php/topic,5460.0/prev_next,prev.html#new">« previous</a> <a href="http://forums.flixel.org/index.php/topic,5460.0/prev_next,next.html#new">next »</a></div>
+			</div>
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="http://forums.flixel.org/index.php"><span>Flixel Forums</span></a> »
+			</li>
+			<li>
+				<a href="http://forums.flixel.org/index.php#c1"><span>development</span></a> »
+			</li>
+			<li>
+				<a href="http://forums.flixel.org/index.php/board,4.0.html"><span>releases</span></a> »
+			</li>
+			<li class="last">
+				<a href="http://forums.flixel.org/index.php/topic,5460.0.html"><span>Sloped Tiles - FlxTilemapExt</span></a>
+			</li>
+		</ul>
+	</div>
+			<div id="moderationbuttons"></div>
+			<div class="plainbox" id="display_jump_to"><label class="smalltext" for="display_jump_to_select">Jump to:</label> <select name="display_jump_to_select" id="display_jump_to_select" onfocus="grabJumpToContent();"><option selected="selected" value="?board=4.0">=&gt; releases</option></select>&nbsp;<input value="go" onclick="window.location.href = 'http://forums.flixel.org/index.php?board=4.0';" type="button"></div>
+		<br class="clear">
+				<script type="text/javascript" src="Sloped%20Tiles%20-%20FlxTilemapExt_files/topic.js"></script>
+				<script type="text/javascript"><!-- // --><![CDATA[
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iTopicId: 5460,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container" style="width: 90%">\n\t\t\t\t\t\t\t\t\t<div id="error_box" style="padding: 4px;" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="c617b78a6e96" value="6a653efccaee412c31b6d14d6dc0dc97" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="5460" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%" />\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Save" tabindex="2" onclick="return oQuickModify.modifySave(\'6a653efccaee412c31b6d14d6dc0dc97\', \'c617b78a6e96\');" accesskey="s" class="button_submit" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" tabindex="3" onclick="return oQuickModify.modifyCancel();" class="button_submit" />\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" style="width: 90%;" name="subject" value="%subject%" size="80" maxlength="80" tabindex="4" class="input_text" />',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="http://forums.flixel.org/index.php'+'?topic=5460.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Topic: %subject% &nbsp;(Read 1650 times)',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Jump to:<" + "/label> %dropdown_list%",
+							iCurBoardId: 4,
+							iCurBoardChildLevel: 0,
+							sCurBoardName: "releases",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "go"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 4,
+							iTopicId: 5460,
+							sSessionId: "6a653efccaee412c31b6d14d6dc0dc97",
+							sSessionVar: "c617b78a6e96",
+							sLabelIconList: "Message Icon",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+			<script type="text/javascript"><!-- // --><![CDATA[
+				var verificationpostHandle = new smfCaptcha("http://forums.flixel.org/index.php?action=verificationcode;vid=post;rand=b64708ee1e64f1f7fbb5cb067f2084bd", "post", 1);
+			// ]]></script>
+		</div>
+	</div></div>
+	<div id="footer_section"><div class="frame">
+		<ul class="reset">
+			<li class="copyright">
+			<span class="smalltext" style="display: inline; visibility: visible; font-family: Verdana, Arial, sans-serif;"><a href="http://forums.flixel.org/index.php?action=credits" title="Simple Machines Forum" target="_blank" class="new_win">SMF 2.0.2</a> |
+ <a href="http://www.simplemachines.org/about/smf/license.php" title="License" target="_blank" class="new_win">SMF © 2011</a>, <a href="http://www.simplemachines.org/" title="Simple Machines" target="_blank" class="new_win">Simple Machines</a>
+			</span></li>
+			<li><a id="button_xhtml" href="http://validator.w3.org/check?uri=referer" target="_blank" class="new_win" title="Valid XHTML 1.0!"><span>XHTML</span></a></li>
+			<li><a id="button_rss" href="http://forums.flixel.org/index.php?action=.xml;type=rss" class="new_win"><span>RSS</span></a></li>
+			<li class="last"><a id="button_wap2" href="http://forums.flixel.org/index.php?wap2" class="new_win"><span>WAP2</span></a></li>
+		</ul>
+	</div></div>
+</div>
+</body></html>

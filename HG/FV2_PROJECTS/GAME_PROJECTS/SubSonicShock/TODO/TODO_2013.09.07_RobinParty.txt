@@ -1,0 +1,9 @@
+Text Engine is displaying text!
+Need to burn text to the background correctly now.
+First, work on a better system for scrolling the background.
+
+Also, FlxCamera should probably have its own method 
+STAMP_ON_BG_USING_SCREEN_COORDS or something like that.
+
+
+Go to Robin's party and make them play your game!

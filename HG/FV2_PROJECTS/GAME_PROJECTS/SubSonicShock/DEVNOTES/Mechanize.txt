@@ -1,0 +1,4 @@
+
+
+Looks like PERL has a mechanize module as well.
+See what PERL's syntax is like. Maybe I should learn that to do my POF stalker.

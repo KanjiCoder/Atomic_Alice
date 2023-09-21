@@ -1,0 +1,6 @@
+It is 82 - 84 KB right now.
+Try eliminating un-used letters.
+
+Down to 77-80KB by taking out non-used glyphs.
+
+38-40KB when compiled in RELEASE mode rather than debug mode. ALRIGHT!!

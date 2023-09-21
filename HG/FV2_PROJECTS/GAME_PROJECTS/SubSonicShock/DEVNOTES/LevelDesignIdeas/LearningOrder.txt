@@ -1,0 +1,34 @@
+
+1. Work Vest. Go steal a work vest. Wear it when you approach the person to look more lugitimate.
+2. Gasoline. Cooperates first. Because he knows if he asks for gas, that I will give him gas instead of the money.
+3. While doing that, works on building a story.
+   Injects a lot of details hinting or blatantly stating he is not poor.
+   1. I make 80 dollars an hour and I am stuck her begging and it is embarassing or something like that.
+4. For some reason, does not want to be seen by the people who work at the gas station?
+   Probably because if he hangs around that area, he will be found out.
+
+For next time:
+
+
+
+Game Flow:
+Learn Bombs Blow Stuff Up & Buttons contribute
+Learn Walk Through Platforms.
+Learn Jump Up Through Platforms.
+Learn Crouch Down Platforms
+Learn Crouch through small holes.
+Learn Jump up and around tiles above you to climb.
+Learn Different Bomb Speeds.
+
+
+
+pixel boost when jumping for jump sensitivity is causing hitch.
+
+To map multiple keys to the same thing...
+have a jumpSecondaryButton key.
+
+http://www.gamepolitics.com/2013/09/24/developers-speak-about-indiegamestand#.UpzpaMRDtNc
+
+Steam, Humble, or GOG
+IGS
+Desura 

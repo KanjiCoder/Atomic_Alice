@@ -1,0 +1,4 @@
+
+
+Make a map-salvager function. Then get back to working on TSDRecycler that is a class responsible for
+recycling/reusing of TileStateDatum.

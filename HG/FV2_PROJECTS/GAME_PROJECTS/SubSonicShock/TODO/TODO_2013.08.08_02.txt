@@ -1,0 +1,24 @@
+
+
+Don't worry about collision code right now. Take a break from that and get stuff on screen.
+You can't debug collision code for things you cannot see. 
+
+Rather than make a debug file and setup stuff...
+Debug the actual object that will be using the collision buckets.
+
+Debug for a "Real life" scenario.
+
+PlasmaSheetPOD
+
+
+Where is my collision bucket example for loading collision data??
+Answer: The "bucketStrips" in PlasmaStateSprite
+
+	var x:Boolean = true; //x's mark colliding buckets.
+	var o:Boolean = false;//o's mark non-collding buckets.
+	var bs:Vector.<Array> = new Vector.<Array>(0);
+	bs.push([o, o, o, o, o]);
+	bs.push([o, x, x, x, o]);
+	bs.push([o, x, x, x, o]);
+	bs.push([o, x, x, x, o]);
+	bs.push([o, o, o, o, o]);

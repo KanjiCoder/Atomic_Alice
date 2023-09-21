@@ -1,0 +1,35 @@
+
+
+EVENT/DIALOG region objects:
+Why have "event regions instead of sprite recs that do the same thing?"
+
+1. Event region does not have to be fixed at a super specific size.
+2. Event region can have geometry laying in it.
+
+
+How to denote them?
+[C][W]    [W][C]
+[W]          [W]
+
+
+[W]          [W]
+[C][W]    [W][C]
+
+
+Search for white pixels that form rectangle brackets with a colored pixel in their corners.
+RGB-CMY are allowed colors.
+4 corners, and SIX allowed colors.
+How many combinations for event areas do we have?
+
+Could I also do this with DARK AND LIGHT GREYS to make: Foreground and Background art asset rectangles?
+
+1111 --Binary. 4 bites that are off or on (2 states)
+5555 --Quadary. 4 bites. With 6 states each. 6*6*6*6 == 1296???? Really??? Do you have that many options?? Awesome.
+Actually... Even more...
+If you are using LIGHT AND DARK CMY-RGB.... 12*12*12*12.... More combinations than you'll ever need.
+With this many combinations, you can have each dialog region combination found unique to the ENTIRE GAME.
+No need to re-use.
+
+Make a meta-data file of dialog regions and the text that accompanies them.
+
+

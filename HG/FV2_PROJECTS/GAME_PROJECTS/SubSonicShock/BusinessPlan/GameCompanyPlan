@@ -1,0 +1,151 @@
+A decent flash game makes around 2,000.00.
+
+Team Types:
+[Main Project / Pentagon]: 
+(ONLY ONE PENTAGON TEAM. They work on my favorite project.)
+5 Members, all taking 20% cut in profits.
+1. Me (CODE)      --------- 20%
+2. Artist         --------- 20%
+3. Music          --------- 20%
+4. Level Designer --------- 20%
+5. PR             --------- 20%
+
+[Sub Project / Managed Box]: 
+4 SUB-PROJECTS. They work on other projects using my engine.
+4 core members, 1Manager, 1PR
+1. Me (CODE)      --------- 20%
+2. Level-Designer --------- 20%
+3. Artist         --------- 20%
+4. Music          --------- 20%
+5. PR             --------- 10%
+6. Manager        --------- 10%
+
+CORE TEAM MEMBER PAY : 20% (Asset Creators, Level Designers, Artist, music)
+PERIPHERY TEAM MEMBER: 10% (Usually Management, Public Relations)
+
+MUSIC:-------------------------------------------------------------------------------------------------------------
+The idea of the games is not to just sell games, but to also sell music.
+If a musician agrees to write tracks specifically for the game, we give that musician 20% as a core team member.
+If the musician agrees to let us use their tracks in the game, we give the musician 10% as a non-core team member.
+The extra 10% goes to the corporation to hire people who do not take profit shares.
+
+How do we sell music?
+1. Game streams music tracks as you play.
+2. Game has "elivator music track" done in artist's style. That plays while streaming music is loading.
+3. In pre-loader, you are asked, "Like the music? [SoundTrack Here] Like the levels? [Level Editor Here]"
+   Both [SoundTrack Here] and [Level Editor here] go to the same landing page that advertises a desktop version
+   of the game with MP3 soundtrack and level editor.
+-------------------------------------------------------------------------------------------------------------------
+
+MANA-MARKS:--------------------------------------------------------------------------------------------------------
+Instead of paying money to buy games on our site, you can use in-game currency to redeem copy of game.
+Purpose of in-game currency:
+     1. Appeal to the Gluttony/Greed mentality of hording. (Addictive aspect)
+     2. Give currency real value by giving games in exchange for the currency.
+
+Wait? If people can just use the currency, why buy the games at all?
+     1. If you want the deal with the sound-track MP3's. You must use real money.
+     2. There are in-game items you can buy ONLY with ManaMarks. You cannot buy ManaMarks with real money.
+        If the items are cool enough, people may choose to spend the marks in game.
+
+What about counterFiting the ManaMarks?
+If people want to pirate your games... They will. Don't worry about it.
+If people are pirating your currency... Wow, you are doing a good job making people believe in it's value.
+Though: Make individual wallet codes expire unless you register the code on our website.
+We can say that, "The base 64 encryption only can handle a wallet with this much money in it."
+And "If your wallet is compromised, there is nothing we can do."
+You get one wallet code per wallet redemption. You cannot re-use the wallet, because that would
+create duplicates. So in order to use the wallet in our online store, it must be "Deposited".
+The server looks at the wallet code, and put's it in a list of redeemed wallet codes.
+
+How do we make sure wallet codes are unique?
+1. Random Seed Value.
+2. Random Hash Value made from recording key-presses of user while they played game.
+3. The UTC Time the ManaMarks in the game were converted to a wallet code.
+
+
+MANAGED-BOX-PROJECT:------------------------------------------------------------------------------------------------
+The ManagedBox teams are initially told the project is a 1 month project.
+At the end of the month, I have a talk with the team and convince them either to launch the game,
+or to keep working on it.
+
+Arguments: 
+KEEP:
+1.  I think we really have something here! This could be the next big thing!
+    How about we work on it some more?
+2. It's almost ready, but not quite. How about we give it more time?
+
+LAUNCH:
+      1. This product is finished, let's ship it!
+      2. This project is tanking, but I think it is good enough to try to get something for it.
+      3. This project made no progress at all. (Keep the people who did good work.
+MANAGED-BOX-PROJECT:------------------------------------------------------------------------------------------------
+
+
+HOW TO MANAGE FUNDS:------------------------------------------------------------------------------------------------
+Each Project has the name of the game copyrighted and characters within the project copyrighted.
+The Game Name and characters are exclusive property of "ManaMark & MakeGamesHappen"
+Each Game Name is registered as a DBA (Doing Business As)
+People are paid according to how much that DBA brings in.
+
+Sequels can only exist if:
+1. All the original team members work on it.
+2. The original team members NOT working on it have had their stake in the project BOUGHT OUT by the company.
+
+
+BUY OUT CLAUSE:-------------------------------------------------------------------------------------------------------------------------------------------
+If any-time after 5 months, your average life-time monthly share is less than $10 .00 per month, ManaMark can buy your share for $50 .00. You must accept.
+If any-time after 5 months, your average life-time monthly share is less than $20 .00 per month, ManaMark can buy your share for $100.00. You must accept.
+If any-time after 5 months, your average life-time monthly share is less than $30 .00 per month, ManaMark can buy your share for $150.00. You must accept.
+If any-time after 5 months, your average life-time monthly share is less than $40 .00 per month, ManaMark can buy your share for $200.00. You must accept.
+If any-time after 5 months, your average life-time monthly share is less than $50 .00 per month, ManaMark can buy your share for $250.00. You must accept.
+If any-time after 5 months, your average life-time monthly share is less than $60 .00 per month, ManaMark can buy your share for $300.00. You must accept.
+If any-time after 5 months, your average life-time monthly share is less than $70 .00 per month, ManaMark can buy your share for $350.00. You must accept.
+If any-time after 5 months, your average life-time monthly share is less than $80 .00 per month, ManaMark can buy your share for $400.00. You must accept.
+If any-time after 5 months, your average life-time monthly share is less than $90 .00 per month, ManaMark can buy your share for $450.00. You must accept.
+If any-time after 5 months, your average life-time monthly share is less than $100.00 per month, ManaMark can buy your share for $500.00. You must accept.
+
+Why Buy-Out?
+The buyout exists to avoid too much accounting paperwork, for not enough money.
+If ManaMark has 10 failed projects. They would rather give you $100.00 now, instead of waste time writing out monthly checks for 5 dollars.
+BUY OUT CLAUSE:-------------------------------------------------------------------------------------------------------------------------------------------
+
+BUSINESS GOAL:--------------------------------------------------------------------------------------------------------------------------------------------
+Business Goal:
+1. Launch 1 game a month from one of your projects.
+2. Get 50,000 up front for said game on kickstarter.
+3. AT 20% share: Make 10,000 per month. Via kickstarter fueled game releases.
+   AT 10% share: Make  5,000 per month. Via kickstarter fueled game releases.
+BUSINESS GOAL:--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+WORST CASE FINANCIAL SITUATION:---------------------------------------------------------------------------------------------------------------------------
+A decent flash game makes around 2,000.00
+At 20%: That is 400 dollars.
+At 10%: That is 200 dollars.
+
+Each Month, our minimum take-home pay should be:
+AssetCreators:          400 dollars.  (20,800 per year, minimum)
+MarketingAndManagement: 200 dollars.  (10,400 per year, minimum)
+WORST CASE FINANCIAL SITUATION:---------------------------------------------------------------------------------------------------------------------------
+
+
+There should also be residual income from each of the games. That amount is unknown as of now.
+
+
+KICK-STARTER BONUS. NOT OPTIONAL. MUST AGREE TO DO BEFORE STARTING PROJECT!:------------------------------------------------------------------------------
+When the game is FINISHED. We hold it [Hostage/Ransom] on kickstarter.
+If we get our asking price on kickstarter, we will release the game.
+This phase is OPTIONAL. If the team agrees to do it, we split the bonus money based on established group percentages.
+
+How much do we want to aim for?
+Ask for 200,000 on kickstarter. 7 3-day kickstarters (with a day break between) than start on unique days of the week.
+After all 7 kickstarters FAIL, we will do a 30 day kickstarter asking for the AVERAGE of the previous 7 kickstarters.
+Each time we do kickstarter, we put new preview image up, with our logo on the bottom-right corner of the preview image.
+So they know it is us.
+
+The idea is to amass the largest crowd possible, to get the most money.
+
+KICK-STARTER BONUS:---------------------------------------------------------------------------------------------------------------------------------------
+

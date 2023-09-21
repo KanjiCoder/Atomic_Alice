@@ -1,0 +1,22 @@
+
+
+I want the game to incorporate fractal art into it....
+Game fractals should take a few arguments:
+	
+	1. The tilemap in use.
+	2. The tilemap's background image.
+	3. The camera used for the tilemap.
+	4. The light and plasma buffers maybe?
+	
+	Want to make something that looks cool enough that I can post screen shots as fractal art on deviant art.
+	
+	
+	
+	Effects Idea:
+	The pink-green slices effect could use:
+		The green as an alpha multiplier to the visible tilemap.
+		 Meaning, when green is showing, the tilemap there is showing.
+		 
+		 Could use PINK as a lighting system deleter.
+		 Meaning when pink is showing, the light from the system is NOT showing.
+		 OR the pink could be places where PINK LIGHT is stampped onto the lighting system, which is still going.

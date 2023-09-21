@@ -1,0 +1,1 @@
+COM_EXAMPLES is for projects that are demos of 3rd party code.

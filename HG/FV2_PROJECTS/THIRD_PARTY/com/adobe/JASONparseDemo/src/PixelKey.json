@@ -1,0 +1,225 @@
+{
+	"pixelKey":
+	{
+		"spriteRectangles":
+		{
+			"COMMENT_R0": "These rectangles control the spawning of objects who's size is larger than 1x1 pixels.",
+			"COMMENT_R1": "Meaning, a simple 1 to 1 conversion will not work. The non 1-1 objects defined in rectangles.",
+			"COMMENT_R2": "Should ALL be processed before the 1-1 objects.",
+			"COMMENT_R3": "Rectangle Defined by LIGHT GREY top-left pixel and DARK GREY bottom-right pixel.",
+			"COMMENT_2X3":"Settings for things found in a 2X3 sprite rectangle.",
+			"2X3":
+			{
+				"COMMENT_00":"lowercase for dark colors. UPPER CASE for bright colors",
+				"COMMENT_01":"dark red for exit door. Dark blue for start door.",
+				"r":"EXIT_DOOR",
+				"b":"START_DOOR",
+				
+				"COMMENT_C0" : "The smallest possible rectangle is 2X2. A string ONE letter long means the entire region of the rectangle is that same color.",
+				"COMMENT_C1" : "A string like 'rgb' as a propery means that when scanning left-right, top-bottom, those color pixels should come up in that order.",
+				"COMMENT_C2" : "If so, you will spawn the object defined by that combination. Colors comming AFTER that can be WHATEVER you want them to be.",
+				"COMMENT_C3" : "Think of colors on the bitmap comming after the combination as Telomere-DNA.",
+				"rgb":"SOME_SPRITE_MADE"
+			}
+		},
+		"eventData":
+		{
+			"COMMENT_E0":"There are no event rectangles. Because an event recangle can be any size it wants to be.",
+			"COMMENT_E1":"However, when an event rectangle is found, it will search for a DATA BOX to tie that region to a specific event.",
+			"COMMENT_E2":"Databox can be solid: DARK GREY, LIGHT GREY, OR WHITE",
+			"defaultEvents":
+			{
+				"COMMENT":"Default events used when no level events have been specified for the level.",
+				
+				"COMMENT_CAPS":"Capitol properties for BRIGHT hues: RGB,CMY defining events.",
+				"R":"EVENT_SHAKE_SCREEN",
+				"G":"EVENT_SHAKE_SCREEN",
+				"B":"EVENT_SHAKE_SCREEN",
+				"C":"EVENT_SHAKE_SCREEN",
+				"M":"EVENT_SHAKE_SCREEN",
+				"Y":"EVENT_SHAKE_SCREEN",
+				
+				"COMMENT_LOWERCASE":"Lowercase properties for DARK hues: rgb,cmy defining events.",
+				"r":"EVENT_SHAKE_SCREEN",
+				"g":"EVENT_SHAKE_SCREEN",
+				"b":"EVENT_SHAKE_SCREEN",
+				"c":"EVENT_SHAKE_SCREEN",
+				"m":"EVENT_SHAKE_SCREEN",
+				"y":"EVENT_SHAKE_SCREEN"
+			},
+			"levelEvents":
+			{
+				"0":
+				{
+					"r":"EVENT_SHAKE_SCREEN"
+				},
+				"1":
+				{
+					"r":"EVENT_SHAKE_SCREEN"
+				},
+				"2":
+				{
+					"r":"EVENT_SHAKE_SCREEN"
+				}
+			}
+		},
+		
+		
+		"defaultGeometry":
+		{
+			"COMMENT_00"  : "There needs to be some logic as to what turns into what when it hits explosions. I've decided that, platforms ALWAYS exist and cannot be exploded.",
+			"COMMENT_01"  : "1 BLOCK type explodes into platforms, because the geometry best lines up, so it makes the most sense. The other, explodes to nothing.",
+			"COMMENT_02"  : "ANGLE types explode into nothing.",
+			"COMMENT_03"  : "PLATFORMS explode into, other platforms.",
+			"defaultBrick":
+			{
+				"COMMENT_00":"When you can't think of any special settings you would like to apply to a tile of a given color.",
+				"COMMENT_01":"Give it the defaultBrick settings by giving it a 'DEFAULT' attribute.",
+				"COMMENT_02":"NOTE: default brick does NOT specify tileSet1_16 value. If BLUE has a DEFAULT attribute, then it's",
+				"COMMENT_03":"tileSet1_16 value is 1, because that is the hard-coded set value for BLUE.",
+				"COMMENT_04":"this is done to allow for easy debugging",
+				"aliveState"    :"BLOCK"   ,
+				"deadState"     :"PLATFORM",
+				"isLight"       :"FALSE"
+			},
+			"blockToPlatform":
+			{
+				"aliveState"    :"BLOCK"   ,
+				"deadState"     :"PLATFORM"
+			},
+			"blockToNothing":
+			{
+				"aliveState"    :"BLOCK"   ,
+				"deadState"     :"EMPTY"
+			},
+			"angleToNothing":
+			{
+				"aliveState"    :"ANGLE"   ,
+				"deadState"     :"EMPTY"
+			},
+			"angleToPlatform":
+			{
+				"aliveState"    :"ANGLE"   ,
+				"deadState"     :"PLATFORM"
+			},
+			"permaPlatform":
+			{
+				"aliveState"    :"PLATFORM",
+				"deadState"     :"PLATFORM"
+			}
+		},
+		"shadesOfGrey":
+		{
+			"COMMENT_00":"black is reserved, by standard, for empty space.",
+			"COMMENT_01":"Thinking I will reserve white,lightgrey,and darkgrey for event triggering or something",
+			"BLACK":
+			{
+				"EMPTY":"By default, black is used as empty space."
+			},
+			"LIGHTGREY":
+			{
+				"COMMENT" : "will use this to define the level start, and level end doors.",
+				"SPRITE_TOP_LEFT":"Top-left corner, defining a special sprite that is the size of the rectangle defined by LIGHTGREY and DARKGREY"
+			},
+			"DARKGREY":
+			{
+				"SPRITE_BOTTOM_RIGHT":"The Bottom Right corner of a defined selection region."
+			},
+			"WHITE":
+			{
+				"COMMENT":"Event Pixel used to define areas of game where events are triggered on the map.",
+				"EVENT_PIXEL":"Used to define region event occurs in when in brackets. Also lone white pixel connected to one colored pixel(non empty/black) used to tie event region to specific event."
+			}
+
+		},
+		"lightColors":
+		{
+			"COMMENT_00":"light colors will be reserved for tiles that don't spawn anything. No fancy stuff.",
+			"COMMENT_01" : "consider that R, Y, G are all same color to people with red-green color blindness when determining types.",
+			"COMMENT_02" : "THUS, R,Y,G all have different initial shapes. (ANGLE, BLOCK, PLATFORM) and all destroy to platform type.",
+			"YELLOW"   :
+			{
+				"COMMENT_00" : "only yellow will be of type perma platform. Don't need more than one type of permenant platform. Yellow ladders.",
+				"COMMENT_01":" RGB BIN == 110 == DEC 6",
+				"tileSet1_16"   : "6"       ,
+				"geomPreset"    : "permaPlatform"
+			},
+			"GREEN"    :
+			{
+				"COMMENT":" RGB BIN == 010 == DEC 2",
+				"tileSet1_16"   :"2"       ,
+				"geomPreset"    : "angleToPlatform"
+			},
+			"RED"      :
+			{
+				"COMMENT":" RGB BIN == 100 == DEC 4",
+				"tileSet1_16"   :"4"       ,
+				"geomPreset"    : "blockToPlatform"
+			},
+			
+			"COMMENT_X0":"Blue,Cyan,Magenta: Explode into nothingness.",
+			"COMMENT_X1":"The reason for TWO angleToNothings is because of how the auto-tiling works :",
+			"COMMENT_X2":"If I want to parallel slopes that are very close together. I must use two different colors.",
+			"COMMENT_X3":"I thought it more logical to have angle tiles decay into nothing, hence why 2 angle types vanish, and one leaves platforms",
+			"COMMENT_X4":"When it is exploded.",
+			
+			"BLUE"     :
+			{
+				"COMMENT"       : " RGB BIN == 001 == DEC 1",
+				"tileSet1_16"   : "1"       ,
+				"geomPreset"    : "angleToNothing"
+			},
+		
+			"CYAN"     :
+			{
+				"COMMENT":" RGB BIN == 011 == DEC 3",
+				"tileSet1_16"   :"3"       ,
+				"geomPreset"    : "angleToNothing"
+			},
+			"MAGENTA"  :
+			{
+				"COMMENT":" RGB BIN == 101 == DEC 5",
+				"tileSet1_16"   :"5"       ,
+				"geomPreset"    : "blockToNothing"
+			}
+		},
+		"darkColors":
+		{
+			"COMMENT_00":"dark colors are reserved for sprite spawning, and light-tile spawning.",
+			"COMMENT_01":"Example: By convention, I use dark blue tiles to set mines in the level.",
+			"BLUE"     :
+			{
+				"COMMENT_00" :"Slow mines are proximity mines that take a while to go off once tripped.",
+				"COMMENT_01" :"They leave plenty of time to get away.",
+				"spawnSprite":"SLOW_MINE"
+			},
+			"CYAN"     :
+			{
+				"COMMENT_00" : "Fast mines are avoidable if you RUN or FALL at full speed.",
+				"COMMENT_01" : "Any slower and they will kill you. They trip that fast.   ",
+				"spawnSprite":"FAST_MINE"
+			},
+			"RED"      :
+			{
+				"spawnSprite":"INSTANT_MINE"
+			},
+			"GREEN"    :
+			{
+				"spawnSprite":"CREEPER"
+			},
+		
+			"MAGENTA"  :
+			{
+				"DEFAULT":"Use default brick for geometry."
+			},
+			"YELLOW"   :
+			{
+			    "COMMENT"       :"Yellow tiles will be used to create ray-lights in our baked lighting system.",
+				"tileSet1_16"   :"1"       ,
+				"aliveState"    :"BLOCK"   ,
+				"deadState"     :"EMPTY"   ,
+				"isLight"       :"TRUE"
+			}
+		}
+	}
+}

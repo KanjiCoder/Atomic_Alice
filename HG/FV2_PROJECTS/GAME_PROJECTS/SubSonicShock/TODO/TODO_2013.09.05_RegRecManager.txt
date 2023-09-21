@@ -1,0 +1,14 @@
+
+RegRecManager.as
+
+for (var iR:int = 0; iR < _regRecs.length; iR++)
+
+Need to fix this loop so that
+for each(w in _watchVec) is OUTSIDE of the iR loop.
+
+
+Use Event Areas to adjust to different player skill.
+If they are in "EXPERT" areas at a given time, make harder.
+If they are in "SUCKER" areas, then make the game easier because they don't know where the fuck they are going.
+
+if( check(this) ){ wreck(this);}

@@ -1,0 +1,47 @@
+
+
+1. MakeChoice / Button Bunny / Blood Bunny.
+Pick the correct button and proceed through the level.
+
+2. Don't press the button. One room with just a button.
+   A timer that is your score, just going up.
+   IF you press button. Level Explodes.
+   The goal is to see how long you can wait before pressing the button.
+   
+   Catch: Your high score is NOT registered until you press the button.
+   But the game ENDs when you press the button. A leader board of current REGISTERED high scores is always displayed in
+   the level.
+   
+   Other Catch:
+	   Pressing button halves your score. But you get to see what happens.
+	   Leaving the room give you your full score, but also ends the game...
+	   
+	   Feel like seeing the explosions should be more rewarding. Maybe pressing button ends the game, but it does NOT halve
+	   your score?
+   
+3. Press the button.
+   ONE LEVEL, with a button that vanishes and comes back.
+   If you go too long without pressing it, you die.
+   
+  4. Angry Bombs. (Don't actually use that name)
+     But you throw bombs and they land somewhere and then cause chain reaction. Or maybe you throw a flare box.
+	 
+	 5. A game just about solving puzzles with the flare box.
+	 
+	 6. A game just about outrunning chain reactions.
+	 
+	 7. A game just about teliporting by using mouse click. The teleport can burn out.
+	    And your path of travel, though it CAN go through walls.... You WILL DIE, if you try to go through an explosion.
+		
+		8. An Iphone game where you touch the crates on the screens, bunnies come out, and explode bombs.
+		 
+		9. An Iphone game where you touch red or blue button on UI and then all red or blue buttons in the game level
+		Are pressed and cause chain reaction. Then the bunnies in the crates either successfully escape, or die.
+		
+	10. A shooter asteroids type game where you can blow up blocks when you shoot them.
+	
+	11. Falling Ceiling:
+		Make a game where the level continuously scrolls up. To where you will die if you get stuck on the bottom
+		of the screen. There are bombs that start flashing once they appear on screen. They flash and take out
+		Columns in the level. Columns start falling, and they will crush you to death if you get stuck within them.
+		

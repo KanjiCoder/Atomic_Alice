@@ -1,0 +1,4 @@
+
+
+Create "Slice Regions" using collision bitmap data.
+These slice regions will be used to slice up, and animate chunks of the plasma map state sprite.
